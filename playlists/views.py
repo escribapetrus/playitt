@@ -39,7 +39,7 @@ def detail(req,id):
                 finally:
                     pl.songs.add(son)
                     pl.save()
-            return HttpResponseRedirect('/playlists')
+            return HttpResponseRedirect('/playlists/detail/{}'.format(pl.pk))
         else:
             HttpResponseRedirect("/playlists")
     else:
