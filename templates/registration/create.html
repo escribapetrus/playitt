@@ -1,0 +1,14 @@
+{% extends "../layout.html" %}
+
+{% block title %}
+Playlists - sign up
+{% endblock%}
+
+{% block content%}
+<h1>NEW USER FORM</h1>
+<form action="/users/create" method="post">
+	{% csrf_token %}
+	{{userform}}
+	<input type="submit" value='sign up'>
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: schreiber.mmb@gmail.com
+Date: Wed, 01 Apr 2020 22:10:00 -0000
+Message-ID: <158577900048.2196.1108313317943004021@LAPTOP-ER5AGL6J>
+
+
+You're receiving this email because you requested a password reset for your user account at localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/users/reset/MQ/5fa-8bf1226319d76aa29bfb/
+
+Your username, in case you’ve forgotten: admin
+
+Thanks for using our site!
+
+The localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------

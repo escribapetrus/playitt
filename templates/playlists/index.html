@@ -1,0 +1,30 @@
+{% extends "../layout.html" %}
+
+{% block title %}
+The best playlists
+{% endblock %}
+
+{% block content %}
+<section class="display">
+    <h3>hot this week:</h3>
+    <h1> <a href="/playlists/detail/{{display.pk}}">{{display}}</a></h1>
+</section>
+
+<section class="create">
+    <form action="/playlists/create" method="post">
+        {%csrf_token%}
+        {{form}}
+        <input type="submit" value="create">
+    </form>
+    
+</section>
+
+<section class="catalog">
+    <h3>new playlists:</h3>
+    <ul>
+        {% for p in pl%}
+        <li><a href="/playlists/detail/{{p.pk}}">{{p.title}}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
