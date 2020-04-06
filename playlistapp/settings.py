@@ -2,11 +2,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'satanismyfatherhahajustkidding'
+SECRET_KEY=os.environ.get("SECRET_KEY")
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
