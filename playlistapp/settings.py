@@ -4,7 +4,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DEBUG = (os.environ.get("DEBUG_VALUE") == "TRUE")
+DEBUG = True #(os.environ.get("DEBUG_VALUE") == "TRUE")
 
 ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com"]
 
@@ -35,7 +35,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
