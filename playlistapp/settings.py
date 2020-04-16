@@ -2,11 +2,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = "theelvenpaaaaath" #os.environ.get("SECRET_KEY")
 
 DEBUG = True #(os.environ.get("DEBUG_VALUE") == "TRUE")
 
-ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com"]
+ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com",'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -35,7 +35,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
-        'APP_DIRS': False,
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -77,12 +77,12 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-#STATIC_ROOT = os.path.join(BASE_DIR,"static")
+# STATIC_ROOT = os.path.join(BASE_DIR,"static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'/var/www/static/',]
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/playlists'
-LOGOUT_REDIRECT_URL = '/playlists'
+LOGIN_REDIRECT_URL = "playlists-index"
+LOGOUT_REDIRECT_URL = 'playlists-index'
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")

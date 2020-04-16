@@ -1,0 +1,12 @@
+{% extends "../layout.html" %}
+
+{% block content %}
+<h2>{{req.user}}</h2>
+
+<ul>
+    {% for f in user.profile.favorites.all %}
+        <li>{{f.title}}</li>
+    {%endfor%}
+</ul>
+
+{% endblock %}

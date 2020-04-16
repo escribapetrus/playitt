@@ -1,12 +1,17 @@
 {% extends "../layout.html" %}
-
 {% block title %}
 Playlists - {{pl.title}}
 {% endblock %}
-
 {% block content %}
+
+
+
     <h1>{{pl.title}}</h1>
     <h4>created by {{pl.user_id}}</h4>
+    <form action="{% url 'users-addtofav' pl.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Add to favorites</button>
+    </form>
 
     <ol>
         {% for s in songs %}
@@ -15,13 +20,33 @@ Playlists - {{pl.title}}
     </ol>
 
     {%if user == pl.user_id%}
-    <h3>Add new songs</h3>
-    <form action="/playlists/detail/{{pl.id}}" method="post">
+    <button>Add new songs</button>    
+    <h3> Add new songs</h3>
+    <form action="{% url 'playlists-detail' id=pl.id %}" method="post">
         {% csrf_token %}
         {{form}}
         <input type="submit" value="add">
     </form>
     {%endif%}
+
+    <article>
+        {{pl.description}}
+    </article>
+
+    <section>
+        <h2>comments</h2>
+        <div class="comment">
+            <h4>Lana Del Rey</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quibusdam possimus suscipit obcaecati odit similique modi. Error dolores accusantium iure accusamus exercitationem atque a quam rem, corrupti natus, cupiditate sequi.</p>
+        </div>
+        <div class="comment">
+            <h4>Tuomas Holopainen</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam odit facilis repudiandae veniam aliquid quisquam. Deserunt voluptatibus eius facere unde ipsa illum quas harum aut blanditiis quibusdam, quidem quis.</p>
+        </div>
+    </section>
+
+
+
 {% endblock %}
 
 

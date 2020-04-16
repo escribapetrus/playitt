@@ -6,7 +6,7 @@ Playlists - sign up
 
 {% block content%}
 <h1>NEW USER FORM</h1>
-<form action="/users/create" method="post">
+<form action="{% url 'users-create' %}" method="post">
 	{% csrf_token %}
 	{{userform}}
 	<input type="submit" value='sign up'>
