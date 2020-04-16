@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from .models import Playlist, Artist, Album, Song
 from .forms import NewPlaylist, AddSong
+from comments.forms import NewComment
 
 def index(req): 
     f = NewPlaylist()
@@ -33,11 +34,12 @@ def detail(req,id):
                 finally:
                     pl.songs.add(son)
                     pl.save()
-            return redirect('playlists-detail', id='pl.id')
+            return redirect('playlists-detail', id=id)
     else:
         songs = pl.songs.all()
+        comments = pl.comment_set.all()
         f = AddSong()
-    return render(req,'playlists/detail.html',{'pl':pl,'songs':songs,'form':f})
+    return render(req,'playlists/detail.html',{'pl':pl,'songs':songs,'comments':comments,'song_form':f,'comment_form': NewComment})
 
 def create(req):
     if req.method == 'POST':

@@ -4,8 +4,6 @@ Playlists - {{pl.title}}
 {% endblock %}
 {% block content %}
 
-
-
     <h1>{{pl.title}}</h1>
     <h4>created by {{pl.user_id}}</h4>
     <form action="{% url 'users-addtofav' pl.id %}" method="post">
@@ -24,7 +22,7 @@ Playlists - {{pl.title}}
     <h3> Add new songs</h3>
     <form action="{% url 'playlists-detail' id=pl.id %}" method="post">
         {% csrf_token %}
-        {{form}}
+        {{song_form}}
         <input type="submit" value="add">
     </form>
     {%endif%}
@@ -33,16 +31,20 @@ Playlists - {{pl.title}}
         {{pl.description}}
     </article>
 
-    <section>
+    <section class="comments">
+        <form action="{% url 'comments-create' pl.id%}" method="post">
+            {% csrf_token %}
+            {{comment_form}}
+            <input type="submit" value="submit">
+        </form>
         <h2>comments</h2>
+        {%for c in comments%}
         <div class="comment">
-            <h4>Lana Del Rey</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quibusdam possimus suscipit obcaecati odit similique modi. Error dolores accusantium iure accusamus exercitationem atque a quam rem, corrupti natus, cupiditate sequi.</p>
+            <h4>{{c.user}}</h4>
+            <p>{{c.text}}</p>
         </div>
-        <div class="comment">
-            <h4>Tuomas Holopainen</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam odit facilis repudiandae veniam aliquid quisquam. Deserunt voluptatibus eius facere unde ipsa illum quas harum aut blanditiis quibusdam, quidem quis.</p>
-        </div>
+        {%endfor%}
+
     </section>
 
 
