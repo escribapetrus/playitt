@@ -1,7 +1,7 @@
 from django import forms
 
 class NewPlaylist(forms.Form):
-    title = forms.CharField(label="playlist title", max_length=120)
+    title = forms.CharField(label="create your playlist", max_length=120)
 
 class AddSong(forms.Form):
     title = forms.CharField(label="Title", max_length=120)

@@ -6,24 +6,30 @@ The best playlists
 
 {% block content %}
 <section class="display">
-    <h3>hot this week:</h3>
-    <h1> <a href="{% url 'playlists-detail' pl.first.pk %}">{{pl.first}}</a></h1>
+    <div class="display-text">
+        <h3>hot this week:</h3>
+        <h1> <a href="{% url 'playlists-detail' pl.first.pk %}">{{pl.first}}</a></h1>
+    </div>
+    
+    <div class="create">
+        <form action="{% url 'playlists-create' %}" method="post">
+            {%csrf_token%}
+            {{form}}
+            <input type="submit" value="create playlist">
+        </form>    
+    </div>
 </section>
 
-<section class="create">
-    <form action="{% url 'playlists-create' %}" method="post">
-        {%csrf_token%}
-        {{form}}
-        <input type="submit" value="create">
-    </form>
-    
-</section>
+
 
 <section class="catalog">
     <h3>new playlists:</h3>
     <ul>
         {% for p in pl.all%}
-        <li><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></li>
+        <li style="background-image: url('/static/playlists/img/DSCF0321.JPG');background-size: 100%;">
+            <h3><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></h3>
+            <h4>by {{p.user_id}}</h4>
+        </li>
         {% endfor %}
     </ul>
 </section>
