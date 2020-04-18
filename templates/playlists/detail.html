@@ -3,41 +3,45 @@
 Playlists - {{pl.title}}
 {% endblock %}
 {% block content %}
+<div class="playlists-detail">
+    <div class="header">
+        <div class="text">
+            <h1>{{pl.title}}</h1>
+            <h4>created by {{pl.user_id}}</h4>
+        </div>
+        <div class="buttons">
+            {%if user == pl.user_id%}
+            <button>Add new songs</button>    
+            {% else %}
+            <form action="{% url 'users-addtofav' pl.id %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Add to favorites</button>
+            </form>
+            {%endif%}
+        </div>
+     
+    </div>
 
-    <h1>{{pl.title}}</h1>
-    <h4>created by {{pl.user_id}}</h4>
-    <form action="{% url 'users-addtofav' pl.id %}" method="post">
-        {% csrf_token %}
-        <button type="submit">Add to favorites</button>
-    </form>
+    <div class="list">
+        <ol>
+            {% for s in songs %}
+                <li>{{s.title}}</li>
+            {% endfor %}
+        </ol>
+            
+        <article>
+            {{pl.description}}
+        </article>
 
-    <ol>
-        {% for s in songs %}
-            <li>{{s.title}}</li>
-        {% endfor %}
-    </ol>
-
-    {%if user == pl.user_id%}
-    <button>Add new songs</button>    
-    <h3> Add new songs</h3>
-    <form action="{% url 'playlists-detail' id=pl.id %}" method="post">
-        {% csrf_token %}
-        {{song_form}}
-        <input type="submit" value="add">
-    </form>
-    {%endif%}
-
-    <article>
-        {{pl.description}}
-    </article>
-
+    </div>
+    
     <section class="comments">
+        <h2>comments</h2>
         <form action="{% url 'comments-create' pl.id%}" method="post">
             {% csrf_token %}
             {{comment_form}}
-            <input type="submit" value="submit">
+            <input class="input-submit" type="submit" value="submit">
         </form>
-        <h2>comments</h2>
         {%for c in comments%}
         <div class="comment">
             <h4>{{c.user}}</h4>
@@ -47,6 +51,18 @@ Playlists - {{pl.title}}
 
     </section>
 
+
+    {%if user == pl.user_id%}   
+    <div class="add-new">
+        <h3> Add new songs</h3>
+        <form action="{% url 'playlists-detail' id=pl.id %}" method="post">
+            {% csrf_token %}
+            {{song_form}}
+            <input type="submit" value="add">
+        </form>
+    </div>
+    {%endif%}
+</div>
 
 
 {% endblock %}

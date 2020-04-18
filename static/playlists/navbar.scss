@@ -1,15 +1,22 @@
 nav {
     display: flex;
     justify-content: space-between;
-
+    height: 50px;
+    
     ul {
-        padding: 0;
         display: flex;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         list-style: none;
         li{
-            margin: 0 20px;
-            a {
-                text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            color: $second;
+            &:hover{
+                background-color: $third;
+                color: $light;
             }
         }
     }
