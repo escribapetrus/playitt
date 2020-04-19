@@ -149,9 +149,6 @@ nav {
   .playlists-detail .comments .comment {
     border-bottom: 1px solid #641d77; }
 
-.add-new {
-  display: none; }
-
 body {
   background-color: #f5f5f5;
   font-family: "Open Sans", sans-serif;

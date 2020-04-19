@@ -1,0 +1,15 @@
+{% extends "../layout.html" %}
+
+{% block title %}
+Delete playlist
+{% endblock %}
+
+{% block content %}
+    <h1>Create playlist</h1>
+
+    <form action="#" method="post">
+        {% csrf_token %}
+        <input type="submit" value="confirm">
+        <a href="{%url 'playlists-index' %}">go back</a>
+    </form>
+{% endblock %}
