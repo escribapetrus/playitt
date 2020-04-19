@@ -7,29 +7,63 @@ The best playlists
 {% block content %}
 <div class="playlists-home">
     <section class="display">
-        <div class="display-text">
-            <h3>hot this week:</h3>
-            <h1> <a href="{% url 'playlists-detail' object_list.first.pk %}">{{object_list.first}}</a></h1>
-        </div>
-        
-        <div class="create">
-            <form action="{% url 'playlists-create' %}" method="post">
-                {%csrf_token%}
-                {{form}}
-                <input type="submit" value="create playlist">
-            </form>    
-        </div>
+        <div class="display-jenny">
+            <div class="display-jackie">
+                <span>hot this week</span>
+                <a href="{% url 'playlists-detail' object_list.first.pk %}"><h1> {{object_list.first}}</h1></a>
+            </div>            
+        </div> 
     </section>
+
     <section class="catalog">
-        <h3>new playlists:</h3>
-        <ul>
-            {% for p in object_list.all%}
-            <li style="background-image: url('/static/playlists/img/DSCF0321.JPG');background-size: 100%;">
-                <h3><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></h3>
-                <h4>by {{p.user_id}}</h4>
-            </li>
-            {% endfor %}
-        </ul>
+        <div class="catalog-list">
+            <div class="catalog-create">
+                <form action="{% url 'playlists-create' %}" method="post">
+                    {%csrf_token%}
+                    {{form}}
+                    <input type="submit" value="create new">
+                </form>    
+            </div>
+            <ul>
+                {% for p in object_list.all%}
+                <li>
+                    <h3><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></h3>
+                    <h4>by {{p.user.username}}</h4>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="catalog-sidebar">
+                <div class="header">
+                    <h2>what music do you love?</h2>
+                </div>
+                <div class="content">
+                    <h4>::| genres |::</h4>
+                    <ul>
+                        {%for g in genres%}
+                            <li><a href="{% url 'genre-list' g.name %}">{{g.name}}</a></li>
+                        {%endfor%}                    
+                    </ul>
+                    {% if user.username %}
+                    <h4>::| creations |::</h4>
+                    <ul>
+                        {%for g in user.playlist_set.all%}
+                            <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
+                        {%endfor%}                    
+                    </ul>
+                    <h4>::| favourites |::</h4>
+                    <ul>
+                        {%for g in user.profile.favorites.all%}
+                            <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
+                        {%endfor%}                    
+                    </ul>
+                    {% endif %}
+                </div>
+            
+
+ 
+            </div>
+        </div>
     </section>
 </div>
 {% endblock %}

@@ -4,10 +4,10 @@ Playlists - {{object.title}}
 {% endblock %}
 {% block content %}
 <div class="playlists-detail">
-    <div class="header">
+    <section class="header">
         <div class="text">
             <h1>{{object.title}}</h1>
-            <h4>created by {{object.user_id}}</h4>
+            <h4>created by {{object.user.username}}</h4>
         </div>
         <div class="buttons">
             {%if user == object.user_id%}
@@ -18,48 +18,57 @@ Playlists - {{object.title}}
                 <button type="submit">Add to favorites</button>
             </form>
             {%endif%}
-        </div>
-     
-    </div>
-
-    <div class="list">
-        <ol>
-            {% for s in object.songs.all %}
-                <li>{{s.title}}</li>
-            {% endfor %}
-        </ol>
-            
-        <article>
-            {{object.description}}
-        </article>
-
-    </div>
-
-    {%if user == object.user_id%}   
-    <div class="add-songs">
-        <h3> Add new songs</h3>
-        <form action="{% url 'playlists-addsong' object.pk %}" method="post">
-            {% csrf_token %}
-            {{song_form}}
-            <input type="submit" value="add">
-        </form>
-    </div>
-    {%endif%}
-
-    <section class="comments">
-        <h2>comments</h2>
-        <form action="{% url 'comments-create' object.id%}" method="post">
-            {% csrf_token %}
-            {{comment_form}}
-            <input class="input-submit" type="submit" value="submit">
-        </form>
-        {%for c in object.comment_set.all%}
-        <div class="comment">
-            <h4>{{c.user}}</h4>
-            <p>{{c.text}}</p>
-        </div>
-        {%endfor%}
+        </div>     
     </section>
+
+    <section class="content">
+        <div class="list">
+            <ol>
+                {% for s in object.songs.all %}
+                    <li>{{s.title}}</li>
+                {% endfor %}
+            </ol>
+                
+            <article>
+                {{object.description}}
+            </article>
+    
+        </div>
+    
+        {%if user == object.user_id%}   
+        <div class="add-songs">
+            <h3> Add new songs</h3>
+            <form action="{% url 'playlists-addsong' object.pk %}" method="post">
+                {% csrf_token %}
+                {{song_form}}
+                <input type="submit" value="add">
+            </form>
+        </div>
+        {%endif%}
+    
+        <section class="comments">
+            <h2>comments</h2>
+            
+            {% if user.username%}
+            <form action="{% url 'comments-create' object.id%}" method="post">
+                {% csrf_token %}
+                {{comment_form}}
+                <input class="input-submit" type="submit" value="submit">
+            </form>
+            {% else %}
+            <span>to join the discussion, <a href="{% url 'login' %}">login</a> or <a href="{% url 'users-create' %}">create an account.</a></span>
+            {% endif %}
+            
+     
+            {%for c in object.comment_set.all%}
+            <div class="comment">
+                <h4>{{c.user}}</h4>
+                <p>{{c.text}}</p>
+            </div>
+            {%endfor%}
+        </section>
+    </section>
+    
 
   
 </div>

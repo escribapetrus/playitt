@@ -1,9 +1,11 @@
 from django.shortcuts import render,redirect
 from playlists.models import Playlist
+from django.contrib.auth.decorators import login_required
 from .models import Comment
 from .forms import NewComment
 
 # Create your views here.
+@login_required(redirect_field_name='playlists-index')
 def create(req,id):
     if req.method == "POST":
         f = NewComment(req.POST)

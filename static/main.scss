@@ -4,7 +4,7 @@ $first: #088508;
 $second: #641d77;
 $third: #9932cc;
 
-$decorative: 'Cinzel Decorative', cursive;
+$decorative: 'Bebas Neue', cursive;
 $text: 'Open Sans', sans-serif;
 
 @import 'navbar';
@@ -12,18 +12,25 @@ $text: 'Open Sans', sans-serif;
 @import 'playlists/detail';
 @import 'users/detail';
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body{
     background-color: $light;
     font-family: $text;
     margin: 0
 }
 
+ul{
+    padding: 0;
+    list-style: none;
+}
+
 h1,h2,h3{
     font-family: $decorative;
+    margin: 0;
+    letter-spacing: 0.6rem;
+    font-size: 1.6rem;
 }
 a {
-    color: inherit;
     text-decoration: none;
     cursor: pointer;
 }

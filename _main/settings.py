@@ -72,6 +72,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+LOGIN_URL = '/users/login'
 LOGIN_REDIRECT_URL = "playlists-index"
 LOGOUT_REDIRECT_URL = 'playlists-index'
 
