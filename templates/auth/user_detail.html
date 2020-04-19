@@ -1,0 +1,44 @@
+{% extends "../layout.html" %}
+
+{% block content %}
+<div class="users-detail">
+    <h1>{{object}}</h1>
+    <div class="user-catalog">
+        <div class="user-favorites">
+            <h2>My favorites</h2>
+            <ul>
+                {% for f in object.profile.favorites.all %}
+                    <li><a href="{% url 'playlists-detail' f.pk %}">{{f.title}}</a></li>
+                {%endfor%}
+            </ul>
+        </div>
+        
+        <div class="user-playlists">
+            <h2>My playlists</h2>
+            <ul>
+                {% for f in object.playlist_set.all %}
+                    <li><a href="{% url 'playlists-detail' f.pk %}">{{f.title}}</a></li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+
+    <div class="user-comments">
+        <h2>My comments</h2>
+        <ul>
+            {% for f in object.comment_set.all %}
+                <li>{{f.text}} in <a href="{% url 'playlists-detail' f.playlist.pk %}">{{f.playlist}}</a></li>
+            {%endfor%}
+        </ul>    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

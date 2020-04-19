@@ -1,0 +1,40 @@
+.users-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 50px auto;
+    .user-catalog{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .user-favorites,.user-playlists{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
+        }
+        .user-playlists{
+            background-color: $first;
+        }
+        .user-favorites{
+            background-color: $third;
+        }
+        li {
+            list-style: none;
+        }   
+    }
+    .user-comments{
+        margin-top: 100px;
+        width: 100%;
+        li {
+            list-style: none;
+        }   
+    }
+}

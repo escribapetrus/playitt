@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %} Playlists {% endblock %}</title>
-        <link rel="stylesheet" href="{% sass_src 'playlists/main.scss' %}">
+        <link rel="stylesheet" href="{% sass_src 'main.scss' %}">
     </head>
     <body>    
         {% block navbar %}
@@ -18,7 +18,7 @@
 
             <ul>            
                 {%if user.username %}
-                    <li><a href="{% url 'users-profile' %}">{{user.username}}</a></li>
+                    <li><a href="{% url 'users-profile' user.pk %}">{{user.username}}</a></li>
                     <li><a href="{% url 'logout' %}">logout</a></li>
                 {%else%}
                     <li><a href="{% url 'login' %}">login</a></li>

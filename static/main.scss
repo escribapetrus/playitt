@@ -4,13 +4,13 @@ $first: #088508;
 $second: #641d77;
 $third: #9932cc;
 
-
 $decorative: 'Cinzel Decorative', cursive;
 $text: 'Open Sans', sans-serif;
 
 @import 'navbar';
-@import 'home';
-@import 'detail';
+@import 'playlists/home';
+@import 'playlists/detail';
+@import 'users/detail';
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans&display=swap');
 
 body{

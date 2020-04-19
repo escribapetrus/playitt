@@ -71,5 +71,3 @@ def add_song_to_pl(req,pk):
                     pl.songs.add(son)
                     pl.save()
             return redirect('playlists-detail', pk)
-
-

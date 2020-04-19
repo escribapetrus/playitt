@@ -36,7 +36,7 @@ Playlists - {{object.title}}
     </div>
 
     {%if user == object.user_id%}   
-    <div class="">
+    <div class="add-songs">
         <h3> Add new songs</h3>
         <form action="{% url 'playlists-addsong' object.pk %}" method="post">
             {% csrf_token %}

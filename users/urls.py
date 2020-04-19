@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
 	path('create/', views.create, name='users-create'),
-	path('profile/',views.profile,name='users-profile'),
+	path('detail/<int:pk>/',views.Detail.as_view(),name='users-profile'),
 	path('add-to-fav/<int:plid>/',views.add_pl_to_fav, name='users-addtofav')
 ]
