@@ -63,7 +63,7 @@ class PlaylistDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return False
 
 class GenreList(ListView):
-    model = Genre
+    model = Playlist
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = NewPlaylist()
@@ -71,7 +71,11 @@ class GenreList(ListView):
         return context
     def get_queryset(self):
         self.genre = get_object_or_404(Genre, name=self.kwargs['name'])
-        return Genre.objects.get(name=self.genre).playlist_set.all()
+        glist = Genre.objects.get(name=self.genre).playlist_set.all()
+        if glist:
+            return Genre.objects.get(name=self.genre).playlist_set.all()
+        else:
+            return Playlist.objects.all()
 
 class UserList(ListView):
     model = Playlist
@@ -82,7 +86,11 @@ class UserList(ListView):
         return context
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs['username'])
-        return Playlist.objects.filter(user=user).order_by('-date_created')
+        qlist = Playlist.objects.filter(user=user).order_by('-date_created')
+        if qlist:
+            return qlist
+        else:
+            return Playlist.objects.all()
 
 @login_required()
 def add_song_to_pl(req,pk):

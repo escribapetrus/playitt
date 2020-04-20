@@ -11,7 +11,7 @@ Playlists - {{object.title}}
         </div>
         <div class="buttons">
             {%if user == object.user%}
-                
+            
             {% else %}
             <form action="{% url 'users-addtofav' object.id %}" method="post">
                 {% csrf_token %}
