@@ -5,7 +5,7 @@ from .models import Comment
 from .forms import NewComment
 
 # Create your views here.
-@login_required(redirect_field_name='playlists-index')
+@login_required()
 def create(req,id):
     if req.method == "POST":
         f = NewComment(req.POST)
@@ -15,6 +15,6 @@ def create(req,id):
             nc.user = req.user
             nc.playlist = Playlist.objects.get(id=id)
             nc.save()
-            return redirect('playlists-detail', id)
+    return redirect('playlists-detail', id)
 
 

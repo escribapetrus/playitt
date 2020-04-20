@@ -5,11 +5,12 @@ Create new playlist
 {% endblock %}
 
 {% block content %}
-    <h1>Create playlist</h1> 
-
-    <form action="#" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="submit">
-    </form>
+    <div class="playlists-form">
+        <form class="add-playlist" action="#" method="post">
+        	<h1>Create playlist</h1>
+            {% csrf_token %}
+            {{ form }}      
+            <input type="submit" value="create">
+        </form>
+    </div>    
 {% endblock %}

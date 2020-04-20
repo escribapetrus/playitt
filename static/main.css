@@ -15,9 +15,6 @@ nav {
       align-items: center;
       padding: 0 20px;
       color: #641d77; }
-      nav ul li:hover {
-        background-color: #9932cc;
-        color: #f5f5f5; }
 
 .playlists-home .display {
   background-image: url("img/guitarman.jpg");
@@ -154,6 +151,9 @@ nav {
 .playlists-detail .content {
   width: 70%;
   margin: 0 auto; }
+  .playlists-detail .content h3 {
+    margin-bottom: 30px;
+    color: #641d77; }
   .playlists-detail .content .list {
     display: flex;
     flex-direction: row;
@@ -161,17 +161,47 @@ nav {
     padding: 40px;
     margin-bottom: 40px;
     box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3); }
-    .playlists-detail .content .list ol {
-      width: 30%;
-      margin: 0;
-      padding: 0;
-      list-style-position: inside; }
-      .playlists-detail .content .list ol li {
-        margin-bottom: 10px;
-        font-size: 1.4rem;
-        text-transform: capitalize; }
+    .playlists-detail .content .list .tracklist {
+      width: 30%; }
+      .playlists-detail .content .list .tracklist ol {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside; }
+        .playlists-detail .content .list .tracklist ol li {
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+          text-transform: capitalize; }
+      .playlists-detail .content .list .tracklist .add-songs form {
+        display: flex;
+        flex-direction: column; }
+        .playlists-detail .content .list .tracklist .add-songs form input {
+          background-color: white;
+          font-size: 1rem;
+          padding: 8px;
+          margin-bottom: 20px;
+          border: 1px solid #641d77; }
+        .playlists-detail .content .list .tracklist .add-songs form input[type=submit] {
+          background-color: #9932cc;
+          height: fit-content;
+          cursor: pointer;
+          font-size: 1rem; }
+          .playlists-detail .content .list .tracklist .add-songs form input[type=submit]:hover {
+            background-color: #641d77;
+            color: #f5f5f5; }
     .playlists-detail .content .list article {
-      width: 70%; }
+      width: 70%;
+      margin-left: 50px; }
+      .playlists-detail .content .list article .tags {
+        display: flex;
+        margin-bottom: 30px; }
+        .playlists-detail .content .list article .tags h3 {
+          cursor: pointer;
+          padding: 0 20px; }
+          .playlists-detail .content .list article .tags h3:hover {
+            background-color: #9932cc;
+            color: #f5f5f5; }
+      .playlists-detail .content .list article p {
+        margin-left: 20px; }
   .playlists-detail .content .comments {
     box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
     padding: 40px; }
@@ -188,17 +218,67 @@ nav {
         resize: none;
         font-family: "Open Sans", sans-serif;
         padding: 10px; }
-        .playlists-detail .content .comments form textarea:focus {
-          outline: none; }
-      .playlists-detail .content .comments form .input-submit {
+      .playlists-detail .content .comments form input[type=submit] {
         border: 1px solid #641d77;
         font-family: "Open Sans", sans-serif;
         width: 10%; }
+    .playlists-detail .content .comments span a {
+      color: #9932cc; }
     .playlists-detail .content .comments .comment {
       border-bottom: 1px solid #641d77; }
 
-.playlists-detail .add-songs {
-  display: none; }
+.playlists-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
+  padding: 50px; }
+  .playlists-form .add-playlist {
+    width: 60%;
+    display: flex;
+    flex-direction: column; }
+    .playlists-form .add-playlist h1, .playlists-form .add-playlist input, .playlists-form .add-playlist textarea {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #641d77; }
+    .playlists-form .add-playlist h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #641d77; }
+      .playlists-form .add-playlist h1:hover {
+        background-color: #9932cc;
+        color: #f5f5f5; }
+    .playlists-form .add-playlist input[type=text] {
+      height: 1.7rem;
+      font-size: 1.5rem; }
+    .playlists-form .add-playlist textarea {
+      height: 200px;
+      resize: none; }
+    .playlists-form .add-playlist select {
+      overflow-y: scroll;
+      margin-bottom: 20px;
+      border: 1px solid #641d77; }
+      .playlists-form .add-playlist select option {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem; }
+    .playlists-form .add-playlist a {
+      margin-top: -10px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      margin-left: auto; }
+    .playlists-form .add-playlist input[type=submit] {
+      background-color: #9932cc;
+      height: fit-content;
+      cursor: pointer;
+      font-size: 1rem; }
+      .playlists-form .add-playlist input[type=submit]:hover {
+        background-color: #641d77;
+        color: #f5f5f5; }
 
 .users-detail {
   display: flex;
@@ -225,13 +305,9 @@ nav {
       background-color: #088508; }
     .users-detail .user-catalog .user-favorites {
       background-color: #9932cc; }
-    .users-detail .user-catalog li {
-      list-style: none; }
   .users-detail .user-comments {
     margin-top: 100px;
     width: 100%; }
-    .users-detail .user-comments li {
-      list-style: none; }
 
 body {
   background-color: #f5f5f5;
@@ -249,8 +325,11 @@ h1, h2, h3 {
   font-size: 1.6rem; }
 
 a {
+  color: inherit;
   text-decoration: none;
   cursor: pointer; }
+  a:visited {
+    color: inherit; }
 
 footer {
   height: 10px;

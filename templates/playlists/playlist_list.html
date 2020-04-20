@@ -28,7 +28,7 @@ The best playlists
                 {% for p in object_list.all%}
                 <li>
                     <h3><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></h3>
-                    <h4>by {{p.user.username}}</h4>
+                    <a href="{% url 'playlists-user-list' p.user.username %}"><h4>by {{p.user.username}}</h4></a>
                 </li>
                 {% endfor %}
             </ul>
@@ -41,7 +41,7 @@ The best playlists
                     <h4>::| genres |::</h4>
                     <ul>
                         {%for g in genres%}
-                            <li><a href="{% url 'genre-list' g.name %}">{{g.name}}</a></li>
+                            <li><a href="{% url 'playlists-genre-list' g.name %}">{{g.name}}</a></li>
                         {%endfor%}                    
                     </ul>
                     {% if user.username %}

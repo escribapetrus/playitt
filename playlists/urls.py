@@ -3,13 +3,13 @@ from . import views
 
 urlpatterns = [
     path('',views.PlaylistIndex.as_view(), name='playlists-index'),    
-    path('detail/<int:pk>/', views.PlaylistDetail.as_view(), name='playlists-detail'),
-    path('create/',views.PlaylistCreate.as_view(), name='playlists-create'),
-    path('update/<int:pk>/', views.PlaylistUpdate.as_view(), name='playlists-update'),
-    path('delete/<int:pk>/', views.PlaylistDelete.as_view(), name='playlists-delete'),
+    path('playlists/detail/<int:pk>/', views.PlaylistDetail.as_view(), name='playlists-detail'),
+    path('playlists/create/',views.PlaylistCreate.as_view(), name='playlists-create'),
+    path('playlists/update/<int:pk>/', views.PlaylistUpdate.as_view(), name='playlists-update'),
+    path('playlists/delete/<int:pk>/', views.PlaylistDelete.as_view(), name='playlists-delete'),
 
-    path('genre/<str:name>/',views.GenreList.as_view(),name='genre-list'),
-
-
-    path('addsong/<int:pk>/', views.add_song_to_pl, name='playlists-addsong'),
+    path('playlists/genre/<str:name>/',views.GenreList.as_view(),name='playlists-genre-list'),
+    path('playlists/user/<str:username>/',views.UserList.as_view(),name='playlists-user-list'),
+   	path('playlists/addsong/<int:pk>/', views.add_song_to_pl, name='playlists-addsong'),
+   	path('playlists/addgenre',views.add_genre,name='playlists-addgenre')
 ]

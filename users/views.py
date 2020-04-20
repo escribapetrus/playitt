@@ -1,5 +1,8 @@
 from django.shortcuts import render,redirect
 from django.views.generic import ListView,DetailView,CreateView,UpdateView
+
+from django.contrib.auth.decorators import login_required
+
 from django.contrib.auth.models import User
 from playlists.models import Playlist
 from .models import Profile
@@ -21,10 +24,12 @@ def create(req):
 		userform = UserCreationForm()
 	return render(req, 'registration/create.html', {'userform':userform})
 
+@login_required()
 def add_pl_to_fav(req,plid):
 	if req.method == 'POST':
 		pl = Playlist.objects.get(id=plid)
 		usr = req.user
 		usr.profile.favorites.add(pl)
 		usr.save()
-		return redirect('playlists-detail', pk=plid)
+	return redirect('playlists-detail', pk=plid)
+
