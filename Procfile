@@ -1,1 +1,1 @@
-web: gunicorn playlistapp.wsgi
+web: gunicorn _main.wsgi

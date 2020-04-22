@@ -2,11 +2,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY") or "ELVENPAAAATH"
 
-DEBUG = False #(os.environ.get("DEBUG_VALUE") == "TRUE")
+DEBUG = True #(os.environ.get("DEBUG_VALUE") == "TRUE")
 
-ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com"]
+ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com", "localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -82,8 +82,8 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# STATIC_ROOT = os.path.join(BASE_DIR,"static")
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'/var/www/static/',]
+STATIC_ROOT = os.path.join(BASE_DIR)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 STATIC_URL = '/static/'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
