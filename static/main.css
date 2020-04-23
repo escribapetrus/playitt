@@ -54,7 +54,8 @@ nav {
       justify-content: flex-start;
       padding: 40px;
       box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
-      border-radius: 4px; }
+      border-radius: 4px;
+      cursor: pointer; }
       .playlists-home .catalog .catalog-list ul li a, .playlists-home .catalog .catalog-list ul li h4 {
         color: #641d77;
         text-decoration: none;
@@ -66,6 +67,7 @@ nav {
       justify-content: center;
       margin-bottom: 25px;
       box-shadow: -1px 0px 2px rgba(200, 200, 200, 0.5);
+      border-radius: 4px;
       height: 60px; }
       .playlists-home .catalog .catalog-list .catalog-create form {
         display: flex;
@@ -113,7 +115,40 @@ nav {
         padding: 3px; }
       .playlists-home .catalog .catalog-sidebar .content li {
         margin: 10px 0; }
-
+        .playlists-home .catalog .catalog-sidebar .content li:hover {
+          color: #f5f5f5;
+          background-color: #9932cc; }
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .playlists-home .catalog .catalog-list ul li {
+      padding: 20px; }
+    .playlists-home .catalog .catalog-sidebar {
+      width: 30%;
+      margin-left: 20px; }
+      .playlists-home .catalog .catalog-sidebar .header h2 {
+        font-size: 1rem; }
+      .playlists-home .catalog .catalog-sidebar .content {
+        font-size: 0.7rem; }
+        .playlists-home .catalog .catalog-sidebar .content h4 {
+          font-size: 0.9rem;
+          margin: 0; } }
+  @media (max-width: 600px) {
+    .playlists-home .catalog {
+      flex-direction: column; }
+      .playlists-home .catalog .catalog-list {
+        width: 100%; }
+        .playlists-home .catalog .catalog-list ul li {
+          padding: 20px; }
+          .playlists-home .catalog .catalog-list ul li h3 {
+            font-size: 1.3rem; }
+          .playlists-home .catalog .catalog-list ul li h4 {
+            font-size: 0.8rem; }
+      .playlists-home .catalog .catalog-sidebar {
+        width: 100%; }
+        .playlists-home .catalog .catalog-sidebar .content ul {
+          display: flex;
+          flex-wrap: wrap; }
+          .playlists-home .catalog .catalog-sidebar .content ul li {
+            margin: 10px; } }
 .playlists-detail .header {
   display: flex;
   flex-direction: column;
@@ -139,6 +174,11 @@ nav {
     .playlists-detail .header .text h4 {
       margin: 0;
       font-size: 1.5rem; }
+    @media (max-width: 900px) {
+      .playlists-detail .header .text h1 {
+        font-size: 2.5rem; }
+      .playlists-detail .header .text h4 {
+        font-size: 1rem; } }
   .playlists-detail .header .buttons button {
     background: #9932cc;
     color: #f5f5f5;
@@ -212,6 +252,19 @@ nav {
           .playlists-detail .content .list article .add-songs form input[type=submit]:hover {
             background-color: #641d77;
             color: #f5f5f5; }
+    @media (max-width: 900px) {
+      .playlists-detail .content .list {
+        flex-direction: column; }
+        .playlists-detail .content .list h3 {
+          font-size: 1.3rem; }
+        .playlists-detail .content .list .tracklist {
+          width: 100%;
+          margin-bottom: 30px; }
+        .playlists-detail .content .list article {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 40px;
+          padding: 0; } }
   .playlists-detail .content .comments {
     box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
     padding: 40px; }
@@ -236,7 +289,9 @@ nav {
       color: #9932cc; }
     .playlists-detail .content .comments .comment {
       border-bottom: 1px solid #641d77; }
-
+    @media (max-width: 900px) {
+      .playlists-detail .content .comments h3 {
+        font-size: 1.3rem; } }
 .playlists-form {
   display: flex;
   flex-direction: column;

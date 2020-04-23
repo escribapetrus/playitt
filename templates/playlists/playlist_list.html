@@ -21,14 +21,14 @@ The best playlists
                 <form action="{% url 'playlists-create' %}" method="post">
                     {%csrf_token%}
                     {{form}}
-                    <input type="submit" value="create new">
+                    <input type="submit" value="create">
                 </form>    
             </div>
             <ul>
                 {% for p in object_list.all%}
-                <li>
-                    <h3><a href="{% url 'playlists-detail' p.pk %}">{{p.title}}</a></h3>
-                    <a href="{% url 'playlists-user-list' p.user.username %}"><h4>by {{p.user.username}}</h4></a>
+                <li class="playlist-card">
+                    <a class="playlist-link" href="{% url 'playlists-detail' p.pk %}"><h3>{{p.title}}</h3></a>
+                    <h4>by {{p.user.username}}</h4>
                 </li>
                 {% endfor %}
             </ul>
@@ -38,32 +38,41 @@ The best playlists
                     <h2>what music do you love?</h2>
                 </div>
                 <div class="content">
-                    <h4>::| genres |::</h4>
+                    <h4>genres</h4>
                     <ul>
                         {%for g in genres%}
                             <li><a href="{% url 'playlists-genre-list' g.name %}">{{g.name}}</a></li>
                         {%endfor%}                    
                     </ul>
                     {% if user.username %}
-                    <h4>::| creations |::</h4>
+                    <h4>creations</h4>
                     <ul>
                         {%for g in user.playlist_set.all%}
                             <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
                         {%endfor%}                    
                     </ul>
-                    <h4>::| favourites |::</h4>
+                    <h4>favourites</h4>
                     <ul>
                         {%for g in user.profile.favorites.all%}
                             <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
                         {%endfor%}                    
                     </ul>
                     {% endif %}
-                </div>
-            
+                </div>          
 
  
             </div>
         </div>
     </section>
 </div>
+
+<script>
+    var jenny = document.querySelectorAll(".playlist-card"),
+        jackie = document.querySelectorAll(".playlist-link")
+        for (let i = 0; i < jenny.length; i++) {
+            console.log(jenny[i],jackie[i])
+            jenny[i].addEventListener("click", () => {window.location = jackie[i].getAttribute('href');return true})     
+        }
+</script>
+
 {% endblock %}
