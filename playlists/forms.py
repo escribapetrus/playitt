@@ -9,9 +9,19 @@ class NewPlaylist(forms.Form):
     )
 
 class AddSong(forms.Form):
-    title = forms.CharField(label="Title", max_length=120)
-    artist = forms.CharField(label="Artist", max_length=120)
-    album = forms.CharField(label="Album", max_length=120)
+    title = forms.CharField(
+        label="Title", 
+        max_length=120, 
+        widget= forms.TextInput(attrs={'placeholder':'title'}))
+    artist = forms.CharField(
+        label="Artist", 
+        max_length=120,
+        widget= forms.TextInput(attrs={'placeholder':'artist'}))
+    album = forms.CharField(
+        label="Album", 
+        max_length=120,
+        widget= forms.TextInput(attrs={'placeholder':'album'}))
 
 class AddGenre(forms.Form):
-    name = forms.CharField(label="Name", max_length=120)
+    name = forms.CharField(
+        label="Name", max_length=120)

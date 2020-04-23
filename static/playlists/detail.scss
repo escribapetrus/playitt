@@ -58,17 +58,51 @@
                 ol{
                     margin: 0;
                     padding: 0;
-                    list-style-position: inside;
+                    list-style: none;
                     li{
+                        display: flex;
+                        flex-direction: column;
                         margin-bottom: 10px;
                         font-size: 1.2rem;
                         text-transform: capitalize;
+                        span{
+                            font-size: 0.7rem;
+                        }
+                        &:hover{
+                            color: $third;
+                        }
                     }
                 }
+                
+            }            
+            article{
+                width: 70%;
+                margin-left: 50px;
+                padding: 0 20px;
+                .description{
+                    margin-bottom: 50px;
+                    .tags{
+                        display: flex;
+                        h3{
+                            cursor: pointer;
+                            margin-right: 20px;
+                            &:hover{
+                            background-color: $third;
+                            color: $light;
+                            }                 
+                        }        
+                    }
+                    p{
+                        margin: 0;
+                    } 
+                }     
                 .add-songs{
                     form{
                         display: flex;
                         flex-direction: column;
+                        label {
+                            display: none;
+                        }
                         input{
                             background-color:white;
                             font-size:1rem;
@@ -88,29 +122,6 @@
                         }
                     }
                 }   
-            }            
-            article{
-                .tags{
-                    display: flex;
-                    h3{
-                        cursor: pointer;
-                        padding: 0 20px;
-                        margin-bottom: 30px;
-                        &:hover{
-                        background-color: $third;
-                        color: $light;
-                        }                 
-                    }
-                       p {
-                        margin: 0;
-                        
-                    }
-                }
-                p{
-                    margin: 0 20px;
-                } 
-                width: 70%;
-                margin-left: 50px;
             }
         }
     

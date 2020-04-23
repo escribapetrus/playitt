@@ -36,8 +36,8 @@ ROOT_URLCONF = '_main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['playlist-app-2/templates'],
-        'APP_DIRS': False,
+        'DIRS': ['templates'],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
