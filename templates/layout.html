@@ -7,24 +7,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %} Playlists {% endblock %}</title>
         <link rel="stylesheet" href="{% sass_src 'main.scss' %}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>    
         {% block navbar %}
-        <nav class="navbar">
-            <ul>
-                <li> <a href="{% url 'playlists-index' %}">home</a></li>
+        <nav class="main-nav">
+            <span class="brand"> <a href="{% url 'playlists-index' %}">playitt</a></span>
+            <ul>    
                 <li><a href="{% url 'playlists-create' %}">new playlist</a></li>
-            </ul>
-
-            <ul>            
                 {%if user.username %}
-                    <li><a href="{% url 'users-profile' user.pk %}">{{user.username}}</a></li>
-                    <li><a href="{% url 'logout' %}">logout</a></li>
+                <li><a href="{% url 'users-profile' user.pk %}">{{user.username}}</a></li>
+                <li><a href="{% url 'logout' %}">logout</a></li>
                 {%else%}
-                    <li><a href="{% url 'login' %}">login</a></li>
-                    <li><a href="{% url 'users-create' %}">sign up</a></li>
+                <li><a href="{% url 'login' %}">login</a></li>
+                <li><a href="{% url 'users-create' %}">sign up</a></li>
                 {%endif%}
             </ul>
+            <i class="material-icons">
+                portrait
+            </i>
+        </nav>
+        <nav class='navbar-toggle'>   
+            <a class="nav-toggle-link" href="{% url 'playlists-create' %}">new playlist</a>
+            {%if user.username %}
+            <a class="nav-toggle-link" href="{% url 'users-profile' user.pk %}">{{user.username}}</a>
+            <a class="nav-toggle-link" href="{% url 'logout' %}">logout</a>
+            {%else%}
+            <a class="nav-toggle-link" href="{% url 'login' %}">login</a>
+            <a class="nav-toggle-link" href="{% url 'users-create' %}">sign up</a>
+            {%endif%}
         </nav>
         {% endblock %}
         <div class="content">
@@ -33,5 +44,14 @@
         </div>
 
         <footer></footer>
+
+        <script>
+            var navico = document.querySelector(".material-icons");
+            var navtog = document.querySelector('.navbar-toggle')
+            navico.addEventListener("click", () => {
+                if (navtog.style.display == "none") {navtog.style.display = "block";return true}
+                else {navtog.style.display = "none"; return true}
+            })
+        </script>
     </body>
 </html>

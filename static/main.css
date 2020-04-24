@@ -1,20 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-nav {
+.main-nav {
   display: flex;
+  background-color: #0F1108;
+  align-items: center;
   justify-content: space-between;
   height: 50px; }
-  nav ul {
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    nav ul li {
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      color: #641d77; }
+  .main-nav .brand {
+    margin-left: 40px;
+    font-family: "Bebas Neue", cursive;
+    color: #9932cc;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
+    text-shadow: 0px 0px 2px rgba(30, 30, 30, 0.3);
+    font-size: 1.4rem;
+    border-top: 2px solid #9932cc;
+    border-right: 2px solid #9932cc;
+    border-bottom: 2px solid #9932cc;
+    border-left: 2px solid #9932cc;
+    border-radius: 20%;
+    padding: 0 5px;
+    transform: rotate(359deg); }
+  .main-nav .material-icons {
+    margin-right: 40px;
+    display: none; }
+  .main-nav .material-icons, .main-nav li {
+    color: #f5f5f5;
+    cursor: pointer; }
+    .main-nav .material-icons:hover, .main-nav li:hover {
+      color: #9932cc; }
+  .main-nav ul {
+    margin-right: 40px;
+    list-style: none;
+    display: flex; }
+    .main-nav ul li {
+      padding: 0 20px; }
+  @media (max-width: 600px) {
+    .main-nav ul {
+      display: none; }
+    .main-nav .material-icons {
+      display: block; } }
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  height: fit-content;
+  width: 100px;
+  right: 10px;
+  padding: 20px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #0F1108; }
+  .navbar-toggle .nav-toggle-link {
+    display: block;
+    color: #f5f5f5;
+    cursor: pointer;
+    text-align: left; }
+    .navbar-toggle .nav-toggle-link:hover {
+      color: #9932cc; }
 
 .playlists-home .display {
   background-image: url("img/guitarman.jpg");
@@ -356,23 +398,32 @@ nav {
     margin-top: 50px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-direction: column; }
     .users-detail .user-catalog .user-favorites, .users-detail .user-catalog .user-playlists {
-      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       border-radius: 4px;
+      padding: 40px;
+      margin-bottom: 20px;
       box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3); }
-    .users-detail .user-catalog .user-playlists {
-      background-color: #088508; }
-    .users-detail .user-catalog .user-favorites {
-      background-color: #9932cc; }
   .users-detail .user-comments {
-    margin-top: 100px;
     width: 100%; }
+    .users-detail .user-comments .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3); }
+      .users-detail .user-comments .container .comment {
+        width: 100%;
+        margin: 40px; }
+        .users-detail .user-comments .container .comment p {
+          margin: 0; }
+        .users-detail .user-comments .container .comment a {
+          color: #9932cc; }
 
 body {
   background-color: #f5f5f5;

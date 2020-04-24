@@ -24,14 +24,16 @@
     </div>
 
     <div class="user-comments">
-        <h2>My comments</h2>
-        <ul>
+        <div class="container">
+            <h2>My comments</h2>
             {% for f in object.comment_set.all %}
-                <li>{{f.text}} in <a href="{% url 'playlists-detail' f.playlist.pk %}">{{f.playlist}}</a></li>
+                <div class="comment">
+                    <a href="{% url 'playlists-detail' f.playlist.pk %}">in {{f.playlist}}:</a>
+                    <p>{{f.text}}</p>
+                </div>
             {%endfor%}
-        </ul>    
+        </div>
     </div>
-
 </div>
 
 
