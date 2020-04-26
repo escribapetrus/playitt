@@ -236,73 +236,73 @@
   .playlists-detail .content h3 {
     margin-bottom: 30px;
     color: #641d77; }
-  .playlists-detail .content .list {
+  .playlists-detail .content .content-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 40px;
     margin-bottom: 40px;
     box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3); }
-    .playlists-detail .content .list .tracklist {
+    .playlists-detail .content .content-list .tracklist {
       width: 30%; }
-      .playlists-detail .content .list .tracklist ol {
+      .playlists-detail .content .content-list .tracklist ol {
         margin: 0;
         padding: 0;
         list-style: none; }
-        .playlists-detail .content .list .tracklist ol li {
+        .playlists-detail .content .content-list .tracklist ol li {
           display: flex;
           flex-direction: column;
           margin-bottom: 10px;
           font-size: 1.2rem;
           text-transform: capitalize; }
-          .playlists-detail .content .list .tracklist ol li span {
+          .playlists-detail .content .content-list .tracklist ol li span {
             font-size: 0.7rem; }
-          .playlists-detail .content .list .tracklist ol li:hover {
+          .playlists-detail .content .content-list .tracklist ol li:hover {
             color: #9932cc; }
-    .playlists-detail .content .list article {
+    .playlists-detail .content .content-list article {
       width: 70%;
       margin-left: 50px;
       padding: 0 20px; }
-      .playlists-detail .content .list article .description {
+      .playlists-detail .content .content-list article .description {
         margin-bottom: 50px; }
-        .playlists-detail .content .list article .description .tags {
+        .playlists-detail .content .content-list article .description .tags {
           display: flex; }
-          .playlists-detail .content .list article .description .tags h3 {
+          .playlists-detail .content .content-list article .description .tags h3 {
             cursor: pointer;
             margin-right: 20px; }
-            .playlists-detail .content .list article .description .tags h3:hover {
+            .playlists-detail .content .content-list article .description .tags h3:hover {
               background-color: #9932cc;
               color: #f5f5f5; }
-        .playlists-detail .content .list article .description p {
+        .playlists-detail .content .content-list article .description p {
           margin: 0; }
-      .playlists-detail .content .list article .add-songs form {
+      .playlists-detail .content .content-list article .add-songs form {
         display: flex;
         flex-direction: column; }
-        .playlists-detail .content .list article .add-songs form label {
+        .playlists-detail .content .content-list article .add-songs form label {
           display: none; }
-        .playlists-detail .content .list article .add-songs form input {
+        .playlists-detail .content .content-list article .add-songs form input {
           background-color: white;
           font-size: 1rem;
           padding: 8px;
           margin-bottom: 20px;
           border: 1px solid #641d77; }
-        .playlists-detail .content .list article .add-songs form input[type=submit] {
+        .playlists-detail .content .content-list article .add-songs form input[type=submit] {
           background-color: #9932cc;
           height: fit-content;
           cursor: pointer;
           font-size: 1rem; }
-          .playlists-detail .content .list article .add-songs form input[type=submit]:hover {
+          .playlists-detail .content .content-list article .add-songs form input[type=submit]:hover {
             background-color: #641d77;
             color: #f5f5f5; }
     @media (max-width: 900px) {
-      .playlists-detail .content .list {
+      .playlists-detail .content .content-list {
         flex-direction: column; }
-        .playlists-detail .content .list h3 {
+        .playlists-detail .content .content-list h3 {
           font-size: 1.3rem; }
-        .playlists-detail .content .list .tracklist {
+        .playlists-detail .content .content-list .tracklist {
           width: 100%;
           margin-bottom: 30px; }
-        .playlists-detail .content .list article {
+        .playlists-detail .content .content-list article {
           width: 100%;
           margin: 0;
           margin-bottom: 40px;
@@ -310,30 +310,42 @@
   .playlists-detail .content .comments {
     box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
     padding: 40px; }
-    .playlists-detail .content .comments form {
+    .playlists-detail .content .comments .comment-form form {
       display: flex;
-      flex-direction: row;
-      width: 100%; }
-      .playlists-detail .content .comments form label {
+      flex-direction: row; }
+      .playlists-detail .content .comments .comment-form form label {
         display: none; }
-      .playlists-detail .content .comments form textarea {
+      .playlists-detail .content .comments .comment-form form textarea {
         border: 1px solid #641d77;
         width: 90%;
         height: 80px;
         resize: none;
         font-family: "Open Sans", sans-serif;
         padding: 10px; }
-      .playlists-detail .content .comments form input[type=submit] {
+      .playlists-detail .content .comments .comment-form form input[type=submit] {
         border: 1px solid #641d77;
         font-family: "Open Sans", sans-serif;
         width: 10%; }
-    .playlists-detail .content .comments span a {
+    .playlists-detail .content .comments .comment-form span a {
       color: #9932cc; }
-    .playlists-detail .content .comments .comment {
+    .playlists-detail .content .comments .comment-list .comment {
       border-bottom: 1px solid #641d77; }
     @media (max-width: 900px) {
       .playlists-detail .content .comments h3 {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem; }
+      .playlists-detail .content .comments .comment-form form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .playlists-detail .content .comments .comment-form form input, .playlists-detail .content .comments .comment-form form textarea {
+          padding: 10px;
+          width: 100%; }
+        .playlists-detail .content .comments .comment-form form input[type=submit] {
+          background: #9932cc;
+          color: #f5f5f5;
+          border: none;
+          font-family: "Open Sans", sans-serif;
+          text-transform: lowercase; } }
 .playlists-form {
   display: flex;
   flex-direction: column;
