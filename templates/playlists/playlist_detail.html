@@ -1,4 +1,5 @@
 {% extends "../layout.html" %}
+{% load static %}
 {% block title %}
 Playlists - {{object.title}}
 {% endblock %}
@@ -36,7 +37,11 @@ Playlists - {{object.title}}
                 <div class="">
                     <p>No songs yet :(</p>
                 </div>
-                {%endif%}         
+                {%endif%}
+                <div id="vue-tracklist">
+                    <vuetrack v-for='t in tracks' v-bind:track='t' v-bind:key='t.id'></vuetrack>           
+
+                </div>       
             </div>                        
             <article>
                 <div class="description">
@@ -46,7 +51,7 @@ Playlists - {{object.title}}
                         {% endfor %}
                     </div>
                     <p>{{object.description}}</p>
-                </div>                
+                </div>       
                 {% if user == object.user%}
                 <div class="add-songs">
                     <h3> Add new songs</h3>
@@ -76,6 +81,8 @@ Playlists - {{object.title}}
         </section>
     </section>  
 </div>
+
+<script src="{% static 'vue/playlist_detail.js' %}"></script>
 {% endblock %}
 
 

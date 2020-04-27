@@ -7,6 +7,9 @@ class Artist(models.Model):
     name = models.CharField(max_length=50)
     def __str__(self):
         return self.name
+    def natural_key(self):
+        return (self.name)
+    
 
 class Album(models.Model):
     title = models.CharField(max_length=50)
@@ -14,6 +17,8 @@ class Album(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     def __str__(self):
         return self.title
+    def natural_key(self):
+        return (self.title)
 
 class Song(models.Model):
     title = models.CharField(max_length=50)
@@ -21,11 +26,15 @@ class Song(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     def __str__(self):
         return self.title
+    def natural_key(self):
+        return ({'title': self.title,'artist': self.artist.name,'album':self.album.title})
     
 class Genre(models.Model):
     name = models.CharField(max_length=50)
     def __str__(self):
         return self.name
+    def natural_key(self):
+        return (self.name)
 
 class Playlist(models.Model):
     title = models.CharField(max_length=50)

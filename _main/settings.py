@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'playlists',
     'users',
     'comments',
+    'api',
 ]
 
 MIDDLEWARE = [
