@@ -1,47 +1,66 @@
-Vue.component('vuetrack',{
-    props: ['track'],
-    template: '<span>[[track.title]]</span>',
+Vue.component('vtracklist', {
+    props:['songs','title','artist','album'],
     delimiters: ['[[', ']]'],
+    template: '<li>[[title]] <span>[[artist]] - [[album]]</span></li>'
 })
 
 var vueTracklist = new Vue({
-    el: '#vue-tracklist',
+    el: '#vue-playlist',
+    component: ['vtracklist'],
     data: {
-        tracks: [
+        songs: [
             {
-            id: 41,
-            title: "indie pop party",
-            user_id: 7,
-            description: "Wanna party? Wanna rock? I created this playlist as a dj set for an indie party in São Paulo. The idea is to merge new and old dance pop and indie rock.",
-            date_created: "2020-04-22T23:56:44.819Z"
+            title: "The Drapery Falls",
+            artist: "Opeth",
+            album: "The Drapery Falls"
             },
             {
-            id: 42,
-            title: "acoustic folk",
-            user_id: 7,
-            description: "My selection of favourite acoustic songs, old and new.",
-            date_created: "2020-04-23T00:12:27.796Z"
+            title: "Nothing Else Matters",
+            artist: "Metallica",
+            album: "Metallica"
             },
             {
-            id: 43,
-            title: "guitar practice",
-            user_id: 7,
-            description: "These are my choices for practicing guitar: some blues licks, some minor and minor harmonic scales, some shred, mostly fun stuff.",
-            date_created: "2020-04-23T00:25:05Z"
+            title: "Stargazer",
+            artist: "Rainbow",
+            album: "Rising"
             },
             {
-            id: 44,
-            title: "listy list list",
-            user_id: 8,
-            description: "asdfasdf",
-            date_created: "2020-04-23T16:23:49.631Z"
+            title: "Money",
+            artist: "Pink Floyd",
+            album: "The Dark Side of the Moon"
+            },
+            {
+            title: "Over the Hills and Far Away",
+            artist: "Gary Moore",
+            album: "Wild Frontier"
+            },
+            {
+            title: "Gutter Ballet",
+            artist: "Savatage",
+            album: "Gutter Ballet"
+            },
+            {
+            title: "Hallowed by thy name",
+            artist: "Iron Maiden",
+            album: "The number of the beast"
+            },
+            {
+            title: "Sacrament of Wilderness",
+            artist: "Nightwish",
+            album: "Oceanborn"
+            },
+            {
+            title: "Percées de Lumière",
+            artist: "Alcest",
+            album: "Écailles de Lune"
             }
-            ],
+        ],
     },
     methods: {
-        refreshTracklist: function(){
-            fetch('/api/playlists/').then(res => this.tracks = res.data)
+        getSongs: function() {
+            fetch('/api/playlists/42').then((res) => console.log(res))
         }
     },
     delimiters: ['[[', ']]'],
 })
+

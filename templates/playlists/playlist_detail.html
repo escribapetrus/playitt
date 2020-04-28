@@ -38,9 +38,17 @@ Playlists - {{object.title}}
                     <p>No songs yet :(</p>
                 </div>
                 {%endif%}
-                <div id="vue-tracklist">
-                    <vuetrack v-for='t in tracks' v-bind:track='t' v-bind:key='t.id'></vuetrack>           
-
+                <div id="vue-playlist">
+                    <h3>VUE</h3> 
+                    <ol>
+                        <vtracklist 
+                            v-for="s in songs"
+                            v-bind:title='s.title'
+                            v-bind:album='s.album'
+                            v-bind:artist='s.artist'>                            
+                        </vtracklist>
+                        <button v-on:click="getSongs">getsongs</button>
+                    </ol>      
                 </div>       
             </div>                        
             <article>
