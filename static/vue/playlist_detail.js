@@ -1,66 +1,92 @@
 Vue.component('vtracklist', {
-    props:['songs','title','artist','album'],
+    props:['title','artist','album'],
     delimiters: ['[[', ']]'],
     template: '<li>[[title]] <span>[[artist]] - [[album]]</span></li>'
 })
 
+Vue.component('vpldescription',{
+    props:['description','genres'],
+    delimiters: ['[[',']]'],
+    template: `
+        <div class="description">
+            <div class="tags">
+                <h3 v-for="g in genres">
+                    [[g]]
+                </h3>
+            </div>
+            <p>[[description]]</p>
+        </div>  
+    `,
+})
+
+Vue.component('vsongadder',{
+    delimiters: ['[[',']]'],
+    methods: {
+        addSong: function(){
+            let addData = {
+                title:this.song.title,
+                artist:this.song.artist,
+                album:this.song.album
+            }
+            axios.defaults.xsrfCookieName = 'csrftoken';
+            axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            axios.post(`${window.location.origin}${window.location.pathname}addsong/`, addData)
+            .then(res => (this.$emit("added")))
+            .catch(err => (console.log(err)));
+        }
+    },
+    data: () => ({song: {title:'',artist:'',album:''}}),
+    template: `
+    <div class="add-songs">
+        <h3> Add new songs</h3>
+        <form v-on:submit.prevent="addSong">
+            <input type="text" placeholder="artist" v-model="song.artist">
+            <input type="text" placeholder="album" v-model="song.album">
+            <input type="text" placeholder="title" v-model="song.title">
+            <input type="submit" value="add">
+        </form>
+        </div>
+    </div>        
+    `
+})
+
 var vueTracklist = new Vue({
     el: '#vue-playlist',
-    component: ['vtracklist'],
+    component: ['vtracklist','vpldescription','vplgenres','vsongadder'],    
+    delimiters: ['[[', ']]'],
     data: {
-        songs: [
-            {
-            title: "The Drapery Falls",
-            artist: "Opeth",
-            album: "The Drapery Falls"
-            },
-            {
-            title: "Nothing Else Matters",
-            artist: "Metallica",
-            album: "Metallica"
-            },
-            {
-            title: "Stargazer",
-            artist: "Rainbow",
-            album: "Rising"
-            },
-            {
-            title: "Money",
-            artist: "Pink Floyd",
-            album: "The Dark Side of the Moon"
-            },
-            {
-            title: "Over the Hills and Far Away",
-            artist: "Gary Moore",
-            album: "Wild Frontier"
-            },
-            {
-            title: "Gutter Ballet",
-            artist: "Savatage",
-            album: "Gutter Ballet"
-            },
-            {
-            title: "Hallowed by thy name",
-            artist: "Iron Maiden",
-            album: "The number of the beast"
-            },
-            {
-            title: "Sacrament of Wilderness",
-            artist: "Nightwish",
-            album: "Oceanborn"
-            },
-            {
-            title: "Percées de Lumière",
-            artist: "Alcest",
-            album: "Écailles de Lune"
-            }
-        ],
+        songs: [],
+        description: "",
+        genres: [],
+        songToAdd: {title:'',artist:'',album:''},
     },
     methods: {
         getSongs: function() {
-            fetch('/api/playlists/42').then((res) => console.log(res))
-        }
+            axios.get(`${window.location.origin}/api${window.location.pathname}`)
+            .then(res => {
+                this.songs = res.data[0].fields.songs
+                this.description = res.data[0].fields.description
+                this.genres = res.data[0].fields.genres
+            })
+            .catch(err => {
+              console.log(err);
+            })
+            .finally(function () {
+            });
+        },
+        // addSongs: function(){
+        //     axios.post(`${window.location.href}addsong/`, this.songToAdd)
+        //     .then(function (res) {
+        //     console.log(res)
+        //     this.getSongs();
+        //     })
+        //     .catch(function (error) {
+        //     console.log(error);
+        //     });
+        // }
     },
-    delimiters: ['[[', ']]'],
+    mounted() {
+        this.getSongs()
+    }
 })
 

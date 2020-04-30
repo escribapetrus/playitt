@@ -1,3 +1,5 @@
+import json
+from django.http import JsonResponse
 from django.shortcuts import render,redirect, get_object_or_404
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 
@@ -92,11 +94,39 @@ class UserList(ListView):
         else:
             return Playlist.objects.all()
 
+# @login_required()
+# def add_song_to_pl(req,pk):
+#     pl = Playlist.objects.get(pk=pk)
+#     if req.method == "POST":
+#         f = AddSong(req.POST)
+#         if f.is_valid():
+#             if req.user == pl.user:
+#                 (artist, album, title) = (f.cleaned_data['artist'], f.cleaned_data['album'],f.cleaned_data['title'])
+#                 try:
+#                     ar = Artist.objects.get(name=artist)
+#                 except:
+#                     ar = Artist(name=artist)
+#                     ar.save()
+#                 try:
+#                     al = Album.objects.get(title=album)
+#                 except:
+#                     al = Album(title=album,artist=ar)
+#                     al.save()
+#                 try:
+#                     son = Song.Objects.get(title=title)
+#                 except:
+#                     son = Song(title=title,artist=ar,album=al)
+#                     son.save()
+#                 finally:
+#                     pl.songs.add(son)
+#                     pl.save()
+#             return redirect('playlists-detail', pk)
+
 @login_required()
 def add_song_to_pl(req,pk):
     pl = Playlist.objects.get(pk=pk)
     if req.method == "POST":
-        f = AddSong(req.POST)
+        f = AddSong(json.loads(req.body.decode('utf-8')))
         if f.is_valid():
             if req.user == pl.user:
                 (artist, album, title) = (f.cleaned_data['artist'], f.cleaned_data['album'],f.cleaned_data['title'])
@@ -118,7 +148,7 @@ def add_song_to_pl(req,pk):
                 finally:
                     pl.songs.add(son)
                     pl.save()
-            return redirect('playlists-detail', pk)
+        return JsonResponse({'success': 'yes'})
 
 @login_required()
 def add_genre(req):

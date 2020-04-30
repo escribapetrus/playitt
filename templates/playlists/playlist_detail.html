@@ -23,52 +23,23 @@ Playlists - {{object.title}}
     </section>
 
     <section class="content">
-        <div class="list">            
+        <div class="list" id="vue-playlist">            
             <div class="tracklist">
                 <h3>Tracklist</h3>
-
-                {%if object.songs.all %}   
                 <ol>
-                {% for s in object.songs.all %}
-                    <li>{{s.title}} <span>{{s.artist}} - {{s.album}}</span></li>
-                {% endfor %}
-                </ol>
-                {% else %}
-                <div class="">
-                    <p>No songs yet :(</p>
-                </div>
-                {%endif%}
-                <div id="vue-playlist">
-                    <h3>VUE</h3> 
-                    <ol>
-                        <vtracklist 
-                            v-for="s in songs"
-                            v-bind:title='s.title'
-                            v-bind:album='s.album'
-                            v-bind:artist='s.artist'>                            
-                        </vtracklist>
-                        <button v-on:click="getSongs">getsongs</button>
-                    </ol>      
-                </div>       
+                    <vtracklist 
+                        v-for="s in songs"
+                        v-bind:key="s.title"
+                        v-bind:title='s.title'
+                        v-bind:album='s.album'
+                        v-bind:artist='s.artist'>                            
+                    </vtracklist>
+                </ol>             
             </div>                        
             <article>
-                <div class="description">
-                    <div class="tags">
-                        {% for g in object.genres.all %}
-                        <h3><a href="{% url 'playlists-genre-list' g.name %}">{{g.name}}</a></h3>
-                        {% endfor %}
-                    </div>
-                    <p>{{object.description}}</p>
-                </div>       
+                <vpldescription :description="description" :genres="genres"></vpldescription>
                 {% if user == object.user%}
-                <div class="add-songs">
-                    <h3> Add new songs</h3>
-                    <form action="{% url 'playlists-addsong' object.pk %}" method="post">
-                        {% csrf_token %}
-                        {{song_form}}
-                        <input type="submit" value="add">
-                    </form>
-                </div>
+                <vsongadder @added="getSongs"></vsongadder>
                 {% endif %} 
             </article>
         </div>    
