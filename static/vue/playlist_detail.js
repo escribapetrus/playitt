@@ -40,9 +40,9 @@ Vue.component('vsongadder',{
     <div class="add-songs">
         <h3> Add new songs</h3>
         <form v-on:submit.prevent="addSong">
+            <input type="text" placeholder="title" v-model="song.title">
             <input type="text" placeholder="artist" v-model="song.artist">
             <input type="text" placeholder="album" v-model="song.album">
-            <input type="text" placeholder="title" v-model="song.title">
             <input type="submit" value="add">
         </form>
         </div>

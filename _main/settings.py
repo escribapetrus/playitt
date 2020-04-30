@@ -2,11 +2,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get("SECRET_KEY") or "ELVENPAAAATH"
+SECRET_KEY = "ELVENPAAAATH"
 
-DEBUG = True #(os.environ.get("DEBUG_VALUE") == "TRUE")
+DEBUG = True
 
-ALLOWED_HOSTS = ["make-your-playlist.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,8 +37,8 @@ ROOT_URLCONF = '_main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
