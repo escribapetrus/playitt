@@ -37,13 +37,17 @@
         }
         .buttons{
             button{
-                background: $third;
+                background: $fourth;
                 color: $light;
                 border: none;
                 border-radius: 4px;
                 padding: 10px;
                 font-family: $text;
                 text-transform: lowercase;
+                cursor: pointer;
+                &:hover{
+                    background-color: $fifth;
+                }
             }
         }
     }
@@ -176,7 +180,7 @@
             }
             span{
                 a{
-                    color: $third;
+                    color: $fifth;
                 }
             }
             .comment{

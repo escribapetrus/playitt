@@ -82,12 +82,16 @@
                         }
                         &:nth-of-type(3){
                             width: 20%;
-                            background-color: $third;
+                            background-color: $fourth;
                             color: $light;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $fifth;
+                            }  
                         }
                         &:focus{
                             outline: none;
-                        }          
+                        }        
                     }
                 }
             }

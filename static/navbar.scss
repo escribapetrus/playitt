@@ -1,6 +1,6 @@
 .main-nav {
     display: flex;
-    background-color: $dark;
+    background-color: $light;
     align-items: center;
     justify-content: space-between;
     height: 50px;
@@ -19,13 +19,20 @@
         border-radius: 20%;
         padding: 0 5px;
         transform: rotate(359deg);
+        &:hover{
+            color: $second;
+            border-top: 2px solid $second;
+            border-right: 2px solid $second;
+            border-bottom: 2px solid $second;
+            border-left: 2px solid $second;
+        }
     }
     .material-icons{
         margin-right: 40px;
         display: none;
     }
     .material-icons,li{
-        color: $light;
+        color: $dark;
         cursor:pointer;
         &:hover{
             color: $third;

@@ -6,7 +6,7 @@ SECRET_KEY = "ELVENPAAAATH"
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com"]
+ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com","localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
