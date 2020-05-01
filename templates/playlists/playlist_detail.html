@@ -43,25 +43,25 @@ Playlists - {{object.title}}
                 {% endif %} 
             </article>
         </div>    
-        <section class="comments">
+        <section id="vue-comments" class="comments">
             <h3>comments</h3>       
-            <form action="{% url 'comments-create' object.id%}" method="post">
-                {% csrf_token %}
-                {{comment_form}}
-                <input class="input-submit" type="submit" value="submit">
-            </form>
+            <vaddcomment @added="getComments">                
+            </vaddcomment>
             <span>to join the discussion, <a href="{% url 'login' %}">login</a> or <a href="{% url 'users-create' %}">create an account.</a></span>
-            {%for c in object.comment_set.all%}
-            <div class="comment">
-                <h4>{{c.user}}</h4>
-                <p>{{c.text}}</p>
-            </div>
-            {%endfor%}
+
+            <vcommentlist 
+                v-for="c in comments"
+                :text="c.fields.text"
+                :user="c.fields.user[0]"
+                :comment_date="c.fields.comment_date">
+            </vcommentlist>
         </section>
     </section>  
 </div>
 
-<script src="{% static 'vue/playlist_detail.js' %}"></script>
+<script src="{% static 'vue/playlist_tracklist.js' %}"></script>
+<script src="{% static 'vue/playlist_comments.js' %}"></script>
+
 {% endblock %}
 
 

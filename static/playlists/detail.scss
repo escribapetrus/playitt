@@ -177,6 +177,12 @@
                     font-family: $text;
                     width: 10%;
                 }
+                @media (max-width: 900px){
+                    flex-direction: column;
+                    input,textarea{
+                        width: 100% !important;
+                    }
+                }
             }
             span{
                 a{

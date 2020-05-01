@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('create/<int:id>', views.create, name='comments-create'),
+    path('playlists/<int:id>/', views.create, name='comments-create'),
 ]
