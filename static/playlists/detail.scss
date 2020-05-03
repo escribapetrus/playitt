@@ -18,7 +18,7 @@
             text-shadow: 0px 0px 3px rgba(22, 22, 22, 0.815);
             background-color: rgba(245, 245, 245, 0.226);
             margin-bottom: 25px;
-            padding:20px;
+            padding:20 0px;
             h1{
                 font-size: 4.2rem;
             }
@@ -26,29 +26,60 @@
                 margin:0;
                 font-size: 1.5rem;
             }
-            @media (max-width: 900px){
+        }
+        button{
+            background: $fourth;
+            color: $light;
+            border: none;
+            border-radius: 4px;
+            min-width: 60px;
+            padding: 8px;
+            font-family: $text;
+            text-transform: lowercase;
+            cursor: pointer;
+            &:hover{
+                background-color: $fifth;
+            }                    
+        }
+        .buttons{
+            a {
+                button{
+                    background: $fourth;
+                    color: $light;
+                    border: none;
+                    border-radius: 4px;
+                    min-width: 60px;
+                    padding: 8px;
+                    font-family: $text;
+                    text-transform: lowercase;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $fifth;
+                    }                    
+                }
+                &:nth-of-type(2){
+                    button{ 
+                        background-color: $dark;
+                        color: $light;
+                        &:hover{
+                            background-color: $light;
+                            color: $dark;
+                        }
+                    }                
+                }            
+            }                        
+        }
+        @media (max-width: 768px){
+            height: 250px;
+            margin-bottom: 20px;
+            .text{
                 h1{
-                    font-size: 2.5rem;
+                    font-size: 2.0rem;
                 }
                 h4{
                     font-size: 1rem;
                 }
-            }
-        }
-        .buttons{
-            button{
-                background: $fourth;
-                color: $light;
-                border: none;
-                border-radius: 4px;
-                padding: 10px;
-                font-family: $text;
-                text-transform: lowercase;
-                cursor: pointer;
-                &:hover{
-                    background-color: $fifth;
-                }
-            }
+            }            
         }
     }
     .content{
@@ -84,8 +115,7 @@
                             color: $third;
                         }
                     }
-                }
-                
+                }                
             }            
             article{
                 width: 70%;
@@ -119,27 +149,98 @@
                             background-color:white;
                             font-size:1rem;
                             padding: 8px;
-                            margin-bottom: 20px;               
+                            margin-bottom: 10px;               
                             border: 1px solid $second;
                         }
                         input[type=submit]{
-                            background-color: $third;
+                            background-color: $fourth;
                             height: fit-content;
+                            border: none;
                             cursor: pointer;
-                            font-size: 1rem;
+                            font-size: 0.9rem;
+                            padding: 5px;
+                            border-radius: 4px;
+                            width: 100px;
+                            color: $light;
                             &:hover{
-                                background-color: $second;
+                                background-color: $fifth;
                                 color: $light;
                             }
                         }
                     }
                 }   
+            }           
+        }    
+        .comments{
+            box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
+            padding: 40px;
+            .comment-add{
+                margin-bottom: 40px;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    label{
+                        display: none;
+                    }
+                    textarea{
+                        margin-bottom: 10px;
+                        border: 1px solid $second;
+                        height: 80px;
+                        resize: none;
+                        font-family: $text;
+                        padding: 10px;               
+                    }
+                    input[type=submit]{
+                        background-color: $fourth;
+                        border:none;
+                        color: $light;
+                        border-radius: 4px;
+                        font-family: $text;
+                        cursor: pointer;
+                        padding: 5px;
+                        width: 100px;
+                        &:hover{
+                            background-color: $fifth;
+                        }
+                    }
+                }
+                span{
+                    font-size: 0.9rem;  
+                    a{
+                        color: $fifth;
+                    }
+                }
             }
-            @media (max-width: 900px){
-                flex-direction: column;
+            .comment-list{
+                .comment{
+                    border-top: 1px solid $second;
+                    padding: 20px 0;
+                    h4,p{
+                        margin:0;
+                    }
+                    .comment-header{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                    }
+                } 
+            }
+                   
+        }
+        @media (max-width: 768px){
+            width: 90%;
+            .list,.comments{
+                padding: 20px;
                 h3{
                     font-size: 1.3rem;
+                    margin-bottom: 10px;
                 }
+            }
+            .list {
+                flex-direction: column;
                 .tracklist{
                     width: 100%;
                     margin-bottom: 30px;
@@ -149,55 +250,19 @@
                     margin: 0;
                     margin-bottom: 40px;
                     padding: 0;
-                }
-            }
-        }
-    
-        .comments{
-            box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
-            padding: 40px;
-            form{
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                label{
-                    display: none;
-                }
-                textarea{
-                    border: 1px solid $second;
-                    width: 90%;
-                    height: 80px;
-                    resize: none;
-                    font-family: $text;
-                    padding: 10px;
-               
-                }
-                input[type=submit]{
-                    border: 1px solid $second;
-                    font-family: $text;
-                    width: 10%;
-                }
-                @media (max-width: 900px){
-                    flex-direction: column;
-                    input,textarea{
-                        width: 100% !important;
+                    margin: 0;
+                    h3 {
+                        font-size: 1rem;
+                        letter-spacing: 0.2rem;
                     }
                 }
-            }
-            span{
-                a{
-                    color: $fifth;
+            } 
+            .comments{
+                .comment-add{
+                    margin-bottom: 20px;
                 }
-            }
-            .comment{
-                border-bottom: 1px solid $second;
-            }
-            @media (max-width: 900px){
-                h3{
-                    font-size: 1.3rem;
-                }
-            }
-        }
-    }
+            }         
+        } 
+    }    
 }
 

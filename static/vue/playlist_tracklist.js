@@ -5,13 +5,13 @@ Vue.component('vtracklist', {
 })
 
 Vue.component('vpldescription',{
-    props:['description','genres'],
+    props:['description','genres','url'],
     delimiters: ['[[',']]'],
     template: `
         <div class="description">
             <div class="tags">
                 <h3 v-for="g in genres">
-                    [[g]]
+                    <a :href="[[url]] + [[g]]">[[g]]</a>
                 </h3>
             </div>
             <p>[[description]]</p>

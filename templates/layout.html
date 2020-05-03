@@ -18,7 +18,7 @@
             <ul>    
                 <li><a href="{% url 'playlists-create' %}">new playlist</a></li>
                 {%if user.username %}
-                <li><a href="{% url 'users-profile' user.pk %}">{{user.username}}</a></li>
+                <li><a href="{% url 'users-profile' user.username %}">{{user.username}}</a></li>
                 <li><a href="{% url 'logout' %}">logout</a></li>
                 {%else%}
                 <li><a href="{% url 'login' %}">login</a></li>
@@ -29,7 +29,7 @@
                 portrait
             </i>
         </nav>
-        <nav class='navbar-toggle'>   
+        <nav class='navbar-toggle' style="display: none;">   
             <a class="nav-toggle-link" href="{% url 'playlists-create' %}">new playlist</a>
             {%if user.username %}
             <a class="nav-toggle-link" href="{% url 'users-profile' user.pk %}">{{user.username}}</a>

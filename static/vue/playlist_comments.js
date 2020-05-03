@@ -1,10 +1,12 @@
 Vue.component('vcommentlist',{
     delimiters: ['[[',']]'],
-    props: ['text','user','comment_date'],
+    props: ['text','user','comment_date','url'],
     template:`
         <div class="comment">
-            <h4>[[user]]</h4>
-            <span>[[comment_date]]</span>
+            <div class="comment-header">
+                <a :href="url"><h4>[[user]]</h4></a>
+                <span>[[comment_date]]</span>
+            </div>            
             <p>[[text]]</p>
         </div>
     `

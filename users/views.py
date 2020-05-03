@@ -1,18 +1,20 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 from django.views.generic import ListView,DetailView,CreateView,UpdateView
-
 from django.contrib.auth.decorators import login_required
-
 from django.contrib.auth.models import User
 from playlists.models import Playlist
 from .models import Profile
 from django.contrib.auth.forms import UserCreationForm
 
 
-# Create your views here.
 
 class Detail(DetailView):
 	model = User
+	def get_object(self, **kwargs):
+		return get_object_or_404(User,username=self.kwargs['username'])
+
+
+
 
 def create(req):
 	if req.method == 'POST':

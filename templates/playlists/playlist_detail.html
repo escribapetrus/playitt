@@ -12,7 +12,10 @@ Playlists - {{object.title}}
         </div>
         <div class="buttons">
             {%if user == object.user%}
-            
+            <div class="header-buttons">
+                <a href="{% url 'playlists-update' pk=object.pk %}"><button>edit</button></a>
+                <a href="{% url 'playlists-delete' pk=object.pk %}"><button>delete</button></a>
+            </div>
             {% else %}
             <form action="{% url 'users-addtofav' object.id %}" method="post">
                 {% csrf_token %}
@@ -37,7 +40,11 @@ Playlists - {{object.title}}
                 </ol>             
             </div>                        
             <article>
-                <vpldescription :description="description" :genres="genres"></vpldescription>
+                <vpldescription 
+                    :description="description" 
+                    :genres="genres" 
+                    :url="'{% url 'playlists-index' %}playlists/genre/'">
+                </vpldescription>
                 {% if user == object.user%}
                 <vsongadder @added="getSongs"></vsongadder>
                 {% endif %} 
@@ -45,16 +52,25 @@ Playlists - {{object.title}}
         </div>    
         <section id="vue-comments" class="comments">
             <h3>comments</h3>       
-            <vaddcomment @added="getComments">                
-            </vaddcomment>
-            <span>to join the discussion, <a href="{% url 'login' %}">login</a> or <a href="{% url 'users-create' %}">create an account.</a></span>
-
-            <vcommentlist 
-                v-for="c in comments"
-                :text="c.fields.text"
-                :user="c.fields.user[0]"
-                :comment_date="c.fields.comment_date">
-            </vcommentlist>
+            <div class="comment-add">
+                {% if user.username %}
+                <vaddcomment @added="getComments">                
+                </vaddcomment>
+                {% else %}
+                <span>to join the discussion, <a href="{% url 'login' %}">login</a> or <a href="{% url 'users-create' %}">create an account.</a></span>
+                {% endif %}
+            </div>
+            
+            <div class="comment-list">
+                <vcommentlist 
+                    v-for="c in comments"
+                    :text="c.fields.text"
+                    :user="c.fields.user[0]"
+                    :comment_date="c.fields.comment_date"
+                    :url="'{% url 'playlists-index' %}users/detail/' + c.fields.user[0]">
+                </vcommentlist>
+            </div>
+            
         </section>
     </section>  
 </div>

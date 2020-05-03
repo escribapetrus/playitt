@@ -27,8 +27,25 @@ The best playlists
             <ul>
                 {% for p in object_list.all%}
                 <li class="playlist-card">
-                    <a class="playlist-link" href="{% url 'playlists-detail' p.pk %}"><h3>{{p.title}}</h3></a>
-                    <h4>by {{p.user.username}}</h4>
+                    <div class="header">
+                        <div class="header-text">
+                            <a class="playlist-link" href="{% url 'playlists-detail' p.pk %}"><h3>{{p.title}}</h3></a>
+                            <h4>by {{p.user.username}}</h4>
+                        </div>
+                        <span>
+                            {{p.profile_set.count}}<i class="material-icons">stars</i>
+                        </span>
+                    </div>
+
+                    <p> featuring
+                    {% for s in p.songs.all|slice:":5"  %}
+                        {{s.artist}},
+                    {% endfor %}
+                        and more
+                    </p>
+                    <a class="playlist-link" href="{% url 'playlists-detail' p.pk %}#vue-comments">
+                        <span>{{p.comment_set.count}} {{ p.comment_set.count|pluralize:"comment,comments" }}</span>
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
