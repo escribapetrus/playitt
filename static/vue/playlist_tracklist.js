@@ -1,7 +1,49 @@
 Vue.component('vtracklist', {
-    props:['title','artist','album'],
+    props:['songs','iscreator','deleteurl'],
     delimiters: ['[[', ']]'],
-    template: '<li>[[title]] <span>[[artist]] - [[album]]</span></li>'
+    data: () => ({toggle: false, message:""}),
+    methods: {
+        removeTrack: function(songid) {
+            axios.defaults.xsrfCookieName = 'csrftoken';
+            axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            axios.post(`${window.location.origin}${window.location.pathname}removesong/${songid}`)
+            .then(res => {
+                    console.log(res)
+                    this.message = "removed track from playlist",
+                    this.$emit("songremoved")
+                }
+            )
+            .catch(err => (console.log(err)))
+        },
+        deletePlaylist: function(songid) {
+            return console.log('later')
+            // axios.defaults.xsrfCookieName = 'csrftoken';
+            // axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            // axios.get(`${window.location.origin}${window.location.pathname}delete/`)
+            // .then(res => {
+            //     window.location.href = res.data
+            //     }
+            // )
+            // .catch(err => (console.log(err)))
+        },
+    },
+    template: `
+    <div>
+    <div class="playlist-edit" v-if="iscreator">
+        <i class="material-icons" @click="toggle = !toggle">text_fields</i>
+        <a :href="deleteurl"><i class="material-icons">delete</i></a>
+        <span :message="message">
+            [[message]]         
+        </span>
+    </div>
+    <li v-for="s in songs" v-bind:key="s.title">
+        <div class="track-info">
+            [[s.title]] <span>[[s.artist]] - [[s.album]]</span>
+        </div>
+        <i class="material-icons" v-show="toggle" @click="removeTrack(s.id)">clear</i>
+    </li>
+    </div>
+    `
 })
 
 Vue.component('vpldescription',{

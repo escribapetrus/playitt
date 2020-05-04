@@ -2,14 +2,10 @@ import json
 from django.http import JsonResponse
 from django.shortcuts import render,redirect, get_object_or_404
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
-
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.decorators import login_required
-
-
 from django.contrib.auth.models import User
 from .models import Playlist, Artist, Album, Song, Genre
-
 from .forms import NewPlaylist, AddSong, AddGenre
 from comments.forms import NewComment
 
@@ -94,34 +90,6 @@ class UserList(ListView):
         else:
             return Playlist.objects.all()
 
-# @login_required()
-# def add_song_to_pl(req,pk):
-#     pl = Playlist.objects.get(pk=pk)
-#     if req.method == "POST":
-#         f = AddSong(req.POST)
-#         if f.is_valid():
-#             if req.user == pl.user:
-#                 (artist, album, title) = (f.cleaned_data['artist'], f.cleaned_data['album'],f.cleaned_data['title'])
-#                 try:
-#                     ar = Artist.objects.get(name=artist)
-#                 except:
-#                     ar = Artist(name=artist)
-#                     ar.save()
-#                 try:
-#                     al = Album.objects.get(title=album)
-#                 except:
-#                     al = Album(title=album,artist=ar)
-#                     al.save()
-#                 try:
-#                     son = Song.Objects.get(title=title)
-#                 except:
-#                     son = Song(title=title,artist=ar,album=al)
-#                     son.save()
-#                 finally:
-#                     pl.songs.add(son)
-#                     pl.save()
-#             return redirect('playlists-detail', pk)
-
 @login_required()
 def add_song_to_pl(req,pk):
     pl = Playlist.objects.get(pk=pk)
@@ -149,6 +117,16 @@ def add_song_to_pl(req,pk):
                     pl.songs.add(son)
                     pl.save()
         return JsonResponse({'success': 'yes'})
+
+@login_required()
+def remove_song_in_pl(req,pk,songid):
+    if req.method == "POST":
+        pl = Playlist.objects.get(pk=pk)
+        son = Song.objects.get(pk=songid)
+        if req.user == pl.user:
+            pl.songs.remove(son)
+            pl.save()
+    return JsonResponse({'success': 'yes'})
 
 @login_required()
 def add_genre(req):

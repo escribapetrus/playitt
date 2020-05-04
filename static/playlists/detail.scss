@@ -123,16 +123,20 @@
                     list-style: none;
                     li{
                         display: flex;
-                        flex-direction: column;
-                        margin-bottom: 10px;
-                        font-size: 1.2rem;
-                        text-transform: capitalize;
-                        span{
-                            font-size: 0.7rem;
-                        }
-                        &:hover{
-                            color: $third;
-                        }
+                        justify-content: space-between;
+                        .track-info{
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                            text-transform: capitalize;
+                            span{
+                                font-size: 0.7rem;
+                            }
+                            &:hover{
+                                color: $third;
+                            }
+                        }                        
                     }
                 }                
             }            

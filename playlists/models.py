@@ -27,7 +27,7 @@ class Song(models.Model):
     def __str__(self):
         return self.title
     def natural_key(self):
-        return ({'title': self.title,'artist': self.artist.name,'album':self.album.title})
+        return ({'id': self.id,'title': self.title,'artist': self.artist.name,'album':self.album.title})
     
 class Genre(models.Model):
     name = models.CharField(max_length=50)

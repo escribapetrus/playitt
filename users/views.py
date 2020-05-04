@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render,redirect, get_object_or_404
 from django.views.generic import ListView,DetailView,CreateView,UpdateView
 from django.contrib.auth.decorators import login_required
@@ -29,18 +30,18 @@ def create(req):
 @login_required()
 def add_pl_to_fav(req,plid):
 	if req.method == 'POST':
-		pl = Playlist.objects.get(id=plid)
+		pl = get_object_or_404(Playlist,id=plid)
 		usr = req.user
 		usr.profile.favorites.add(pl)
 		usr.save()
-	return redirect('playlists-detail', pk=plid)
+	return JsonResponse({'success':'yes'})
 
 
 @login_required()
 def remove_fav(req,plid):
 	if req.method == 'POST':
-		pl = Playlist.objects.get(id=plid)
+		pl = get_object_or_404(Playlist,id=plid)
 		usr = req.user
 		usr.profile.favorites.remove(pl)
 		usr.save()
-	return redirect('playlists-detail', pk=plid)
+	return JsonResponse({'success':'yes'})

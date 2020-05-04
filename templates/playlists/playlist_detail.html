@@ -10,37 +10,31 @@ Playlists - {{object.title}}
             <h1>{{object.title}}</h1>
             <a href="{% url 'playlists-user-list' object.user.username %}"><h4>created by {{object.user.username}}</h4></a>
         </div>
-        <div class="buttons">
-            {%if user == object.user%}
-            <div class="header-buttons">
-                <a href="{% url 'playlists-update' pk=object.pk %}"><button>edit</button></a>
-                <a href="{% url 'playlists-delete' pk=object.pk %}"><button>delete</button></a>
-            </div>
-            {% else %}
-            <form action="{% url 'users-addtofav' object.id %}" method="post">
-                {% csrf_token %}
-                <button type="submit">Add to favorites</button>
-            </form>
-            {%endif%}
-        </div>     
     </section>
 
     <section class="content">
         <div class="list" id="vue-playlist">            
             <div class="tracklist">
-                {%if object in user.profile.favorites.all%}
-                <vplfavorite :isfavorite="true"></vplfavorite>
-                {% else %}
-                <vplfavorite :isfavorite="false"></vplfavorite>
-                {% endif%}
+                {% if object.user != user%}
+                    {%if object in user.profile.favorites.all%}
+                    <vplfavorite :isfavorite="true"></vplfavorite>
+                    {% else %}
+                    <vplfavorite :isfavorite="false"></vplfavorite>
+                    {% endif%}
+                {%endif%}
+
+         
                 <ol>
+                    {% if object.user == user%} 
                     <vtracklist 
-                        v-for="s in songs"
-                        v-bind:key="s.title"
-                        v-bind:title='s.title'
-                        v-bind:album='s.album'
-                        v-bind:artist='s.artist'>                            
+                        :songs="songs" 
+                        :iscreator="true" 
+                        :deleteurl="'{% url 'playlists-delete' object.pk %}'"
+                        @songremoved="getSongs">
                     </vtracklist>
+                    {% else %}
+                    <vtracklist :songs="songs" @songremoved="getSongs"></vtracklist>
+                    {%endif%}
                 </ol>             
             </div>                        
             <article>
