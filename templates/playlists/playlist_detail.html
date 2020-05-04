@@ -28,7 +28,11 @@ Playlists - {{object.title}}
     <section class="content">
         <div class="list" id="vue-playlist">            
             <div class="tracklist">
-                <h3>Tracklist</h3>
+                {%if object in user.profile.favorites.all%}
+                <vplfavorite :isfavorite="true"></vplfavorite>
+                {% else %}
+                <vplfavorite :isfavorite="false"></vplfavorite>
+                {% endif%}
                 <ol>
                     <vtracklist 
                         v-for="s in songs"
@@ -46,7 +50,7 @@ Playlists - {{object.title}}
                     :url="'{% url 'playlists-index' %}playlists/genre/'">
                 </vpldescription>
                 {% if user == object.user%}
-                <vsongadder @added="getSongs"></vsongadder>
+                <vsongadder @addedsong="getSongs"></vsongadder>
                 {% endif %} 
             </article>
         </div>    
@@ -54,7 +58,7 @@ Playlists - {{object.title}}
             <h3>comments</h3>       
             <div class="comment-add">
                 {% if user.username %}
-                <vaddcomment @added="getComments">                
+                <vaddcomment @addedcomment="getComments">                
                 </vaddcomment>
                 {% else %}
                 <span>to join the discussion, <a href="{% url 'login' %}">login</a> or <a href="{% url 'users-create' %}">create an account.</a></span>

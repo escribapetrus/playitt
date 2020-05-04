@@ -42,6 +42,7 @@
             }                    
         }
         .buttons{
+            display: none;
             a {
                 button{
                     background: $fourth;
@@ -98,6 +99,24 @@
             box-shadow: 0px 0px 4px rgba(60, 60, 60, 0.3);
             .tracklist{
                 width: 30%;
+                .playlist-edit{
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 1.8rem;
+                        color: $fourth;
+                        cursor: pointer;
+                        &:hover{
+                           color:$fifth; 
+                        }
+                    }
+                    span{
+                        margin-left: 25px;
+                        color: $dark;
+                        font-size: 0.8rem;
+                    }
+                }
                 ol{
                     margin: 0;
                     padding: 0;

@@ -43,7 +43,7 @@ class PlaylistCreate(LoginRequiredMixin, CreateView):
 
 class PlaylistUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Playlist
-    fields = ['title','description','songs','genres']
+    fields = ['title','description','genres']
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)

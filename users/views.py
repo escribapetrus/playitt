@@ -35,3 +35,12 @@ def add_pl_to_fav(req,plid):
 		usr.save()
 	return redirect('playlists-detail', pk=plid)
 
+
+@login_required()
+def remove_fav(req,plid):
+	if req.method == 'POST':
+		pl = Playlist.objects.get(id=plid)
+		usr = req.user
+		usr.profile.favorites.remove(pl)
+		usr.save()
+	return redirect('playlists-detail', pk=plid)

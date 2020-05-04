@@ -20,7 +20,7 @@ Vue.component('vaddcomment',{
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}/comments${window.location.pathname}`,{text:this.comment.text})
-            .then(res => (this.$emit("added")))
+            .then(res => (this.$emit("addedcomment")))
             .catch(err => (console.log(err)));
         }
     },

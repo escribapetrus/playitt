@@ -31,7 +31,7 @@ Vue.component('vsongadder',{
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}addsong/`, addData)
-            .then(res => (this.$emit("added")))
+            .then(res => (this.$emit("addedsong")))
             .catch(err => (console.log(err)));
         }
     },
@@ -50,9 +50,48 @@ Vue.component('vsongadder',{
     `
 })
 
+Vue.component('vplfavorite' ,{
+    delimiters: ['[[',']]'],
+    props: ['isfavorite'],
+    data: () => ({message: ""}),
+    methods: {
+        addToFavorites: function() {
+            axios.defaults.xsrfCookieName = 'csrftoken';
+            axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            axios.post(`${window.location.origin}/users/add-to-fav${window.location.pathname}`)
+            .then(res => {
+                    console.log(res)
+                    this.message = "added to favorites"
+                }
+            )
+            .catch(err => (console.log(err)))
+        },
+        removeFavorite: function() {
+            axios.defaults.xsrfCookieName = 'csrftoken';
+            axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            axios.post(`${window.location.origin}/users/remove-fav${window.location.pathname}`)
+            .then(res => {
+                    console.log(res)
+                    this.message = "removed from favorites"
+                }
+            )
+            .catch(err => (console.log(err)))
+        },
+    },
+    template: `
+        <div class="playlist-edit">
+            <i class="material-icons" v-if="isfavorite" @click="removeFavorite">remove_circle</i>
+            <i class="material-icons" v-else @click="addToFavorites">stars</i>
+            <span :message="message">
+                [[message]]         
+            </span>
+        </div>
+    `
+})
+
 var vueTracklist = new Vue({
     el: '#vue-playlist',
-    component: ['vtracklist','vpldescription','vplgenres','vsongadder'],    
+    component: ['vtracklist','vpldescription','vplgenres','vsongadder','vplfavorite'],    
     delimiters: ['[[', ']]'],
     data: {
         songs: [],
@@ -67,22 +106,8 @@ var vueTracklist = new Vue({
                 this.description = res.data[0].fields.description
                 this.genres = res.data[0].fields.genres
             })
-            .catch(err => {
-              console.log(err);
-            })
-            .finally(function () {
-            });
+            .catch(err => (console.log(err)))
         },
-        // addSongs: function(){
-        //     axios.post(`${window.location.href}addsong/`, this.songToAdd)
-        //     .then(function (res) {
-        //     console.log(res)
-        //     this.getSongs();
-        //     })
-        //     .catch(function (error) {
-        //     console.log(error);
-        //     });
-        // }
     },
     mounted() {
         this.getSongs()
