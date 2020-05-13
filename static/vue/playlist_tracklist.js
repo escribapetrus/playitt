@@ -29,12 +29,10 @@ Vue.component('vtracklist', {
     },
     template: `
     <div>
-    <div class="playlist-edit" v-if="iscreator">
+    <div class="tracklist-header" v-if="iscreator">
         <i class="material-icons" @click="toggle = !toggle">text_fields</i>
         <a :href="deleteurl"><i class="material-icons">delete</i></a>
-        <span :message="message">
-            [[message]]         
-        </span>
+        <h3>playlist</h3>
     </div>
     <li v-for="s in songs" v-bind:key="s.title">
         <div class="track-info">
@@ -94,7 +92,7 @@ Vue.component('vsongadder',{
 
 Vue.component('vplfavorite' ,{
     delimiters: ['[[',']]'],
-    props: ['isfavorite'],
+    props: ['isfavorite','message'],
     data: () => ({message: ""}),
     methods: {
         addToFavorites: function() {
@@ -121,12 +119,10 @@ Vue.component('vplfavorite' ,{
         },
     },
     template: `
-        <div class="playlist-edit">
+        <div class="tracklist-header">
             <i class="material-icons" v-if="isfavorite" @click="removeFavorite">remove_circle</i>
             <i class="material-icons" v-else @click="addToFavorites">stars</i>
-            <span :message="message">
-                [[message]]         
-            </span>
+            <h3>[[message]]</h3>
         </div>
     `
 })

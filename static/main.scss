@@ -29,7 +29,8 @@ ul{
 
 h1,h2,h3{
     font-family: $decorative;
-    margin: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     letter-spacing: 0.2rem;
     font-size: 1.6rem;
 }
