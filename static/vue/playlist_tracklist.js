@@ -66,23 +66,24 @@ Vue.component('vsongadder',{
             let addData = {
                 title:this.song.title,
                 artist:this.song.artist,
-                album:this.song.album
             }
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}addsong/`, addData)
             .then(res => (this.$emit("addedsong")))
             .catch(err => (console.log(err)));
+            this.song = {title:'',artist:'',}
         }
     },
-    data: () => ({song: {title:'',artist:'',album:''}}),
+    data: () => ({song: {title:'',artist:'',}}),
     template: `
     <div class="add-songs">
         <h3> Add new songs</h3>
         <form @submit.prevent="addSong">
+            <label>title</label>
             <input type="text" placeholder="title" v-model="song.title">
+            <label>artist</label>
             <input type="text" placeholder="artist" v-model="song.artist">
-            <input type="text" placeholder="album" v-model="song.album">
             <input type="submit" value="add">
         </form>
         </div>

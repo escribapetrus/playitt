@@ -1,21 +1,17 @@
-from django.http import JsonResponse
-from django.shortcuts import render,redirect, get_object_or_404
-from django.views.generic import ListView,DetailView,CreateView,UpdateView
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.generic import CreateView, DetailView, ListView, UpdateView
 from playlists.models import Playlist
 from .models import Profile
-from django.contrib.auth.forms import UserCreationForm
-
 
 
 class Detail(DetailView):
 	model = User
 	def get_object(self, **kwargs):
 		return get_object_or_404(User,username=self.kwargs['username'])
-
-
-
 
 def create(req):
 	if req.method == 'POST':
@@ -35,7 +31,6 @@ def add_pl_to_fav(req,plid):
 		usr.profile.favorites.add(pl)
 		usr.save()
 	return JsonResponse({'success':'yes'})
-
 
 @login_required()
 def remove_fav(req,plid):

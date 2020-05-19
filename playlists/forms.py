@@ -17,10 +17,10 @@ class AddSong(forms.Form):
         label="Artist", 
         max_length=120,
         widget= forms.TextInput(attrs={'placeholder':'artist'}))
-    album = forms.CharField(
-        label="Album", 
-        max_length=120,
-        widget= forms.TextInput(attrs={'placeholder':'album'}))
+    # album = forms.CharField(
+    #     label="Album", 
+    #     max_length=120,
+    #     widget= forms.TextInput(attrs={'placeholder':'album'}))
 
 class AddGenre(forms.Form):
     name = forms.CharField(
