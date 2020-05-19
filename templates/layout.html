@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %} Playlists {% endblock %}</title>
+        <title>{% block title %} Playitt {% endblock %}</title>
         <link rel="stylesheet" href="{% sass_src 'main.scss' %}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -45,7 +45,9 @@
             {% endblock %}
         </div>
 
-        <footer></footer>
+        <footer>
+            <span>Developed by Pedro Schreiber (<a href="https://github.com/escribapetrus">@escribapetrus</a>)</span>
+        </footer>
 
         <script>
             var navico = document.querySelector(".material-icons");

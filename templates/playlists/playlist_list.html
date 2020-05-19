@@ -10,13 +10,16 @@ Playitt
         <div class="display-jenny">
             <div class="display-jackie">
                 <span>hot this week</span>
-                <a href="{% url 'playlists-detail' object_list.first.pk %}"><h1> {{object_list.first}}</h1></a>
+                <a href="{% url 'playlists-detail' object_list.first.pk %}"><h2> {{object_list.first}}</h2></a>
             </div>            
         </div> 
     </section>
 
     <section class="catalog">
         <div class="catalog-list">
+            <div class="catalog-list-header">
+                <h4>create playlists, choose your favorites, comment, share</h4>       
+            </div>
             <div class="catalog-create">
                 <form action="{% url 'playlists-create' %}" method="post">
                     {%csrf_token%}
@@ -51,34 +54,31 @@ Playitt
             </ul>
         </div>
         <div class="catalog-sidebar">
-                <div class="header">
-                    <h2>what music do you love?</h2>
-                </div>
-                <div class="content">
-                    <h4>genres</h4>
-                    <ul>
-                        {%for g in genres%}
-                            <li><a href="{% url 'playlists-genre-list' g.name %}">{{g.name}}</a></li>
-                        {%endfor%}                    
-                    </ul>
-                    {% if user.username %}
-                    <h4>creations</h4>
-                    <ul>
-                        {%for g in user.playlist_set.all%}
-                            <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
-                        {%endfor%}                    
-                    </ul>
-                    <h4>favourites</h4>
-                    <ul>
-                        {%for g in user.profile.favorites.all%}
-                            <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
-                        {%endfor%}                    
-                    </ul>
-                    {% endif %}
-                </div>          
-
- 
+            <div class="header">
+                <h2>what music do you love?</h2>
             </div>
+            <div class="content">
+                <h4>genres</h4>
+                <ul>
+                    {%for g in genres%}
+                        <li><a href="{% url 'playlists-genre-list' g.name %}">{{g.name}}</a></li>
+                    {%endfor%}                    
+                </ul>
+                {% if user.username %}
+                <h4>creations</h4>
+                <ul>
+                    {%for g in user.playlist_set.all%}
+                        <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
+                    {%endfor%}                    
+                </ul>
+                <h4>favourites</h4>
+                <ul>
+                    {%for g in user.profile.favorites.all%}
+                        <li><a href="{% url 'playlists-detail' g.pk %}">{{g.title}}</a></li>
+                    {%endfor%}                    
+                </ul>
+                {% endif %}
+            </div>           
         </div>
     </section>
 </div>

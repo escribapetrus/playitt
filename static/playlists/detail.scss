@@ -135,6 +135,12 @@
                             color: $third;
                         }                      
                     }
+                    .material-icons {
+                        cursor: pointer;
+                        &:hover{
+                            color: $fourth;
+                        }
+                    } 
                 }                
             }            
             article{

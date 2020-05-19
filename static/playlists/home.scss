@@ -14,7 +14,7 @@
                 width:70%;
                 margin: 0 auto;
                 padding-left: 40px;
-                h1{
+                h2{
                     font-size: 3.3rem;
                 }
                 span{
@@ -76,6 +76,17 @@
                     }
                 }
             }
+            .catalog-list-header{
+                border-radius: 4px;
+                background-color: $second;
+                color: $light;
+                margin-bottom: 20px;
+                h4{
+                    margin: 0;
+                    padding: 10px;
+                    text-shadow: none;
+                }
+            }
             .catalog-create{
                 display: flex;
                 flex-direction: column;
@@ -84,7 +95,6 @@
                 margin-bottom: 25px;
                 box-shadow: -1px 0px 2px rgba(200, 200, 200, 0.5);
                 border-radius: 4px;
-                height: 60px;
                 form{ 
                     display: flex;
                     width: 100%;
