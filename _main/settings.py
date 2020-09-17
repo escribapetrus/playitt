@@ -5,11 +5,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
-SECRET_KEY = os.getenv('SECRET_KEY') or "ELVENPAAAATH"
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com","localhost"]
+ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
