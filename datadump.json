@@ -1,0 +1,5580 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$e6H9KoOvqW0D$fv1ZvBhZXLSPPjH3tDujxLNNyYZv9pZ74Uh0+yi0pf4=",
+        "last_login": "2020-07-08T03:26:00.465Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "schreiber.mmb@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-03-27T23:55:48.427Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$g1D4E47lM6Az$8PTS2t0vwB7Qp0M0aVdUvefjQKcKiiBHtkfrh1TGO8o=",
+        "last_login": "2020-04-20T22:26:10.556Z",
+        "is_superuser": false,
+        "username": "lanadelrey",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-16T00:41:47.796Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$8lrxqQHOINVL$OxkFBSuq9TOcWWioiK/fbDzPVwCHgYjFRPLnPTGP9EY=",
+        "last_login": "2020-05-19T09:21:49.126Z",
+        "is_superuser": false,
+        "username": "escribapetrus",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-22T23:53:10.464Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$n18ZFHYyhrLW$JZ4nDQ8pPcA+hBRSeCQmE4RQp65K9isJOEQ1uBdU010=",
+        "last_login": "2020-04-30T20:28:35.370Z",
+        "is_superuser": false,
+        "username": "dfkimera",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-23T16:23:00.821Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$LfiLS3OYbXHT$Wa+jaQfhzi4Ps+K3jrLlgyoPdoM1RhFrjwM9h2z5r5k=",
+        "last_login": "2020-04-26T20:01:37.918Z",
+        "is_superuser": false,
+        "username": "johnbatera",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-26T20:01:22.381Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$hbVndWPJMNvi$oswdDA39yiNPTc8UXoqZ/dpVFuBcMCKo95SixKDuMfc=",
+        "last_login": "2020-04-27T07:42:39.180Z",
+        "is_superuser": false,
+        "username": "romoadox",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-27T07:42:14.074Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$SjEF3sQhKIBz$hsPrVdinMJTJ17oGtQmVYszDfa6xCP0i2aXjY+KwqCo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Gustavo8",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-01T02:53:13.239Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$vspkkmGL3Lfx$htNiYQYIEX0ObKkOLjHmKMzf7SJWFQ88GxjOMQEfAhE=",
+        "last_login": "2020-05-18T00:03:38.822Z",
+        "is_superuser": false,
+        "username": "Bruninho",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-03T01:55:28.038Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$gMfx5c5RRH1R$5F7YTIopD8sxiJQsCFVvFznzzHCYs6visGglWbcSduo=",
+        "last_login": "2020-05-05T09:18:01.865Z",
+        "is_superuser": false,
+        "username": "juliananeres6@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-05T09:17:42.363Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$vo7IOpNyWVyU$RjVZPrcJL20sS3UdUdMJSm9w2KMMfFdu9B1WBazTXIs=",
+        "last_login": "2020-05-06T19:54:07.519Z",
+        "is_superuser": false,
+        "username": "robertsmith",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-06T19:53:54.599Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$jPgKza3tsZ7b$UQ73vXfkq617IZkHC0l2YPOlW0mBa1Ly961f5aZ7M9w=",
+        "last_login": "2020-05-14T21:26:08.915Z",
+        "is_superuser": false,
+        "username": "julia",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-14T21:25:45.101Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$0cusA7Jr6a2n$YP7JltIvOttbpSiiV/VbIGdEuA1Cp9nzBC2JLFB0UwU=",
+        "last_login": "2020-07-14T01:06:58.468Z",
+        "is_superuser": false,
+        "username": "f1d31",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-07-14T01:06:50.486Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "92by5uto8wovqnzlkdbb0lu8cxhrzfat",
+    "fields": {
+        "session_data": "ZDU4YTJhODY5NmFhYWI0YWY0NTJmMWM4MzVjNTk3ZTFmMDZjOWNhOTp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2ZiZDJmOWRmNWMxZDg1N2EyNTVmYzAzYzg3NTJkYjFmMWFkMmE1OCJ9",
+        "expire_date": "2020-05-17T02:10:15.142Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9m1fb6jx6nkwzlxxtizrwsm58ihslzbf",
+    "fields": {
+        "session_data": "MjQ0ZmNjMWZlNzM1YzkzOGE5OTNiZWZhNTBlNWIwYmMyMDUwZTNjZjp7Il9hdXRoX3VzZXJfaWQiOiI4IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlNzg5Zjg0YTdiMTVjODY3ZjE4ZjcxZGI5YzQyOGMzODljNzlkNDI1In0=",
+        "expire_date": "2020-05-14T20:28:35.398Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "arlwdpcabg3vjbk5srb74cer7069r9ha",
+    "fields": {
+        "session_data": "YzQ1N2RjNGJkMjIxM2EzMzFlYjIyNWZiNDYwYzBlZjdhZjU5NzhhNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4Y2ViOWZjNDQ5NjgxNGNkN2Q4ODBkYmFhMTdjYTVjZGMwMzVjNTFkIn0=",
+        "expire_date": "2020-05-08T02:32:44.903Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hdi4gulfrtchpvr0i9r7uhwd2mr0t3zj",
+    "fields": {
+        "session_data": "MjQ0ZmNjMWZlNzM1YzkzOGE5OTNiZWZhNTBlNWIwYmMyMDUwZTNjZjp7Il9hdXRoX3VzZXJfaWQiOiI4IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlNzg5Zjg0YTdiMTVjODY3ZjE4ZjcxZGI5YzQyOGMzODljNzlkNDI1In0=",
+        "expire_date": "2020-05-07T16:23:07.089Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i1lwfjegqeqyjwmwtovsvvw43unv52nw",
+    "fields": {
+        "session_data": "YzIzMWE0ZmY4OWU0NDJlODM0OGI4NjZmZWE3M2Y4YjRkNGU1NGFmNDp7Il9hdXRoX3VzZXJfaWQiOiIxNSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZGI3YzgzOTA2YTg2MTQ0NzJiZjBiMTkzMjhmOGMxOWNmY2RmMzZiYyJ9",
+        "expire_date": "2020-05-28T21:26:08.944Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j95zt26ryb3i1qsmswzoti7oteqg9cv3",
+    "fields": {
+        "session_data": "NTBhNjU1ZmYxZWY0MThmMDg4OWFlY2M4MDUwODExNTA3MWM3NDE3NTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0ODk2N2FiZjZjZmU3NGZmMzQ5NDEwNDNmNWFhODk0YmQ2MmRmOTFkIn0=",
+        "expire_date": "2020-05-04T20:52:40.385Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jwwpfu4gfidgks0yi4c1rsdhvj1pdu4c",
+    "fields": {
+        "session_data": "YmNmNGQ4ZDI5YWQ2MTllMWE5ZWI3MDQ2ZDY1N2EzN2QzYmJiYTY3Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMGRjNzAwZjU2YjJlZWI2OGQ4MzhkMzdjZmU1NTBhYzEyZDkyYmRmIn0=",
+        "expire_date": "2020-05-07T01:17:52.410Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lh4ssldcbo2w35213wicjgfv3xq8eg9y",
+    "fields": {
+        "session_data": "MGI1MmZlYTYyOWEyNGIwMmUxMmE1Njg5YTcxMzMyZGY0ZTU5MzdhODp7fQ==",
+        "expire_date": "2020-04-29T23:54:16.862Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lhixktesfc72m8mwoxxcu0rms8xiw7bb",
+    "fields": {
+        "session_data": "MTllOGNlZGUwNDQ5YzBmNmJjMzVmMTVkNWZmOTRhNzBjNWFlODM4Yjp7Il9hdXRoX3VzZXJfaWQiOiIxMyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjkzM2M1ZmE5MzliYjRmZDMxM2VkNDhhYjJiNGJlMjkxYjIxNzZjYyJ9",
+        "expire_date": "2020-05-19T09:18:01.893Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lnjy2mww1w5spnz06nibb9xwegdfg8vr",
+    "fields": {
+        "session_data": "ZDU4YTJhODY5NmFhYWI0YWY0NTJmMWM4MzVjNTk3ZTFmMDZjOWNhOTp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2ZiZDJmOWRmNWMxZDg1N2EyNTVmYzAzYzg3NTJkYjFmMWFkMmE1OCJ9",
+        "expire_date": "2020-06-01T00:03:38.847Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lxydnkr80yv4fp5ow36iogcmjfdb3cbu",
+    "fields": {
+        "session_data": "OGQxZDA4NDJhZjI1ZjU0ZmVjNTlkOTFmNmQ2MDIwZGZkZGQ5ZDA5OTp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3ODdjMzEzMTg4ZTAyYzljMmVkNzE0OTMxMjlhOGMwYjBmOWEwMzY4In0=",
+        "expire_date": "2020-05-10T20:01:37.961Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m6nqrt0lkbnxgohcyvq7xdgqzjbqgbuc",
+    "fields": {
+        "session_data": "YmNmNGQ4ZDI5YWQ2MTllMWE5ZWI3MDQ2ZDY1N2EzN2QzYmJiYTY3Yjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMGRjNzAwZjU2YjJlZWI2OGQ4MzhkMzdjZmU1NTBhYzEyZDkyYmRmIn0=",
+        "expire_date": "2020-05-26T20:09:40.757Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u6ex09bb6eps3yu6x5xekocycl0nop0i",
+    "fields": {
+        "session_data": "ODUwNTU3OTE5ZDZjZDk0NTVmYzZmMzI4YTg5ZjE5ZTE2YzZkMThhZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMmY4YzJiYTQ0OWFhMzkxNmQxZDIwZjNlMGZhYmZiOTA4YmFlYTg2In0=",
+        "expire_date": "2020-07-22T03:26:00.503Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v1gaaexkfvl71wi6ag0vp4mbgyt83mh0",
+    "fields": {
+        "session_data": "MWNjODJkZjVhODA1MDk2YzJkYTY3MTdiYjc2ZWRjY2QwN2RlZjg1ZDp7Il9hdXRoX3VzZXJfaWQiOiIxNiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNDIxN2I2NjZiMmMzNmE1MjQ3MGZhZTlhMjM3MzZmODIyMzZlZWQ3YyJ9",
+        "expire_date": "2020-07-28T01:06:58.496Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wbqqhxcjqwm147mele5kw139e6m086yd",
+    "fields": {
+        "session_data": "Y2NlNzJjZGIwYmJkZGRhN2FmZmRhZjI2NmYxYjJiMTBlNThmZTIwYzp7Il9hdXRoX3VzZXJfaWQiOiIxMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiYzA3MmZhNzg3NDU3MGUwZjM3YzVkZjY4NjVjNDZjNjM4MDliZmNhNSJ9",
+        "expire_date": "2020-05-11T07:42:39.206Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xq8eq1ohi05e0umifzxma2004g5fd0kp",
+    "fields": {
+        "session_data": "NzIxNDJiYjIzN2ZkYWE2ZGZiNDRmYThjMDEzMzBhZTA5YTQyNjNkNTp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1YzM1ZWFhNzUwMTE1MjMyM2ZjYTVlODAwOGIxMzRhMzYyY2ZlOTNhIn0=",
+        "expire_date": "2020-06-02T09:21:49.153Z"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Type O Negative"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Sturgill Simpson"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Tyler Childers"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Britney Spears"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Yes"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Nightwish"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "The War on Drugs"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Carly Rae Jepsen"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Dua Lipa"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Grimes"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Kali Uchis"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Vendredi sur mer"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "MGMT"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Gorillaz"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Ariel Pink"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Sublime"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Lizzo"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Charli XCX"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Rina Sawayama"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Fleet Foxes"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Van Morrison"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Townes Van Zandt"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Father John Misty"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Emma Ruth Rundle"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Arcade Fire"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Colter Wall"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Paddy Reilly"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Bob Dylan"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Carole King"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Turnpike Trobadours"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Paul McCartney"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Alain Bashung"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Opeth"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Metallica"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Rainbow"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Pink Floyd"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Gary Moore"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Savatage"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Iron Maiden"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Alcest"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "edith piaf"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Red Hot Chili Peppers"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Gilberto Gil"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Novos Baianos"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Alceu Valenca"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Chico Science"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Milton Nascimento"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Asian Kung-Fu Generation"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "touch\u00e9 amore"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "michael cera palin"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "microwave"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "thin lips"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "somos"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "jeff ronsenstock"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "beach bunny"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "weakened friends"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "charmer"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "remember sports"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "This Heat"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Aphex Twin"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Kandekt"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Massacre"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Ornette Coleman"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Begnagrad"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Satanique Samba Trio"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Combat Astronomy"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Gorge Trio"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Jute Gyte"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "S\u00e3o Paulo Underground"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "John Zorn"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Merzbow"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Hermeto Pascoal"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Oneohtrix Point Never"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Arrigo Barnab\u00e9"
+    }
+},
+{
+    "model": "playlists.artist",
+    "fields": {
+        "name": "Fet.Nat"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "A Deeper Understanding",
+        "artist": "The War on Drugs"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Emotion",
+        "artist": "Carly Rae Jepsen"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Future Nostalgia",
+        "artist": "Dua Lipa"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Art Angels",
+        "artist": "Grimes"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Isolation",
+        "artist": "Kali Uchis"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Premier \u00e9mois",
+        "artist": "Vendredi sur mer"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Oracular Spectacular",
+        "artist": "MGMT"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Gorillaz",
+        "artist": "Gorillaz"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Before Today",
+        "artist": "Ariel Pink"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Sublime",
+        "artist": "Sublime"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Cuz I love you",
+        "artist": "Lizzo"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Charli",
+        "artist": "Charli XCX"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "RINA",
+        "artist": "Rina Sawayama"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Fleet Foxes",
+        "artist": "Fleet Foxes"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Moondance",
+        "artist": "Van Morrison"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Townes Van Zandt",
+        "artist": "Townes Van Zandt"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "I Love You, Honeybear",
+        "artist": "Father John Misty"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Some Heavy Ocean",
+        "artist": "Emma Ruth Rundle"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The Suburbs",
+        "artist": "Arcade Fire"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Colter Wall",
+        "artist": "Colter Wall"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "At Home",
+        "artist": "Paddy Reilly"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The Freewheelin' Bob Dylan",
+        "artist": "Bob Dylan"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Purgatory",
+        "artist": "Tyler Childers"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Tapestry",
+        "artist": "Carole King"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Goodbye Normal Street",
+        "artist": "Turnpike Trobadours"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Pure McCartney",
+        "artist": "Paul McCartney"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Fantasie Militaire",
+        "artist": "Alain Bashung"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The Drapery Falls",
+        "artist": "Opeth"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Metallica",
+        "artist": "Metallica"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Rising",
+        "artist": "Rainbow"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The Dark Side of the Moon",
+        "artist": "Pink Floyd"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Wild Frontier",
+        "artist": "Gary Moore"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Gutter Ballet",
+        "artist": "Savatage"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The number of the beast",
+        "artist": "Iron Maiden"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Oceanborn",
+        "artist": "Nightwish"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "\u00c9cailles de Lune",
+        "artist": "Alcest"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "geen album, dank je",
+        "artist": "edith piaf"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Stadium Arcadium",
+        "artist": "Red Hot Chili Peppers"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Britney",
+        "artist": "Britney Spears"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Louvacao",
+        "artist": "Gilberto Gil"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Vamos Pro Mundo",
+        "artist": "Novos Baianos"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Novos Baianos",
+        "artist": "Novos Baianos"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Forro Lunar",
+        "artist": "Alceu Valenca"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Da Lama Ao Caos",
+        "artist": "Chico Science"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Clube Da Esquina",
+        "artist": "Milton Nascimento"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "One Ok Rock",
+        "artist": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Zeitakuby\u014d",
+        "artist": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Zankyo Reference",
+        "artist": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Jinsei\u00d7Boku",
+        "artist": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "World World World",
+        "artist": "Asian Kung-Fu Generation"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Sol-Fa",
+        "artist": "Asian Kung-Fu Generation"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Surf Bungaku Kamakura",
+        "artist": "Asian Kung-Fu Generation"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "stage four",
+        "artist": "touch\u00e9 amore"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "growing pains",
+        "artist": "michael cera palin"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "split",
+        "artist": "microwave"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "riff hard",
+        "artist": "thin lips"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "temple of plenty",
+        "artist": "somos"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "we cool?",
+        "artist": "jeff ronsenstock"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "honeymoon",
+        "artist": "beach bunny"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "common blah",
+        "artist": "weakened friends"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "charmer",
+        "artist": "charmer"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "sunchokes",
+        "artist": "remember sports"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "...and Justice for All",
+        "artist": "Metallica"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "This Heat",
+        "artist": "This Heat"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Drukqs",
+        "artist": "Aphex Twin"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Live Performance (08/17/17)",
+        "artist": "Kandekt"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Killing Time",
+        "artist": "Massacre"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Science Fiction",
+        "artist": "Ornette Coleman"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Begnagrad",
+        "artist": "Begnagrad"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Xenossamba",
+        "artist": "Satanique Samba Trio"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "History As It Is Happening",
+        "artist": "Kandekt"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Dreams No Longer Hesitate",
+        "artist": "Combat Astronomy"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Dead Chicken Fear No Knife",
+        "artist": "Gorge Trio"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Birefringence",
+        "artist": "Jute Gyte"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Tr\u00eas Cabe\u00e7as Loucuras",
+        "artist": "S\u00e3o Paulo Underground"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Repeat",
+        "artist": "This Heat"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "The True Discoveries of Witches and Demons",
+        "artist": "John Zorn"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Pulse Demon",
+        "artist": "Merzbow"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "C\u00e9rebro Magn\u00e9tico",
+        "artist": "Hermeto Pascoal"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "R Plus Seven",
+        "artist": "Oneohtrix Point Never"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Tubar\u00f5es Voadores",
+        "artist": "Arrigo Barnab\u00e9"
+    }
+},
+{
+    "model": "playlists.album",
+    "fields": {
+        "title": "Le Mal",
+        "artist": "Fet.Nat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Up All Night",
+        "artist": "The War on Drugs",
+        "album": "A Deeper Understanding"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "I didn't just come here to dance",
+        "artist": "Carly Rae Jepsen",
+        "album": "Emotion"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Love Again",
+        "artist": "Dua Lipa",
+        "album": "Future Nostalgia"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Realiti",
+        "artist": "Grimes",
+        "album": "Art Angels"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Tomorrow",
+        "artist": "Kali Uchis",
+        "album": "Isolation"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Larme \u00e0 gauche",
+        "artist": "Vendredi sur mer",
+        "album": "Premier \u00e9mois"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Electric Feel",
+        "artist": "MGMT",
+        "album": "Oracular Spectacular"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "19-2000 (Soulchild remix)",
+        "artist": "Gorillaz",
+        "album": "Gorillaz"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Bright Lit Blue Skies",
+        "artist": "Ariel Pink",
+        "album": "Before Today"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Doin' Time",
+        "artist": "Sublime",
+        "album": "Sublime"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Juice",
+        "artist": "Lizzo",
+        "album": "Cuz I love you"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Gone",
+        "artist": "Charli XCX",
+        "album": "Charli"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Alterlife",
+        "artist": "Rina Sawayama",
+        "album": "RINA"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Blue Ridge Mountains",
+        "artist": "Fleet Foxes",
+        "album": "Fleet Foxes"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Into the Mystic",
+        "artist": "Van Morrison",
+        "album": "Moondance"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Fare thee well, Ms. Carousel",
+        "artist": "Townes Van Zandt",
+        "album": "Townes Van Zandt"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Holy Shit",
+        "artist": "Father John Misty",
+        "album": "I Love You, Honeybear"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Oh, Sarah",
+        "artist": "Emma Ruth Rundle",
+        "album": "Some Heavy Ocean"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "The Suburbs",
+        "artist": "Arcade Fire",
+        "album": "The Suburbs"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Transcendent Ramblin' Railroad Blues",
+        "artist": "Colter Wall",
+        "album": "Colter Wall"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Annerchuain",
+        "artist": "Paddy Reilly",
+        "album": "At Home"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "A Hard Rain's A-Gonna Fall",
+        "artist": "Bob Dylan",
+        "album": "The Freewheelin' Bob Dylan"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Lady May",
+        "artist": "Tyler Childers",
+        "album": "Purgatory"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "It's Too Late",
+        "artist": "Carole King",
+        "album": "Tapestry"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Good Lord Lorrie",
+        "artist": "Turnpike Trobadours",
+        "album": "Goodbye Normal Street"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Mull of Kintyre",
+        "artist": "Paul McCartney",
+        "album": "Pure McCartney"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "La Nuit Je Mens",
+        "artist": "Alain Bashung",
+        "album": "Fantasie Militaire"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "The Drapery Falls",
+        "artist": "Opeth",
+        "album": "The Drapery Falls"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Nothing Else Matters",
+        "artist": "Metallica",
+        "album": "Metallica"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Stargazer",
+        "artist": "Rainbow",
+        "album": "Rising"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "album": "The Dark Side of the Moon"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Over the Hills and Far Away",
+        "artist": "Gary Moore",
+        "album": "Wild Frontier"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Gutter Ballet",
+        "artist": "Savatage",
+        "album": "Gutter Ballet"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Hallowed by thy name",
+        "artist": "Iron Maiden",
+        "album": "The number of the beast"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Sacrament of Wilderness",
+        "artist": "Nightwish",
+        "album": "Oceanborn"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Perc\u00e9es de Lumi\u00e8re",
+        "artist": "Alcest",
+        "album": "\u00c9cailles de Lune"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "la vie en rose",
+        "artist": "edith piaf",
+        "album": "geen album, dank je"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Death of a Martian",
+        "artist": "Red Hot Chili Peppers",
+        "album": "Stadium Arcadium"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Hey",
+        "artist": "Red Hot Chili Peppers",
+        "album": "Stadium Arcadium"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Overprotected",
+        "artist": "Britney Spears",
+        "album": "Britney"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Louvacao",
+        "artist": "Gilberto Gil",
+        "album": "Louvacao"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Vamos Pro Mundo",
+        "artist": "Novos Baianos",
+        "album": "Vamos Pro Mundo"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Vende-se Sonhos",
+        "artist": "Novos Baianos",
+        "album": "Novos Baianos"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Forro Lunar",
+        "artist": "Alceu Valenca",
+        "album": "Forro Lunar"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "A Praieira",
+        "artist": "Chico Science",
+        "album": "Da Lama Ao Caos"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Samba Makossa",
+        "artist": "Chico Science",
+        "album": "Da Lama Ao Caos"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Cravo e Canela",
+        "artist": "Milton Nascimento",
+        "album": "Clube Da Esquina"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Keep it Real",
+        "artist": "One Ok Rock",
+        "album": "One Ok Rock"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Et Cetera",
+        "artist": "One Ok Rock",
+        "album": "Zeitakuby\u014d"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Lost And Found",
+        "artist": "One Ok Rock",
+        "album": "Zankyo Reference"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "The Beginning",
+        "artist": "One Ok Rock",
+        "album": "Jinsei\u00d7Boku"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "After Dark",
+        "artist": "Asian Kung-Fu Generation",
+        "album": "World World World"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Rewrite",
+        "artist": "Asian Kung-Fu Generation",
+        "album": "Sol-Fa"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Yuigahama Kaito",
+        "artist": "Asian Kung-Fu Generation",
+        "album": "Surf Bungaku Kamakura"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "flowers and you",
+        "artist": "touch\u00e9 amore",
+        "album": "stage four"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "laughing makes it worse",
+        "artist": "michael cera palin",
+        "album": "growing pains"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "but not often",
+        "artist": "microwave",
+        "album": "split"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "andy weed",
+        "artist": "thin lips",
+        "album": "riff hard"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "dead wrong",
+        "artist": "somos",
+        "album": "temple of plenty"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "you, in weird cities",
+        "artist": "jeff ronsenstock",
+        "album": "we cool?"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "colorblind",
+        "artist": "beach bunny",
+        "album": "honeymoon"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "waste",
+        "artist": "weakened friends",
+        "album": "common blah"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "nurse joy",
+        "artist": "charmer",
+        "album": "charmer"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "you're so sorry",
+        "artist": "remember sports",
+        "album": "sunchokes"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "One",
+        "artist": "Metallica",
+        "album": "...and Justice for All"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "One",
+        "artist": "Metallica",
+        "album": "...and Justice for All"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "One",
+        "artist": "Metallica",
+        "album": "...and Justice for All"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Horizontal Hold",
+        "artist": "This Heat",
+        "album": "This Heat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Horizontal Hold",
+        "artist": "This Heat",
+        "album": "This Heat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Horizontal Hold",
+        "artist": "This Heat",
+        "album": "This Heat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Horizontal Hold",
+        "artist": "This Heat",
+        "album": "This Heat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Taking Control",
+        "artist": "Aphex Twin",
+        "album": "Drukqs"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "An Oddity",
+        "artist": "Kandekt",
+        "album": "Live Performance (08/17/17)"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Aging With Dignity",
+        "artist": "Massacre",
+        "album": "Killing Time"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Science Fiction",
+        "artist": "Ornette Coleman",
+        "album": "Science Fiction"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Coc'n Rolla (Ljubljana By Night)",
+        "artist": "Begnagrad",
+        "album": "Begnagrad"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Altos Traumas",
+        "artist": "Satanique Samba Trio",
+        "album": "Xenossamba"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "D\u00e0 Yu\u00e8 J\u00ecn",
+        "artist": "Kandekt",
+        "album": "History As It Is Happening"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Alive Inside Eternity",
+        "artist": "Combat Astronomy",
+        "album": "Dreams No Longer Hesitate"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "In the Midst of a Thrill",
+        "artist": "Gorge Trio",
+        "album": "Dead Chicken Fear No Knife"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Dissected Grace",
+        "artist": "Jute Gyte",
+        "album": "Birefringence"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Jagoda's Dream",
+        "artist": "S\u00e3o Paulo Underground",
+        "album": "Tr\u00eas Cabe\u00e7as Loucuras"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Repeat",
+        "artist": "This Heat",
+        "album": "Repeat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Strategies",
+        "artist": "John Zorn",
+        "album": "The True Discoveries of Witches and Demons"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Woodpecker No. 1",
+        "artist": "Merzbow",
+        "album": "Pulse Demon"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Di\u00e1logo",
+        "artist": "Hermeto Pascoal",
+        "album": "C\u00e9rebro Magn\u00e9tico"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Still Life",
+        "artist": "Oneohtrix Point Never",
+        "album": "R Plus Seven"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Crotalus Terrificus",
+        "artist": "Arrigo Barnab\u00e9",
+        "album": "Tubar\u00f5es Voadores"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Horizontal Hold",
+        "artist": "This Heat",
+        "album": "This Heat"
+    }
+},
+{
+    "model": "playlists.song",
+    "fields": {
+        "title": "Patio Monday",
+        "artist": "Fet.Nat",
+        "album": "Le Mal"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "pop"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "rock"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "classical"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "hip hop"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "rnb"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "metal"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "folk"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "electronic"
+    }
+},
+{
+    "model": "playlists.genre",
+    "fields": {
+        "name": "country"
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 41,
+    "fields": {
+        "title": "indie pop party",
+        "user": [
+            "escribapetrus"
+        ],
+        "description": "Wanna party? Wanna rock? I created this playlist as a dj set for an indie party in S\u00e3o Paulo. The idea is to merge new and old dance pop and indie rock.",
+        "date_created": "2020-04-22T23:56:44.819Z",
+        "songs": [
+            {
+                "id": 37,
+                "title": "Up All Night",
+                "artist": "The War on Drugs",
+                "album": "A Deeper Understanding"
+            },
+            {
+                "id": 38,
+                "title": "I didn't just come here to dance",
+                "artist": "Carly Rae Jepsen",
+                "album": "Emotion"
+            },
+            {
+                "id": 39,
+                "title": "Love Again",
+                "artist": "Dua Lipa",
+                "album": "Future Nostalgia"
+            },
+            {
+                "id": 40,
+                "title": "Realiti",
+                "artist": "Grimes",
+                "album": "Art Angels"
+            },
+            {
+                "id": 41,
+                "title": "Tomorrow",
+                "artist": "Kali Uchis",
+                "album": "Isolation"
+            },
+            {
+                "id": 42,
+                "title": "Larme \u00e0 gauche",
+                "artist": "Vendredi sur mer",
+                "album": "Premier \u00e9mois"
+            },
+            {
+                "id": 43,
+                "title": "Electric Feel",
+                "artist": "MGMT",
+                "album": "Oracular Spectacular"
+            },
+            {
+                "id": 44,
+                "title": "19-2000 (Soulchild remix)",
+                "artist": "Gorillaz",
+                "album": "Gorillaz"
+            },
+            {
+                "id": 45,
+                "title": "Bright Lit Blue Skies",
+                "artist": "Ariel Pink",
+                "album": "Before Today"
+            },
+            {
+                "id": 46,
+                "title": "Doin' Time",
+                "artist": "Sublime",
+                "album": "Sublime"
+            },
+            {
+                "id": 47,
+                "title": "Juice",
+                "artist": "Lizzo",
+                "album": "Cuz I love you"
+            },
+            {
+                "id": 48,
+                "title": "Gone",
+                "artist": "Charli XCX",
+                "album": "Charli"
+            },
+            {
+                "id": 49,
+                "title": "Alterlife",
+                "artist": "Rina Sawayama",
+                "album": "RINA"
+            },
+            {
+                "id": 76,
+                "title": "Overprotected",
+                "artist": "Britney Spears",
+                "album": "Britney"
+            }
+        ],
+        "genres": [
+            "pop",
+            "rock"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 42,
+    "fields": {
+        "title": "acoustic folk",
+        "user": [
+            "escribapetrus"
+        ],
+        "description": "My selection of favourite acoustic songs, old and new.",
+        "date_created": "2020-04-23T00:12:27.796Z",
+        "songs": [
+            {
+                "id": 50,
+                "title": "Blue Ridge Mountains",
+                "artist": "Fleet Foxes",
+                "album": "Fleet Foxes"
+            },
+            {
+                "id": 51,
+                "title": "Into the Mystic",
+                "artist": "Van Morrison",
+                "album": "Moondance"
+            },
+            {
+                "id": 52,
+                "title": "Fare thee well, Ms. Carousel",
+                "artist": "Townes Van Zandt",
+                "album": "Townes Van Zandt"
+            },
+            {
+                "id": 53,
+                "title": "Holy Shit",
+                "artist": "Father John Misty",
+                "album": "I Love You, Honeybear"
+            },
+            {
+                "id": 54,
+                "title": "Oh, Sarah",
+                "artist": "Emma Ruth Rundle",
+                "album": "Some Heavy Ocean"
+            },
+            {
+                "id": 55,
+                "title": "The Suburbs",
+                "artist": "Arcade Fire",
+                "album": "The Suburbs"
+            },
+            {
+                "id": 56,
+                "title": "Transcendent Ramblin' Railroad Blues",
+                "artist": "Colter Wall",
+                "album": "Colter Wall"
+            },
+            {
+                "id": 57,
+                "title": "Annerchuain",
+                "artist": "Paddy Reilly",
+                "album": "At Home"
+            },
+            {
+                "id": 58,
+                "title": "A Hard Rain's A-Gonna Fall",
+                "artist": "Bob Dylan",
+                "album": "The Freewheelin' Bob Dylan"
+            },
+            {
+                "id": 59,
+                "title": "Lady May",
+                "artist": "Tyler Childers",
+                "album": "Purgatory"
+            },
+            {
+                "id": 60,
+                "title": "It's Too Late",
+                "artist": "Carole King",
+                "album": "Tapestry"
+            },
+            {
+                "id": 61,
+                "title": "Good Lord Lorrie",
+                "artist": "Turnpike Trobadours",
+                "album": "Goodbye Normal Street"
+            },
+            {
+                "id": 62,
+                "title": "Mull of Kintyre",
+                "artist": "Paul McCartney",
+                "album": "Pure McCartney"
+            },
+            {
+                "id": 63,
+                "title": "La Nuit Je Mens",
+                "artist": "Alain Bashung",
+                "album": "Fantasie Militaire"
+            }
+        ],
+        "genres": [
+            "rock",
+            "folk"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 43,
+    "fields": {
+        "title": "guitar practice",
+        "user": [
+            "escribapetrus"
+        ],
+        "description": "These are my choices for practicing guitar: some blues licks, some minor and minor harmonic scales, some shred, mostly fun stuff.",
+        "date_created": "2020-04-23T00:25:05Z",
+        "songs": [
+            {
+                "id": 64,
+                "title": "The Drapery Falls",
+                "artist": "Opeth",
+                "album": "The Drapery Falls"
+            },
+            {
+                "id": 65,
+                "title": "Nothing Else Matters",
+                "artist": "Metallica",
+                "album": "Metallica"
+            },
+            {
+                "id": 66,
+                "title": "Stargazer",
+                "artist": "Rainbow",
+                "album": "Rising"
+            },
+            {
+                "id": 67,
+                "title": "Money",
+                "artist": "Pink Floyd",
+                "album": "The Dark Side of the Moon"
+            },
+            {
+                "id": 68,
+                "title": "Over the Hills and Far Away",
+                "artist": "Gary Moore",
+                "album": "Wild Frontier"
+            },
+            {
+                "id": 69,
+                "title": "Gutter Ballet",
+                "artist": "Savatage",
+                "album": "Gutter Ballet"
+            },
+            {
+                "id": 70,
+                "title": "Hallowed by thy name",
+                "artist": "Iron Maiden",
+                "album": "The number of the beast"
+            },
+            {
+                "id": 71,
+                "title": "Sacrament of Wilderness",
+                "artist": "Nightwish",
+                "album": "Oceanborn"
+            },
+            {
+                "id": 72,
+                "title": "Perc\u00e9es de Lumi\u00e8re",
+                "artist": "Alcest",
+                "album": "\u00c9cailles de Lune"
+            }
+        ],
+        "genres": [
+            "rock",
+            "metal"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 44,
+    "fields": {
+        "title": "listy list list",
+        "user": [
+            "dfkimera"
+        ],
+        "description": "asdfasdf",
+        "date_created": "2020-04-23T16:23:49.631Z",
+        "songs": [
+            {
+                "id": 73,
+                "title": "la vie en rose",
+                "artist": "edith piaf",
+                "album": "geen album, dank je"
+            }
+        ],
+        "genres": [
+            "classical"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 45,
+    "fields": {
+        "title": "Romoalist",
+        "user": [
+            "romoadox"
+        ],
+        "description": "Longe de tudo",
+        "date_created": "2020-04-27T07:43:45.385Z",
+        "songs": [
+            {
+                "id": 74,
+                "title": "Death of a Martian",
+                "artist": "Red Hot Chili Peppers",
+                "album": "Stadium Arcadium"
+            },
+            {
+                "id": 75,
+                "title": "Hey",
+                "artist": "Red Hot Chili Peppers",
+                "album": "Stadium Arcadium"
+            }
+        ],
+        "genres": [
+            "rock"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 47,
+    "fields": {
+        "title": "Roda",
+        "user": [
+            "Bruninho"
+        ],
+        "description": "fazer uma roda pra dancar muito e ser feliz (folk do brasil) kkkk",
+        "date_created": "2020-05-03T01:58:56.573Z",
+        "songs": [
+            {
+                "id": 80,
+                "title": "Louvacao",
+                "artist": "Gilberto Gil",
+                "album": "Louvacao"
+            },
+            {
+                "id": 81,
+                "title": "Vamos Pro Mundo",
+                "artist": "Novos Baianos",
+                "album": "Vamos Pro Mundo"
+            },
+            {
+                "id": 82,
+                "title": "Vende-se Sonhos",
+                "artist": "Novos Baianos",
+                "album": "Novos Baianos"
+            },
+            {
+                "id": 83,
+                "title": "Forro Lunar",
+                "artist": "Alceu Valenca",
+                "album": "Forro Lunar"
+            },
+            {
+                "id": 84,
+                "title": "A Praieira",
+                "artist": "Chico Science",
+                "album": "Da Lama Ao Caos"
+            },
+            {
+                "id": 85,
+                "title": "Samba Makossa",
+                "artist": "Chico Science",
+                "album": "Da Lama Ao Caos"
+            },
+            {
+                "id": 86,
+                "title": "Cravo e Canela",
+                "artist": "Milton Nascimento",
+                "album": "Clube Da Esquina"
+            }
+        ],
+        "genres": [
+            "folk"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 48,
+    "fields": {
+        "title": "Jota r\u00f3qui",
+        "user": [
+            "juliananeres6@gmail.com"
+        ],
+        "description": "umas musiquinhas que eu gosto. \u00af\\_(\u30c4)_/\u00af",
+        "date_created": "2020-05-05T09:28:45.342Z",
+        "songs": [
+            {
+                "id": 87,
+                "title": "Keep it Real",
+                "artist": "One Ok Rock",
+                "album": "One Ok Rock"
+            },
+            {
+                "id": 88,
+                "title": "Et Cetera",
+                "artist": "One Ok Rock",
+                "album": "Zeitakuby\u014d"
+            },
+            {
+                "id": 89,
+                "title": "Lost And Found",
+                "artist": "One Ok Rock",
+                "album": "Zankyo Reference"
+            },
+            {
+                "id": 90,
+                "title": "The Beginning",
+                "artist": "One Ok Rock",
+                "album": "Jinsei\u00d7Boku"
+            },
+            {
+                "id": 91,
+                "title": "After Dark",
+                "artist": "Asian Kung-Fu Generation",
+                "album": "World World World"
+            },
+            {
+                "id": 92,
+                "title": "Rewrite",
+                "artist": "Asian Kung-Fu Generation",
+                "album": "Sol-Fa"
+            },
+            {
+                "id": 93,
+                "title": "Yuigahama Kaito",
+                "artist": "Asian Kung-Fu Generation",
+                "album": "Surf Bungaku Kamakura"
+            }
+        ],
+        "genres": [
+            "rock"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 49,
+    "fields": {
+        "title": "o melhor da cal\u00e7a curta",
+        "user": [
+            "julia"
+        ],
+        "description": "para pessoas que usam meia colorida, cal\u00e7a um n\u00famero menor para ver a mesma e bon\u00e9 frouxo, mas n\u00e3o gostam de mac demarco e gostam de ficar deprimidinhas ao som de jovens e afina\u00e7\u00f5es estranhas.",
+        "date_created": "2020-05-14T21:28:27.428Z",
+        "songs": [
+            {
+                "id": 94,
+                "title": "flowers and you",
+                "artist": "touch\u00e9 amore",
+                "album": "stage four"
+            },
+            {
+                "id": 95,
+                "title": "laughing makes it worse",
+                "artist": "michael cera palin",
+                "album": "growing pains"
+            },
+            {
+                "id": 96,
+                "title": "but not often",
+                "artist": "microwave",
+                "album": "split"
+            },
+            {
+                "id": 97,
+                "title": "andy weed",
+                "artist": "thin lips",
+                "album": "riff hard"
+            },
+            {
+                "id": 98,
+                "title": "dead wrong",
+                "artist": "somos",
+                "album": "temple of plenty"
+            },
+            {
+                "id": 99,
+                "title": "you, in weird cities",
+                "artist": "jeff ronsenstock",
+                "album": "we cool?"
+            },
+            {
+                "id": 100,
+                "title": "colorblind",
+                "artist": "beach bunny",
+                "album": "honeymoon"
+            },
+            {
+                "id": 101,
+                "title": "waste",
+                "artist": "weakened friends",
+                "album": "common blah"
+            },
+            {
+                "id": 102,
+                "title": "nurse joy",
+                "artist": "charmer",
+                "album": "charmer"
+            },
+            {
+                "id": 103,
+                "title": "you're so sorry",
+                "artist": "remember sports",
+                "album": "sunchokes"
+            }
+        ],
+        "genres": [
+            "rock"
+        ]
+    }
+},
+{
+    "model": "playlists.playlist",
+    "pk": 54,
+    "fields": {
+        "title": "Avant-garde/Experimental Stuff",
+        "user": [
+            "f1d31"
+        ],
+        "description": "...",
+        "date_created": "2020-07-14T01:19:06.373Z",
+        "songs": [
+            {
+                "id": 113,
+                "title": "Aging With Dignity",
+                "artist": "Massacre",
+                "album": "Killing Time"
+            },
+            {
+                "id": 114,
+                "title": "Science Fiction",
+                "artist": "Ornette Coleman",
+                "album": "Science Fiction"
+            },
+            {
+                "id": 115,
+                "title": "Coc'n Rolla (Ljubljana By Night)",
+                "artist": "Begnagrad",
+                "album": "Begnagrad"
+            },
+            {
+                "id": 116,
+                "title": "Altos Traumas",
+                "artist": "Satanique Samba Trio",
+                "album": "Xenossamba"
+            },
+            {
+                "id": 117,
+                "title": "D\u00e0 Yu\u00e8 J\u00ecn",
+                "artist": "Kandekt",
+                "album": "History As It Is Happening"
+            },
+            {
+                "id": 118,
+                "title": "Alive Inside Eternity",
+                "artist": "Combat Astronomy",
+                "album": "Dreams No Longer Hesitate"
+            },
+            {
+                "id": 119,
+                "title": "In the Midst of a Thrill",
+                "artist": "Gorge Trio",
+                "album": "Dead Chicken Fear No Knife"
+            },
+            {
+                "id": 120,
+                "title": "Dissected Grace",
+                "artist": "Jute Gyte",
+                "album": "Birefringence"
+            },
+            {
+                "id": 121,
+                "title": "Jagoda's Dream",
+                "artist": "S\u00e3o Paulo Underground",
+                "album": "Tr\u00eas Cabe\u00e7as Loucuras"
+            },
+            {
+                "id": 122,
+                "title": "Repeat",
+                "artist": "This Heat",
+                "album": "Repeat"
+            },
+            {
+                "id": 123,
+                "title": "Strategies",
+                "artist": "John Zorn",
+                "album": "The True Discoveries of Witches and Demons"
+            },
+            {
+                "id": 124,
+                "title": "Woodpecker No. 1",
+                "artist": "Merzbow",
+                "album": "Pulse Demon"
+            },
+            {
+                "id": 125,
+                "title": "Di\u00e1logo",
+                "artist": "Hermeto Pascoal",
+                "album": "C\u00e9rebro Magn\u00e9tico"
+            },
+            {
+                "id": 126,
+                "title": "Still Life",
+                "artist": "Oneohtrix Point Never",
+                "album": "R Plus Seven"
+            },
+            {
+                "id": 127,
+                "title": "Crotalus Terrificus",
+                "artist": "Arrigo Barnab\u00e9",
+                "album": "Tubar\u00f5es Voadores"
+            },
+            {
+                "id": 129,
+                "title": "Patio Monday",
+                "artist": "Fet.Nat",
+                "album": "Le Mal"
+            }
+        ],
+        "genres": [
+            "electronic"
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "admin"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "lanadelrey"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "escribapetrus"
+        ],
+        "favorites": [
+            47,
+            48,
+            49
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "dfkimera"
+        ],
+        "favorites": [
+            43
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "johnbatera"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "romoadox"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "Gustavo8"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "Bruninho"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "juliananeres6@gmail.com"
+        ],
+        "favorites": [
+            47
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "robertsmith"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "julia"
+        ],
+        "favorites": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "f1d31"
+        ],
+        "favorites": [
+            43
+        ]
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 27,
+    "fields": {
+        "text": "hello world",
+        "playlist": 43,
+        "user": [
+            "dfkimera"
+        ],
+        "comment_date": "2020-04-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 28,
+    "fields": {
+        "text": "Thanks for the contrib. That's awesome!!",
+        "playlist": 44,
+        "user": [
+            "escribapetrus"
+        ],
+        "comment_date": "2020-04-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 29,
+    "fields": {
+        "text": "sdfasdf",
+        "playlist": 44,
+        "user": [
+            "dfkimera"
+        ],
+        "comment_date": "2020-04-30"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 30,
+    "fields": {
+        "text": "Money como vc ta tocando manda ai um video, vc ta fazendo um arranjo de por tudo em uma guitarra so?",
+        "playlist": 43,
+        "user": [
+            "Bruninho"
+        ],
+        "comment_date": "2020-05-03"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-03-28T00:20:21.460Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "1",
+        "object_repr": "Tame Impala",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-03-28T00:21:19.363Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "1",
+        "object_repr": "Currents",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-03-28T00:21:37.287Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "1",
+        "object_repr": "Let it happen",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-03-28T00:23:07.484Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "pschreiber",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-03-28T00:24:33.577Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "1",
+        "object_repr": "Play loca",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-03-28T02:05:51.636Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "2",
+        "object_repr": "Lalala",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-03-28T02:05:58.830Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "3",
+        "object_repr": "Another song",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-03-28T02:06:36.875Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "4",
+        "object_repr": "Heyyy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-03-28T02:06:42.735Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "1",
+        "object_repr": "Play loca",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-03-28T02:07:16.738Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "1",
+        "object_repr": "Play loca",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Songs\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-03-28T02:25:49.232Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "2",
+        "object_repr": "Nova play",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Songs\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-03-28T02:54:54.961Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "lanadelrey",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-03-28T02:55:51.994Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "lanadelrey",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-03-28T02:57:27.873Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "pschreiber",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-03-29T00:23:21.212Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "1",
+        "object_repr": "Test playlist",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-03-29T00:56:15.826Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "2",
+        "object_repr": "tem empada",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-03-30T14:33:40.111Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "3",
+        "object_repr": "sdfsdfsd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-03-30T14:33:50.497Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "4",
+        "object_repr": "quatro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-03-30T15:21:53.293Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "lanadelrey",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-03-30T15:22:12.524Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "lanadelrey",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-03-30T15:22:23.093Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "lanadelrey",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-03-30T15:23:14.164Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "lanadelrey",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-03-30T19:22:34.230Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "3",
+        "object_repr": "Nightwish",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2020-03-30T19:33:29.773Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "8",
+        "object_repr": "Ghost Love Score",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2020-03-30T19:33:29.864Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "7",
+        "object_repr": "The Siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2020-03-30T19:33:29.947Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "5",
+        "object_repr": "The Siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2020-03-30T19:33:36.948Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "4",
+        "object_repr": "Heyyy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2020-03-30T19:33:37.049Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "3",
+        "object_repr": "Another song",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2020-03-30T19:33:37.134Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "2",
+        "object_repr": "Lalala",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2020-03-30T19:33:37.316Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "1",
+        "object_repr": "Let it happen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2020-03-30T19:33:46.022Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "2",
+        "object_repr": "Once",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2020-03-30T19:33:46.119Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "1",
+        "object_repr": "Currents",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2020-03-30T19:33:55.636Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "4",
+        "object_repr": "Fleet Foxes",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2020-03-30T19:33:55.712Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "2",
+        "object_repr": "Nightwish",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2020-03-30T19:33:55.819Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "1",
+        "object_repr": "Tame Impala",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2020-03-30T19:34:07.680Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "10",
+        "object_repr": "new n 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2020-03-30T19:34:07.765Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "9",
+        "object_repr": "new n 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2020-03-30T19:34:07.839Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "8",
+        "object_repr": "sdfsdfsrgr",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2020-03-30T19:34:07.925Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "4",
+        "object_repr": "quatro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2020-04-15T22:14:58.864Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "14",
+        "object_repr": "Good Metal",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Songs\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2020-04-15T23:59:19.861Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "floorjansen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2020-04-15T23:59:19.973Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "lanadelrey",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2020-04-15T23:59:20.047Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "rsmith",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.129Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "18",
+        "object_repr": "Wishmaster",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.401Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "17",
+        "object_repr": "The siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.473Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "16",
+        "object_repr": "Daed boys poem",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.560Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "15",
+        "object_repr": "Imaginaerum",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.644Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "14",
+        "object_repr": "Good Metal",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2020-04-15T23:59:48.717Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "12",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2020-04-16T00:05:56.252Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "19",
+        "object_repr": "A primeira",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2020-04-16T00:23:04.061Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "20",
+        "object_repr": "A segunda",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2020-04-16T00:23:08.872Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Favorites\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2020-04-16T00:40:09.408Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Favorites\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2020-04-16T00:56:28.539Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2020-04-16T06:30:41.704Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "comments",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Comment object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2020-04-19T00:08:54.532Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "33",
+        "object_repr": "A primeira",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2020-04-19T00:14:30.722Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "33",
+        "object_repr": "A primeira",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2020-04-19T00:21:22.790Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "comments",
+            "comment"
+        ],
+        "object_id": "9",
+        "object_repr": "Comment object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2020-04-19T00:21:42.968Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "comments",
+            "comment"
+        ],
+        "object_id": "9",
+        "object_repr": "Comment object (9)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2020-04-19T18:51:59.461Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "1",
+        "object_repr": "Genre object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2020-04-19T18:52:04.885Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "2",
+        "object_repr": "Genre object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2020-04-19T18:52:21.526Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "3",
+        "object_repr": "Genre object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2020-04-19T18:52:29.379Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "4",
+        "object_repr": "Genre object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2020-04-19T18:52:33.260Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "5",
+        "object_repr": "Genre object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2020-04-19T18:52:41.004Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "6",
+        "object_repr": "Genre object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2020-04-19T19:01:28.693Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "36",
+        "object_repr": "realiti",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Genres\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2020-04-19T21:47:22.477Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2020-04-19T21:53:06.300Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "35",
+        "object_repr": "The Good Country",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Genres\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2020-04-19T22:30:42.093Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "36",
+        "object_repr": "realiti",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.484Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "36",
+        "object_repr": "The Siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.641Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "35",
+        "object_repr": "ffffdsf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.714Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "34",
+        "object_repr": "gdf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.790Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "33",
+        "object_repr": "Play loca",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.875Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "32",
+        "object_repr": "sdfdsf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2020-04-23T00:34:12.960Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "31",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.045Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "30",
+        "object_repr": "sdfsdf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.130Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "29",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.215Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "28",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.299Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "27",
+        "object_repr": "The Siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.375Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "26",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.459Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "25",
+        "object_repr": "rewtwe",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.544Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "24",
+        "object_repr": "sdgsffshfd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.630Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "23",
+        "object_repr": "dfsdgsg",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.713Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "22",
+        "object_repr": "dadadagd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.821Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "21",
+        "object_repr": "dadada",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2020-04-23T00:34:13.906Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "20",
+        "object_repr": "dasdasdsa",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.076Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "19",
+        "object_repr": "Dead Boy's Poem",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.162Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "18",
+        "object_repr": "Dead Boy's Poem",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.393Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "17",
+        "object_repr": "The Siren 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.478Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "16",
+        "object_repr": "Roundabout",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.561Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "15",
+        "object_repr": "The Siren",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.635Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "14",
+        "object_repr": "Toxic",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.709Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "13",
+        "object_repr": "Country Song num 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.784Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "12",
+        "object_repr": "Feathered Indians",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.868Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "11",
+        "object_repr": "Life of Sin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2020-04-23T00:34:14.986Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "10",
+        "object_repr": "Turtles All The Way",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2020-04-23T00:34:15.083Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "9",
+        "object_repr": "Christian Woman",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.040Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "40",
+        "object_repr": "Gin Tonica",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.140Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "39",
+        "object_repr": "Goth Classics",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.269Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "38",
+        "object_repr": "ALPHA TEST",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.355Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "37",
+        "object_repr": "taking my time",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.440Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "36",
+        "object_repr": "realiti",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.525Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "35",
+        "object_repr": "The Good Country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.609Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "34",
+        "object_repr": "Grimes best hits",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2020-04-23T00:34:34.695Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "33",
+        "object_repr": "A primeira",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2020-04-23T00:34:41.538Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "43",
+        "object_repr": "guitar practice",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.123Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "23",
+        "object_repr": "assddadsad",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.293Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "22",
+        "object_repr": "qweqwe",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.379Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "21",
+        "object_repr": "CSS",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.463Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "20",
+        "object_repr": "Once",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.548Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "19",
+        "object_repr": "sdfsdf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.633Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "18",
+        "object_repr": "hdfhdfh",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.718Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "17",
+        "object_repr": "hdfhdfhfdh",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.802Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "16",
+        "object_repr": "sdgsd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.887Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "15",
+        "object_repr": "gdgdg",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2020-04-23T00:35:14.962Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "14",
+        "object_repr": "dadada",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.048Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "13",
+        "object_repr": "asdadsasd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.133Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "12",
+        "object_repr": "Wishmaster",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.363Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "11",
+        "object_repr": "agsfs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.448Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "10",
+        "object_repr": "Fragile",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.534Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "9",
+        "object_repr": "asdasdsa",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.619Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "8",
+        "object_repr": "In the Zone",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.704Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "7",
+        "object_repr": "Sing the country",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.788Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "6",
+        "object_repr": "IDK",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.873Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "5",
+        "object_repr": "Metamodern Sounds in Country Music",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2020-04-23T00:35:15.980Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "album"
+        ],
+        "object_id": "4",
+        "object_repr": "Bloody Kisses",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2020-04-23T00:35:32.055Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "genre"
+        ],
+        "object_id": "9",
+        "object_repr": "country",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.333Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "24",
+        "object_repr": "sdffdsdf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.432Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "23",
+        "object_repr": "ffeqeqe",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.517Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "22",
+        "object_repr": "ewrwer",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.601Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "21",
+        "object_repr": "CSS",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.684Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "20",
+        "object_repr": "sdfsdf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.759Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "19",
+        "object_repr": "twrtrwyh",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.833Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "18",
+        "object_repr": "hdhdhfd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2020-04-23T00:36:29.952Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "17",
+        "object_repr": "sfgsgsd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.038Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "16",
+        "object_repr": "gddgd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.178Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "15",
+        "object_repr": "dadada",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.285Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "14",
+        "object_repr": "asdadasd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.371Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "12",
+        "object_repr": "sadsda",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.454Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "10",
+        "object_repr": "adasdsad",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2020-04-23T00:36:30.529Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "8",
+        "object_repr": "Country Man",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2020-05-03T20:20:40.351Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "playlist"
+        ],
+        "object_id": "46",
+        "object_repr": "Roda",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2020-05-03T20:39:09.260Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "79",
+        "object_repr": "Louvacao",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2020-05-03T20:39:09.285Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "78",
+        "object_repr": "Louvacao",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2020-05-03T20:39:09.302Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "song"
+        ],
+        "object_id": "77",
+        "object_repr": "test asdasd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2020-05-03T20:39:53.448Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "playlists",
+            "artist"
+        ],
+        "object_id": "61",
+        "object_repr": "werwer",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
