@@ -9,7 +9,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com"]
+ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com", "localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
