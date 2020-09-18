@@ -14,6 +14,3 @@ def find_artist_album_track(artist, song):
         return list(map(lambda x: (x["artists"][0]["name"], x["album"]["name"], x["name"]), tracks_))[0]
     except: 
         print("not found")
-
-
-print(find_artist_album_track("Lana Del Rey","The Trooper"))
