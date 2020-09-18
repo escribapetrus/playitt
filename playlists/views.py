@@ -7,7 +7,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 from comments.forms import NewComment
 from .forms import AddGenre, AddSong, NewPlaylist
-from .lastfm import search_song
+# from .lastfm import search_song
+from .spotify import find_artist_album_track
 from .models import Album, Artist, Genre, Playlist, Song
 
 class PlaylistIndex(ListView):
@@ -101,8 +102,9 @@ def add_song_to_pl(req,pk):
         if f.is_valid() and req.user == pl.user:
             (jackie, jenny) = (f.cleaned_data['artist'],f.cleaned_data['title'])
             try:
-                track_info = search_song('track.getInfo',jackie,jenny).json()['track']
-                (artist,album,title) = (track_info['artist']['name'],track_info['album']['title'],track_info['name'],)
+                # track_info = search_song('track.getInfo',jackie,jenny).json()['track']
+                # (artist,album,title) = (track_info['artist']['name'],track_info['album']['title'],track_info['name'],)
+                (artist, album, title) = find_artist_album_track(jackie, jenny)
                 try:
                     ar = Artist.objects.get(name=artist)
                 except:

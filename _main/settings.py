@@ -5,11 +5,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
+<<<<<<< HEAD
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
 ALLOWED_HOSTS = ["pschreiber.pythonanywhere.com"]
+=======
+SECRET_KEY = "ELVENPAAAATH"
+
+DEBUG = True
+
+ALLOWED_HOSTS = ["localhost"]
+>>>>>>> master
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sass_processor',
+    'spotipy',
     'playlists',
     'users',
     'comments',
