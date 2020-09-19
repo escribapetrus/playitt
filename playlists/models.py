@@ -23,11 +23,15 @@ class Album(models.Model):
 class Song(models.Model):
     title = models.CharField(max_length=50)
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
-    album = models.ForeignKey(Album, on_delete=models.CASCADE)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE, null=True,)
     def __str__(self):
         return self.title
     def natural_key(self):
-        return ({'id': self.id,'title': self.title,'artist': self.artist.name,'album':self.album.title})
+        if self.album:
+            return ({'id': self.id,'title': self.title,'artist': self.artist.name,'album': self.album.title})
+        else:
+            return ({'id': self.id,'title': self.title,'artist': self.artist.name})
+
     
 class Genre(models.Model):
     name = models.CharField(max_length=50)

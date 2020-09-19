@@ -169,7 +169,7 @@
                     form{
                         display: flex;
                         flex-direction: column;
-                        label {
+                        label.hide {
                             display: none;
                         }
                         input{

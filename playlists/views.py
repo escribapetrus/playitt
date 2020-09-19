@@ -101,30 +101,45 @@ def add_song_to_pl(req,pk):
         # f = AddSong(req.POST)
         if f.is_valid() and req.user == pl.user:
             (jackie, jenny) = (f.cleaned_data['artist'],f.cleaned_data['title'])
-            try:
-                # track_info = search_song('track.getInfo',jackie,jenny).json()['track']
-                # (artist,album,title) = (track_info['artist']['name'],track_info['album']['title'],track_info['name'],)
-                (artist, album, title) = find_artist_album_track(jackie, jenny)
+            if f.cleaned_data['custom'] == False:
                 try:
-                    ar = Artist.objects.get(name=artist)
+                    # track_info = search_song('track.getInfo',jackie,jenny).json()['track']
+                    # (artist,album,title) = (track_info['artist']['name'],track_info['album']['title'],track_info['name'],)
+                    (artist, album, title) = find_artist_album_track(jackie, jenny)
+                    try:
+                        ar = Artist.objects.get(name=artist)
+                    except:
+                        ar = Artist(name=artist)
+                        ar.save()
+                    try:
+                        al = Album.objects.get(title=album)
+                    except:
+                        al = Album(title=album,artist=ar)
+                        al.save()
+                    try:
+                        son = ar.song_set.get(title=title)
+                    except:
+                        son = Song(title=title,artist=ar,album=al)
+                        son.save()
+                    finally:
+                        pl.songs.add(son)
+                        pl.save()
                 except:
-                    ar = Artist(name=artist)
+                    return JsonResponse({'message': "track not found"})
+            else:
+                try:
+                    ar = Artist.objects.get(name=jackie)
+                except:
+                    ar = Artist(name=jackie)
                     ar.save()
                 try:
-                    al = Album.objects.get(title=album)
+                    son = ar.song_set.get(title=jenny)
                 except:
-                    al = Album(title=album,artist=ar)
-                    al.save()
-                try:
-                    son = Song.Objects.get(title=title)
-                except:
-                    son = Song(title=title,artist=ar,album=al)
+                    son = Song(title=jenny,artist=ar)
                     son.save()
                 finally:
                     pl.songs.add(son)
                     pl.save()
-            except:
-                return JsonResponse({'message': "track not found"})
         return JsonResponse({'success': 'yes'})
 
 # @login_required()
