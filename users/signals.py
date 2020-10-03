@@ -17,11 +17,17 @@ def save_profile(sender,instance,**kwargs):
 @receiver(m2m_changed, sender = Profile.favorites.through)
 def send_email_after_favorite(sender, instance, action, pk_set, **kwargs):
     if action == "post_add":
-        send_mail(
+        user = instance.user.username
+        playlist = Playlist.objects.get(pk=pk_set.pop())
+        playlist_author = playlist.user
+        try:
+            send_mail(
             subject="Someone added your playlist to favorites",
             message="""
-            Hi, {user}! Someone added your playlist {playlist} to their favorites. You're making quite a name for yourself in the music scene. Cheers!
-            """.format(user=instance, playlist=Playlist.objects.get(pk=pk_set.pop())),
+            Hi, {playlist_author}! {user} added your playlist {playlist} to their favorites. You're making quite a name for yourself in the music scene. Cheers!
+            """.format(playlist_author=playlist_author.username, user=user, playlist=playlist),
             from_email=None,
-            recipient_list=["playitt.app@gmail.com"]
-        )
+            recipient_list=[playlist_author.email]
+            )
+        except:
+            print("error: maybe email not found?")
