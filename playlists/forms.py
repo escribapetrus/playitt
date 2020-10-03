@@ -17,6 +17,11 @@ class AddSong(forms.Form):
         label="Artist", 
         max_length=120,
         widget= forms.TextInput(attrs={'placeholder':'artist'}))
+    custom = forms.BooleanField(
+        required=False,
+        label="Custom?",
+        # widget= forms.CheckboxInput()
+    )
     # album = forms.CharField(
     #     label="Album", 
     #     max_length=120,

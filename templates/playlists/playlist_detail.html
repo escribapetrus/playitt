@@ -57,7 +57,8 @@ Playlists - {{object.title}}
             
             <div class="comment-list">
                 <vcommentlist 
-                    v-for="c in comments"
+                    v-for="(c, idx) in comments"
+                    :key="idx"
                     :text="c.fields.text"
                     :user="c.fields.user[0]"
                     :comment_date="c.fields.comment_date"

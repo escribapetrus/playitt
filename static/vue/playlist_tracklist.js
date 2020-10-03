@@ -34,9 +34,11 @@ Vue.component('vtracklist', {
         <a :href="deleteurl"><i class="material-icons">delete</i></a>
         <h3>playlist</h3>
     </div>
-    <li v-for="s in songs" v-bind:key="s.title">
+    <li v-for="(s, idx) in songs">
         <div class="track-info">
-            [[s.title]] <span>[[s.artist]] - [[s.album]]</span>
+            [[s.title]] 
+            <span v-if="s.album">[[s.artist]] - [[s.album]]</span>
+            <span v-else="s.album">[[s.artist]]</span>
         </div>
         <i class="material-icons" v-show="toggle" @click="removeTrack(s.id)">clear</i>
     </li>
@@ -50,7 +52,7 @@ Vue.component('vpldescription',{
     template: `
         <div class="description">
             <div class="tags">
-                <h3 v-for="g in genres">
+                <h3 v-for="(g, idx) in genres ">
                     <a :href="[[url]] + [[g]]">[[g]]</a>
                 </h3>
             </div>
@@ -66,6 +68,7 @@ Vue.component('vsongadder',{
             let addData = {
                 title:this.song.title,
                 artist:this.song.artist,
+                custom:this.song.custom,
             }
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
@@ -75,15 +78,17 @@ Vue.component('vsongadder',{
             this.song = {title:'',artist:'',}
         }
     },
-    data: () => ({song: {title:'',artist:'',}}),
+    data: () => ({song: {title:'',artist:'', custom: false}}),
     template: `
     <div class="add-songs">
         <h3> Add new songs</h3>
         <form @submit.prevent="addSong">
-            <label>title</label>
+            <label class="hide">title</label>
             <input type="text" placeholder="title" v-model="song.title">
-            <label>artist</label>
+            <label class="hide">artist</label>
             <input type="text" placeholder="artist" v-model="song.artist">
+            <label>Didn't find your song in the library? Create a custom: </label>
+            <input type="checkbox" v-model="song.custom">
             <input type="submit" value="add">
         </form>
         </div>
