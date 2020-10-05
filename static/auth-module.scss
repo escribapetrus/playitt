@@ -1,0 +1,25 @@
+.auth-iframe {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 7px 20px 2px rgba(0,0,0,.4);
+    height: 650px;
+    left: 50%;
+    overflow: hidden;
+    pointer-events: all;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 850px;
+    z-index: 111;
+
+    .close-modal{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
