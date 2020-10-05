@@ -63,6 +63,7 @@ Vue.component('vpldescription',{
 
 Vue.component('vsongadder',{
     delimiters: ['[[',']]'],
+    props: {notfound: Boolean},
     methods: {
         addSong: function(){
             let addData = {
@@ -73,7 +74,10 @@ Vue.component('vsongadder',{
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}addsong/`, addData)
-            .then(res => (this.$emit("addedsong")))
+            .then(res => {
+                console.log(res.data);
+                return this.$emit("addedsong", res.data)
+            })
             .catch(err => (console.log(err)));
             this.song = {title:'',artist:'',}
         }
@@ -82,6 +86,7 @@ Vue.component('vsongadder',{
     template: `
     <div class="add-songs">
         <h3> Add new songs</h3>
+        <h5>[[notfound]]</h5>
         <form @submit.prevent="addSong">
             <label class="hide">title</label>
             <input type="text" placeholder="title" v-model="song.title">
@@ -141,20 +146,27 @@ var vueTracklist = new Vue({
         songs: [],
         description: "",
         genres: [],
+        notfound: false
     },
     methods: {
-        getSongs: function() {
-            axios.get(`${window.location.origin}/api${window.location.pathname}`)
-            .then(res => {
-                this.songs = res.data[0].fields.songs
-                this.description = res.data[0].fields.description
-                this.genres = res.data[0].fields.genres
-            })
-            .catch(err => (console.log(err)))
+        getSongs: function(message) {
+            if (message.success === false) {
+                console.log("ERROR CONDITION")
+            } else {
+                console.log("fetching songs");
+                axios.get(`${window.location.origin}/api${window.location.pathname}`)
+                .then(res => {
+                    this.description = res.data[0].fields.description
+                    this.genres = res.data[0].fields.genres
+                    this.songs = res.data[0].fields.songs
+                })
+                .catch(err => (console.log(err)))
+            }
         },
     },
     mounted() {
-        this.getSongs()
+        this.getSongs({success: true})
     }
 })
 
+this.notFound = true

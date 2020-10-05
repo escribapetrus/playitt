@@ -125,7 +125,7 @@ def add_song_to_pl(req,pk):
                         pl.songs.add(son)
                         pl.save()
                 except:
-                    return JsonResponse({'message': "track not found"})
+                    return JsonResponse({'success': False})
             else:
                 try:
                     ar = Artist.objects.get(name=jackie)
@@ -140,7 +140,7 @@ def add_song_to_pl(req,pk):
                 finally:
                     pl.songs.add(son)
                     pl.save()
-        return JsonResponse({'success': 'yes'})
+        return JsonResponse({'success': True})
 
 # @login_required()
 # def add_song_to_pl(req,pk):

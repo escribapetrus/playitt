@@ -40,7 +40,7 @@ Playlists - {{object.title}}
                     :url="'{% url 'playlists-index' %}playlists/genre/'">
                 </vpldescription>
                 {% if user == object.user%}
-                <vsongadder @addedsong="getSongs"></vsongadder>
+                <vsongadder :notfound="notfound" @addedsong="getSongs"></vsongadder>
                 {% endif %} 
             </article>
         </div>    
