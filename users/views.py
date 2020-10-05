@@ -1,3 +1,4 @@
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import JsonResponse
@@ -18,11 +19,18 @@ def create(req):
 	if req.method == 'POST':
 		f = NewUser(req.POST)
 		if f.is_valid():
-			f.save()
-		return redirect('playlists-index')
+			new_user = f.save()
+			new_user = authenticate(username=f.cleaned_data['username'], password=f.cleaned_data['password1'])
+			login(req, new_user)
+			return redirect('users-auth-redirect')
 	else:
 		userform = NewUser()
 	return render(req, 'registration/create.html', {'userform':userform})
+
+def auth_redirect(req):
+	username = req.user
+	print(username)
+	return render(req, "registration/auth_redirect.html", {'username': username})
 
 @login_required()
 def add_pl_to_fav(req,plid):
