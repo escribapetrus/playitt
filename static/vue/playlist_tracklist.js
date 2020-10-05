@@ -74,10 +74,7 @@ Vue.component('vsongadder',{
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}addsong/`, addData)
-            .then(res => {
-                console.log(res.data);
-                return this.$emit("addedsong", res.data)
-            })
+            .then(res => (this.$emit("addedsong", res.data)))
             .catch(err => (console.log(err)));
             this.song = {title:'',artist:'',}
         }
@@ -86,7 +83,7 @@ Vue.component('vsongadder',{
     template: `
     <div class="add-songs">
         <h3> Add new songs</h3>
-        <h5>[[notfound]]</h5>
+        <h5 v-if="notfound">track not found, sorry.</h5>
         <form @submit.prevent="addSong">
             <label class="hide">title</label>
             <input type="text" placeholder="title" v-model="song.title">
@@ -151,14 +148,14 @@ var vueTracklist = new Vue({
     methods: {
         getSongs: function(message) {
             if (message.success === false) {
-                console.log("ERROR CONDITION")
+                this.notfound = true;
             } else {
-                console.log("fetching songs");
                 axios.get(`${window.location.origin}/api${window.location.pathname}`)
                 .then(res => {
                     this.description = res.data[0].fields.description
                     this.genres = res.data[0].fields.genres
                     this.songs = res.data[0].fields.songs
+                    this.notfound = false
                 })
                 .catch(err => (console.log(err)))
             }

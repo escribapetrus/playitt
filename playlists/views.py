@@ -98,7 +98,6 @@ def add_song_to_pl(req,pk):
     pl = Playlist.objects.get(pk=pk)
     if req.method == "POST":
         f = AddSong(json.loads(req.body.decode('utf-8')))
-        # f = AddSong(req.POST)
         if f.is_valid() and req.user == pl.user:
             (jackie, jenny) = (f.cleaned_data['artist'],f.cleaned_data['title'])
             if f.cleaned_data['custom'] == False:
