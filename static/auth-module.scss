@@ -9,7 +9,8 @@
     position: fixed;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 850px;
+    width: 80%;
+    max-width: 750px;
     z-index: 111;
 
     .close-modal{

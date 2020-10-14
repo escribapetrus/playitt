@@ -19,10 +19,10 @@ class Detail(DetailView):
 
 def create(req):
 	if req.method == 'POST':
-		f = NewUser(req.POST)
-		if f.is_valid():
-			new_user = f.save()
-			new_user = authenticate(username=f.cleaned_data['username'], password=f.cleaned_data['password1'])
+		userform = NewUser(req.POST)
+		if userform.is_valid():
+			new_user = userform.save()
+			new_user = authenticate(username=userform.cleaned_data['username'], password=userform.cleaned_data['password1'])
 			login(req, new_user)
 			return redirect('users-auth-redirect')
 	else:
@@ -31,7 +31,6 @@ def create(req):
 
 def auth_redirect(req):
 	username = req.user
-	print(username)
 	return render(req, "registration/auth_redirect.html", {'username': username})
 
 @login_required()
