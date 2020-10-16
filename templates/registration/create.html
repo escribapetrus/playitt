@@ -10,16 +10,16 @@ Playlists - sign up
 	{% csrf_token %}
 	{% for field in userform %}
 
-	<div class="form-group">
+	<fieldset>
 		{{ field.label_tag }}
 		{{ field }}
 		<!-- {% if field.help_text %}
 		<small style="color: grey">{{ field.help_text }}</small>
 		{% endif %} -->
-		{% for error in field.errors %}
-		<p style="color: red">{{ error }}</p>
+	</fieldset>
+	{% for error in field.errors %}
+	<p style="color: red; margin:0;">{{ error }}</p>
 	{% endfor %}
-	</div>
 
 	{% endfor %}
 	<input type="submit" value='sign up'>

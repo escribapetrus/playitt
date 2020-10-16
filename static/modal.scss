@@ -8,31 +8,96 @@ $fifth: #F35B04;
 $decorative: 'Bebas Neue', cursive;
 $text: 'Open Sans', sans-serif;
 
-@import 'users/auth';
+// @import 'users/auth';
 // @import 'playlists/form';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+// html {margin: 0;}
 body{
-    overflow: hidden;
-    margin: 0 auto;
+    // overflow: hidden;
+    margin: 0;
     background-color: $light;
     font-family: $text;
     .header {
-        height: 200px;
+        top: 0;
+        height: 220px;
         background-image: url('img/vinyl-headphone.jpg');
         background-size: cover;
         background-position: center;
     }
-    
-    h1,h2,h3{
-        font-family: $decorative;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        letter-spacing: 0.2rem;
-        font-size: 1.6rem;
-    }
+    .content {    
+        width: 70%;
+        margin: 30px auto;
+        form {
+            fieldset{
+                position: relative;
+                margin: 10px;
+                background-color: #fff;
+                border-radius: 4px;
+                height: 40px;
+                // padding: 0;
+                padding: 15px 0 5px 0;
+                label {
+                    position: absolute;
+                    font-size: 1.2rem;
+                    top: 0;
+                    margin-top: 20px;
+                    margin-left: 5px;
+                    // opacity: 0;
+                    transition: all .3s ease-out;
+                    -webkit-transition: all .3s ease-out;
+                    -moz-transition: all .3s ease-out;
+                    &.label-tiny{
+                        font-size: 0.7rem;
+                        // opacity: 1;
+                        margin-top: 3px;
+                        color: $dark;
+                        font-weight: 700;
+                        text-transform: lowercase;
+                        &.focused {color: $fifth;}
+                    }
+                }
+                input {
+                    border: 0;
+                    padding: 0;
+                    margin-left: 5px;
+                    width: 90%;
+                    height: 100%;
+                    // padding: 2em 1em 1em;
+                    outline: none;
+                    font-size: 1.2rem;
+                    transition: all .3s ease-out;
+                    -webkit-transition: all .3s ease-out;
+                    -moz-transition: all .3s ease-out;
+                    -webkit-appearance:none;
+                    // border-bottom: 2px solid lightgrey;
+                    // min-width: 180px;
+                    // border-radius: 5px;
+                    &::placeholder{
+                        color: transparent;
+                    }
+                    &:focus + label{
+                        // font-size: 0.8rem;
+                        // margin-top: 0;
+                        color: #3951b2
+                    }
+                }
+            }
+        }
 
+  
+
+
+
+
+        h1,h2,h3{
+            font-family: $decorative;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            letter-spacing: 0.2rem;
+            font-size: 1.6rem;
+        }
+    }
 }
 
