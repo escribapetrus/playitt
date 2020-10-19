@@ -11,44 +11,55 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
-    <body>    
-        {% block navbar %}
-        <nav class="main-nav">
-            <span class="brand"> <a href="{% url 'playlists-index' %}">playitt</a></span>
-            <ul>    
-                <li><a href="{% url 'playlists-create' %}">new playlist</a></li>
+    <body>
+        <div class="page" id="auth-module">
+            {% block navbar %}
+            <nav class="main-nav">
+                <span class="brand"> <a href="{% url 'playlists-index' %}">playitt</a></span>
+                <ul>    
+                    <li><a href="{% url 'playlists-create' %}">new playlist</a></li>
+                    {%if user.username %}
+                    <li><a href="{% url 'users-profile' user.username %}">{{user.username}}</a></li>
+                    <li><a href="{% url 'logout' %}">logout</a></li>
+                    {%else%}
+                    <!-- <li><a href="{% url 'login' %}">login</a></li> -->
+                    <li @click="openAuthModal('{% url 'login' %}')">login</li>
+                    <!-- <li><a href="{% url 'users-create' %}">sign up</a></li> -->
+                    <li @click="openAuthModal('{% url 'users-create' %}')">sign up</li>
+                    {%endif%}
+                </ul>
+                <i class="material-icons">
+                    portrait
+                </i>
+            </nav>
+            <nav class='navbar-toggle' style="display: none;">   
+                <a class="nav-toggle-link" href="{% url 'playlists-create' %}">new playlist</a>
                 {%if user.username %}
-                <li><a href="{% url 'users-profile' user.username %}">{{user.username}}</a></li>
-                <li><a href="{% url 'logout' %}">logout</a></li>
+                <a class="nav-toggle-link" href="{% url 'users-profile' user.pk %}">{{user.username}}</a>
+                <a class="nav-toggle-link" href="{% url 'logout' %}">logout</a>
                 {%else%}
-                <li><a href="{% url 'login' %}">login</a></li>
-                <li><a href="{% url 'users-create' %}">sign up</a></li>
+                <a class="nav-toggle-link" href="{% url 'login' %}">login</a>
+                <a class="nav-toggle-link" href="{% url 'users-create' %}">sign up</a>
                 {%endif%}
-            </ul>
-            <i class="material-icons">
-                portrait
-            </i>
-        </nav>
-        <nav class='navbar-toggle' style="display: none;">   
-            <a class="nav-toggle-link" href="{% url 'playlists-create' %}">new playlist</a>
-            {%if user.username %}
-            <a class="nav-toggle-link" href="{% url 'users-profile' user.pk %}">{{user.username}}</a>
-            <a class="nav-toggle-link" href="{% url 'logout' %}">logout</a>
-            {%else%}
-            <a class="nav-toggle-link" href="{% url 'login' %}">login</a>
-            <a class="nav-toggle-link" href="{% url 'users-create' %}">sign up</a>
-            {%endif%}
-        </nav>
-        {% endblock %}
+            </nav>
+            {% endblock %}
+            <div v-if="modal.length > 1" class="auth-iframe">
+                <iframe :src="modal" frameborder="0"></iframe>
+                <!-- <iframe src="{% url 'users-create' %}" frameborder="0"></iframe> -->
+                    <span class="close-modal material-icons" @click="closeAuthModal()">
+                        highlight_off
+                    </span>
+            </div>
+        </div>    
         <div class="content">
             {% block content %}
             {% endblock %}
         </div>
-
+        
         <footer>
             <span>Developed by Pedro Schreiber (<a href="https://github.com/escribapetrus">@escribapetrus</a>)</span>
         </footer>
-
+        
         <script>
             var navico = document.querySelector(".material-icons");
             var navtog = document.querySelector('.navbar-toggle')
@@ -56,6 +67,7 @@
                 if (navtog.style.display == "none") {navtog.style.display = "block";return true}
                 else {navtog.style.display = "none"; return true}
             })
-        </script>
+            </script>
+        <script src="{% static 'vue/auth_module.js' %}"></script>
     </body>
-</html>
+    </html>

@@ -98,7 +98,6 @@ def add_song_to_pl(req,pk):
     pl = Playlist.objects.get(pk=pk)
     if req.method == "POST":
         f = AddSong(json.loads(req.body.decode('utf-8')))
-        # f = AddSong(req.POST)
         if f.is_valid() and req.user == pl.user:
             (jackie, jenny) = (f.cleaned_data['artist'],f.cleaned_data['title'])
             if f.cleaned_data['custom'] == False:
@@ -125,7 +124,7 @@ def add_song_to_pl(req,pk):
                         pl.songs.add(son)
                         pl.save()
                 except:
-                    return JsonResponse({'message': "track not found"})
+                    return JsonResponse({'success': False})
             else:
                 try:
                     ar = Artist.objects.get(name=jackie)
@@ -140,7 +139,7 @@ def add_song_to_pl(req,pk):
                 finally:
                     pl.songs.add(son)
                     pl.save()
-        return JsonResponse({'success': 'yes'})
+        return JsonResponse({'success': True})
 
 # @login_required()
 # def add_song_to_pl(req,pk):

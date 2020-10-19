@@ -36,6 +36,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ROOT_URLCONF = '_main.urls'
 
 TEMPLATES = [
@@ -86,7 +88,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 LOGIN_URL = '/users/login'
-LOGIN_REDIRECT_URL = "playlists-index"
+LOGIN_REDIRECT_URL = "users-auth-redirect"
 LOGOUT_REDIRECT_URL = 'playlists-index'
 
 LANGUAGE_CODE = 'en-us'

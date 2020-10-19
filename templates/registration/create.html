@@ -1,4 +1,4 @@
-{% extends "../layout.html" %}
+{% extends "../modal.html" %}
 
 {% block title %}
 Playlists - sign up
@@ -8,7 +8,22 @@ Playlists - sign up
 <h1>Sign up to create your own playlists</h1>
 <form action="{% url 'users-create' %}" method="post">
 	{% csrf_token %}
-	{{userform}}
+	{% for field in userform %}
+
+	<fieldset>
+		{{ field.label_tag }}
+		{{ field }}
+		<!-- {% if field.help_text %}
+		<small style="color: grey">{{ field.help_text }}</small>
+		{% endif %} -->
+	</fieldset>
+	{% for error in field.errors %}
+	<p style="color: red; margin:0;">{{ error }}</p>
+	{% endfor %}
+
+	{% endfor %}
 	<input type="submit" value='sign up'>
 </form>
+
+<p>Already have an account? <a href="{% url 'login' %}">Sign in!</a></p>
 {% endblock %}

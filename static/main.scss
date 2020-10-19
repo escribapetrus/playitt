@@ -9,6 +9,7 @@ $decorative: 'Bebas Neue', cursive;
 $text: 'Open Sans', sans-serif;
 
 @import 'navbar';
+@import 'auth-module';
 @import 'playlists/home';
 @import 'playlists/detail';
 @import 'playlists/form';

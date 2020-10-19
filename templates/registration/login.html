@@ -1,15 +1,33 @@
-{% extends "../layout.html" %}
+{% extends "../modal.html" %}
 
 {% block content %}
 
 <h2>Login</h2>
 <form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
+  <!-- {% csrf_token %} -->
+  <!-- {{ form.as_p }} -->
+
+    {% csrf_token %}
+    {% for field in form %}
+  
+    <fieldset>
+      {{ field.label_tag }}
+      {{ field }}
+      <!-- {% if field.help_text %}
+      <small style="color: grey">{{ field.help_text }}</small>
+      {% endif %} -->
+    </fieldset>
+    {% for error in field.errors %}
+    <p style="color: red; margin:0;">{{ error }}</p>
+    {% endfor %}
+  
+    {% endfor %}
+    <input type="submit" value='login'>
+
+
 </form>
-<p><a href="{% url 'password_reset' %}">Reset password</a></p>
-<p><a href="{% url 'users-create' %}">Don't have an account? Sign up!</a></p>
+<p>Forgot your password? <a href="{% url 'password_reset' %}">Recover here.</a></p>
+<p>Don't have an account? <a href="{% url 'users-create' %}">Sign up!</a></p>
 
 
 {% endblock %}

@@ -142,3 +142,5 @@ cython_debug/
 
 static/main.css
 static/main.css.map
+
+templates/yt-api/index.html
