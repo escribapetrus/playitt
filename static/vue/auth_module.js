@@ -11,7 +11,6 @@ var authModule = new Vue({
     },
     methods: {
         openAuthModal: function(link){
-            console.log(link);
             this.modal = link
         },
         closeAuthModal: function(){

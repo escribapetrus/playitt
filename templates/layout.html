@@ -46,7 +46,9 @@
             <div v-if="modal.length > 1" class="auth-iframe">
                 <iframe :src="modal" frameborder="0"></iframe>
                 <!-- <iframe src="{% url 'users-create' %}" frameborder="0"></iframe> -->
-                <button class="close-modal" @click="closeAuthModal()">X</button>
+                    <span class="close-modal material-icons" @click="closeAuthModal()">
+                        highlight_off
+                    </span>
             </div>
         </div>    
         <div class="content">

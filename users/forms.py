@@ -10,8 +10,8 @@ class NewUser(UserCreationForm):
         # self.fields['email'].widget.attrs['placeholder'] = 'Email'
         # self.fields['password1'].widget.attrs['placeholder'] = 'Password'
         # self.fields['password2'].widget.attrs['placeholder'] = 'Confirm Password'
+        # self.fields['username'].widget.attrs.pop("autofocus", None)
 
-        self.fields['username'].widget.attrs.pop("autofocus", None)
         self.fields['username'].label = "Username"
         self.fields['email'].label = "Email"
         self.fields['password1'].label = "Password"

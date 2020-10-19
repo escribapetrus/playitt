@@ -1,9 +1,14 @@
 {% extends "../modal.html" %}
 
 {% block content %}
+<div class="auth-redirect">
+    <h2>You are being redirected</h2>
+    <p><span class="user">{{ username }}</span>, welcome to Playitt. Now create your playlist and enjoy the music discussions with the other users.</p>
 
-<h2>You are being redirected</h2>
-<p>{{ username }}, welcome to Playitt. Now create your playlist and enjoy the music discussions with the other users.</p>
+    <div class="loader"></div>
+</div>
+
+<!-- CSS Loader by Luke Haas https://github.com/lukehaas/css-loaders -->
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
