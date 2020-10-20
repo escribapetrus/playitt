@@ -84,12 +84,13 @@ Playitt
 </div>
 
 <script>
-    var jenny = document.querySelectorAll(".playlist-card"),
-        jackie = document.querySelectorAll(".playlist-link")
-        for (let i = 0; i < jenny.length; i++) {
-            console.log(jenny[i],jackie[i])
-            jenny[i].addEventListener("click", () => {window.location = jackie[i].getAttribute('href');return true})     
-        }
+    let cards = document.querySelectorAll(".playlist-card")
+    cards.forEach(el => {
+        let elLink = el.querySelector(".playlist-link").getAttribute('href')
+        el.addEventListener("click", () => {
+            window.location = elLink;
+        })
+    })
 </script>
 
 {% endblock %}

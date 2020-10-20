@@ -16,11 +16,11 @@ Playlists - {{object.title}}
         <div class="list" id="vue-playlist">            
             <ol class="tracklist">
                 {% if object.user != user%}
-                    {%if object in user.profile.favorites.all%}
-                    <vplfavorite :isfavorite="true" :message="'Favorite'"></vplfavorite>
-                    {% else %}
-                    <vplfavorite :isfavorite="false" :message="'Like it?'"></vplfavorite>
-                    {% endif%}   
+                <vplfavorite :playlistid="playlistid"></vplfavorite>
+                    <!-- {%if object in user.profile.favorites.all%} -->
+                    <!-- <vplfavorite :isfavorite="true"></vplfavorite> -->
+                    <!-- {% else %} -->
+                    <!-- {% endif%}    -->
                 {%endif%}
                 {% if object.user == user%} 
                 <vtracklist 
