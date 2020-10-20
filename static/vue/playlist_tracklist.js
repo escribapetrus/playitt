@@ -8,7 +8,6 @@ Vue.component('vtracklist', {
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}removesong/${songid}`)
             .then(res => {
-                    console.log(res)
                     this.message = "removed track from playlist",
                     this.$emit("songremoved")
                 }
@@ -100,46 +99,52 @@ Vue.component('vsongadder',{
 
 Vue.component('vplfavorite' ,{
     delimiters: ['[[',']]'],
-    props: ['isfavorite','message'],
-    data: () => ({message: ""}),
+    props: {playlistid: Number},
     methods: {
         addToFavorites: function() {
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}/users/add-to-fav${window.location.pathname}`)
-            .then(res => {
-                    console.log(res)
-                    this.message = "added to favorites"
-                }
-            )
+            .then(res => { this.message_ = "added to favorites" })
             .catch(err => (console.log(err)))
         },
         removeFavorite: function() {
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}/users/remove-fav${window.location.pathname}`)
-            .then(res => {
-                    console.log(res)
-                    this.message = "removed from favorites"
-                }
-            )
+            .then(res => { this.message_ = "removed from favorites" })
+            .catch(err => (console.log(err)))
+        },
+        checkFavorites: function(playlist) {
+            axios.defaults.xsrfCookieName = 'csrftoken';
+            axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+            axios.get(`${window.location.origin}/api/playlists/user-favorites`)
+            .then(res => { 
+                console.log(res.data)
+                console.log(playlist)
+            })
             .catch(err => (console.log(err)))
         },
     },
+    data() {return {isFavorite: false, message: ""}},
+    mounted(){ this.checkFavorites(this.playlistid)},
     template: `
         <div class="tracklist-header">
-            <i class="material-icons" v-if="isfavorite" @click="removeFavorite">remove_circle</i>
-            <i class="material-icons" v-else @click="addToFavorites">stars</i>
-            <h3>[[message]]</h3>
+            <h3> alo alo w brasil [[playlistid]]</h3>
         </div>
     `
 })
+
+//<i class="material-icons" v-if="isfavorite" @click="removeFavorite">remove_circle</i>
+//<i class="material-icons" v-else @click="addToFavorites">stars</i>
+//<h3>[[message]]</h3>
 
 var vueTracklist = new Vue({
     el: '#vue-playlist',
     component: ['vtracklist','vpldescription','vplgenres','vsongadder','vplfavorite'],    
     delimiters: ['[[', ']]'],
     data: {
+        playlistid: 0,
         songs: [],
         description: "",
         genres: [],
@@ -152,10 +157,11 @@ var vueTracklist = new Vue({
             } else {
                 axios.get(`${window.location.origin}/api${window.location.pathname}`)
                 .then(res => {
-                    this.description = res.data[0].fields.description
-                    this.genres = res.data[0].fields.genres
-                    this.songs = res.data[0].fields.songs
-                    this.notfound = false
+                    this.playlistid = res.data[0].pk;
+                    this.description = res.data[0].fields.description;
+                    this.genres = res.data[0].fields.genres;
+                    this.songs = res.data[0].fields.songs;
+                    this.notfound = false;
                 })
                 .catch(err => (console.log(err)))
             }
@@ -166,4 +172,3 @@ var vueTracklist = new Vue({
     }
 })
 
-this.notFound = true
