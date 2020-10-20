@@ -177,7 +177,7 @@ def remove_song_in_pl(req,pk,songid):
         if req.user == pl.user:
             pl.songs.remove(son)
             pl.save()
-    return JsonResponse({'success': 'yes'})
+    return JsonResponse({'success': True})
 
 @login_required()
 def add_genre(req):

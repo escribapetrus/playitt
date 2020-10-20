@@ -8,10 +8,10 @@ Vue.component('vtracklist', {
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.post(`${window.location.origin}${window.location.pathname}removesong/${songid}`)
             .then(res => {
-                    this.message = "removed track from playlist",
-                    this.$emit("songremoved")
-                }
-            )
+                console.log(res.data)
+                this.message = "removed track from playlist";
+                this.$emit("songremoved",res.data);
+            })
             .catch(err => (console.log(err)))
         },
         deletePlaylist: function(songid) {
@@ -107,6 +107,7 @@ Vue.component('vplfavorite' ,{
             axios.post(`${window.location.origin}/users/add-to-fav${window.location.pathname}`)
             .then(res => { this.message_ = "added to favorites" })
             .catch(err => (console.log(err)))
+            .finally(() => this.checkFavorites())
         },
         removeFavorite: function() {
             axios.defaults.xsrfCookieName = 'csrftoken';
@@ -114,30 +115,38 @@ Vue.component('vplfavorite' ,{
             axios.post(`${window.location.origin}/users/remove-fav${window.location.pathname}`)
             .then(res => { this.message_ = "removed from favorites" })
             .catch(err => (console.log(err)))
+            .finally(() => this.checkFavorites())
         },
-        checkFavorites: function(playlist) {
+        checkFavorites: function() {
             axios.defaults.xsrfCookieName = 'csrftoken';
             axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             axios.get(`${window.location.origin}/api/playlists/user-favorites`)
-            .then(res => { 
-                console.log(res.data)
-                console.log(playlist)
-            })
+            .then(res => { this.userFavorites = res.data })
             .catch(err => (console.log(err)))
         },
+        log: function() {
+            console.log({playlist: this.playlistid, favs: this.userFavorites, isfav: this.isFavorite})
+        }
     },
-    data() {return {isFavorite: false, message: ""}},
-    mounted(){ this.checkFavorites(this.playlistid)},
+    computed: {
+        isFavorite: function(){
+            let filtered = this.userFavorites.filter(el => el.pk === this.playlistid);
+            return filtered.length >= 1
+        }
+    },
+    data() { return {userFavorites: []} },
+    mounted(){ this.checkFavorites() },
     template: `
         <div class="tracklist-header">
-            <h3> alo alo w brasil [[playlistid]]</h3>
+            <i class="material-icons" v-if="isFavorite" @click="removeFavorite">remove_circle</i>
+            <i class="material-icons" v-else @click="addToFavorites">stars</i>
+            <span v-if="isFavorite">In your favorites!</span>
+            <span v-else>Add to favorites?</span>
         </div>
     `
 })
 
-//<i class="material-icons" v-if="isfavorite" @click="removeFavorite">remove_circle</i>
-//<i class="material-icons" v-else @click="addToFavorites">stars</i>
-//<h3>[[message]]</h3>
+
 
 var vueTracklist = new Vue({
     el: '#vue-playlist',
