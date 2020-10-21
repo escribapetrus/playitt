@@ -38,7 +38,7 @@ def add_pl_to_fav(req,plid):
 		usr = req.user
 		usr.profile.favorites.add(pl)
 		usr.save()
-	return JsonResponse({'success':'yes'})
+	return JsonResponse({'success': True})
 
 @login_required()
 def remove_fav(req,plid):
@@ -47,4 +47,4 @@ def remove_fav(req,plid):
 		usr = req.user
 		usr.profile.favorites.remove(pl)
 		usr.save()
-	return JsonResponse({'success':'yes'})
+	return JsonResponse({'success':True})

@@ -9,7 +9,7 @@
     position: fixed;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 80%;
+    width: 40%;
     max-width: 750px;
     z-index: 111;
 
@@ -28,8 +28,19 @@
         }
     }
 
+    // .close-button-outline{
+    //     margin: 30px;
+    //     border: 2px solid $fifth;
+    //     width: 100%;
+    //     padding: 4px;
+    //     background-color: #fff;
+    // }
+
     iframe {
         height: 100%;
         width: 100%;
+    }
+    &.small {
+        height: 300px;
     }
 }

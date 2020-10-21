@@ -1,0 +1,13 @@
+{% extends "../modal.html" %}
+
+{% block content %}
+<script>
+    let header = document.querySelector(".header");
+    header.remove();
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        window.parent.location.pathname = "/"})
+</script>
+
+{% endblock %}

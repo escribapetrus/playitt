@@ -1,7 +1,7 @@
-var authPages = [
-    {id: 1, name: "sign up", link: "/users/create/"},
-    {id: 1, name: "log in", link: "/users/login/"},
-]
+// var authPages = [
+//     {id: 1, name: "sign up", link: "/users/create/"},
+//     {id: 1, name: "log in", link: "/users/login/"},
+// ]
 
 var authModule = new Vue({
     el: "#auth-module",

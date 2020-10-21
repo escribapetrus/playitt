@@ -54,13 +54,17 @@ class PlaylistUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class PlaylistDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Playlist
-    success_url = '/'
+    success_url = '/playlists/playlist-delete-redirect'
     def test_func(self):
         pl = self.get_object()
         if pl.user == self.request.user:
             return True
         else:
             return False
+
+def delete_redirect(req):
+	username = req.user
+	return render(req, "playlists/playlist_delete_redirect.html", {'username': username})
 
 class GenreList(ListView):
     model = Playlist

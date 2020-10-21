@@ -11,5 +11,6 @@ urlpatterns = [
     path('playlists/user/<str:username>/',views.UserList.as_view(),name='playlists-user-list'),
     path('playlists/<int:pk>/removesong/<int:songid>', views.remove_song_in_pl, name='playlists-removesong'),
    	path('playlists/<int:pk>/addsong/', views.add_song_to_pl, name='playlists-addsong'),
-   	path('playlists/addgenre',views.add_genre,name='playlists-addgenre')
+   	path('playlists/addgenre',views.add_genre,name='playlists-addgenre'),
+    path('playlists/playlist-delete-redirect',views.delete_redirect, name='playlist-delete-redirect')	
 ]
