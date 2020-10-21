@@ -61,6 +61,9 @@
         </footer>
         
         <script>
+            window.loggedInUser = {username: "{{user.username}}"}
+        </script>
+        <script>
             var navico = document.querySelector(".material-icons");
             var navtog = document.querySelector('.navbar-toggle')
             navico.addEventListener("click", () => {
@@ -69,5 +72,6 @@
             })
         </script>
         <script src="{% static 'vue/auth_module.js' %}"></script>
+
     </body>
     </html>

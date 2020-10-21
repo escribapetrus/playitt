@@ -15,7 +15,7 @@ Vue.component('vtracklist', {
             .catch(err => (console.log(err)))
         },
         deletePlaylist: function(songid) {
-            return console.log('later')
+            this.$emit('deleteplaylist', songid)
             // axios.defaults.xsrfCookieName = 'csrftoken';
             // axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
             // axios.get(`${window.location.origin}${window.location.pathname}delete/`)
@@ -26,13 +26,15 @@ Vue.component('vtracklist', {
             // .catch(err => (console.log(err)))
         },
     },
+    // <a :href="deleteurl"><i class="material-icons">delete</i></a>
     template: `
     <div>
     <div class="tracklist-header" v-if="iscreator">
         <i class="material-icons" @click="toggle = !toggle">text_fields</i>
-        <a :href="deleteurl"><i class="material-icons">delete</i></a>
+        <a @click="deletePlaylist(deleteurl)" href="#"><i class="material-icons">delete</i></a>
         <h3>playlist</h3>
     </div>
+    <div class=""></div>
     <li v-for="(s, idx) in songs">
         <div class="track-info">
             [[s.title]] 
@@ -124,18 +126,15 @@ Vue.component('vplfavorite' ,{
             .then(res => { this.userFavorites = res.data })
             .catch(err => (console.log(err)))
         },
-        log: function() {
-            console.log({playlist: this.playlistid, favs: this.userFavorites, isfav: this.isFavorite})
-        }
     },
     computed: {
         isFavorite: function(){
-            let filtered = this.userFavorites.filter(el => el.pk === this.playlistid);
-            return filtered.length >= 1
+                let filtered = this.userFavorites.filter(el => el.pk === this.playlistid);
+                return filtered.length >= 1
         }
     },
     data() { return {userFavorites: []} },
-    mounted(){ this.checkFavorites() },
+    mounted(){ console.log(this.userFavorites); this.checkFavorites() },
     template: `
         <div class="tracklist-header">
             <i class="material-icons" v-if="isFavorite" @click="removeFavorite">remove_circle</i>
@@ -157,7 +156,8 @@ var vueTracklist = new Vue({
         songs: [],
         description: "",
         genres: [],
-        notfound: false
+        notfound: false,
+        modal: ""
     },
     methods: {
         getSongs: function(message) {
@@ -175,6 +175,12 @@ var vueTracklist = new Vue({
                 .catch(err => (console.log(err)))
             }
         },
+        openModal: function(link){
+            this.modal = link
+        },
+        closeModal: function(){
+            this.modal = ""
+        }
     },
     mounted() {
         this.getSongs({success: true})

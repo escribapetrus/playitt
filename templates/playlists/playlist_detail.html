@@ -15,7 +15,7 @@ Playlists - {{object.title}}
     <section class="content">
         <div class="list" id="vue-playlist">            
             <ol class="tracklist">
-                {% if object.user != user%}
+                {% if user.username and not object.user == user%}
                 <vplfavorite :playlistid="playlistid"></vplfavorite>
                     <!-- {%if object in user.profile.favorites.all%} -->
                     <!-- <vplfavorite :isfavorite="true"></vplfavorite> -->
@@ -27,6 +27,7 @@ Playlists - {{object.title}}
                     :songs="songs" 
                     :iscreator="true" 
                     :deleteurl="'{% url 'playlists-delete' object.pk %}'"
+                    @deleteplaylist="openModal"
                     @songremoved="getSongs">
                 </vtracklist>
                 {% else %}
@@ -43,6 +44,13 @@ Playlists - {{object.title}}
                 <vsongadder :notfound="notfound" @addedsong="getSongs"></vsongadder>
                 {% endif %} 
             </article>
+
+
+            <div v-if="modal.length > 1" class="auth-iframe small">
+                <iframe :src="modal" frameborder="0"></iframe>
+                <!-- <iframe src="{% url 'users-create' %}" frameborder="0"></iframe> -->
+                <button class="close-modal material-icons" @click="closeModal()"></button>
+            </div>
         </div>    
         <section id="vue-comments" class="comments">
             <h3>comments</h3>       
@@ -65,6 +73,8 @@ Playlists - {{object.title}}
                     :url="'{% url 'playlists-index' %}users/detail/' + c.fields.user[0]">
                 </vcommentlist>
             </div>
+
+
             
         </section>
     </section>  
