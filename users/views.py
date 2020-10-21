@@ -8,8 +8,6 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import CreateView, DetailView, ListView, UpdateView
 from playlists.models import Playlist
 from .forms import NewUser
-# from django.contrib.auth.forms import UserCreationForm
-# from .models import Profile
 
 
 class Detail(DetailView):
